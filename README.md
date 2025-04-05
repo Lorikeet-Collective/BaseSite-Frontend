@@ -14,6 +14,7 @@
 - [Built With](#built-with)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
+- [Running The Application](#running)
 - [Testing](#testing)
 - [Linting](#linting)
 - [License](#license)
@@ -43,7 +44,6 @@ This is the official Lorikeet Collective main website frontend.
 [![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://react.dev/)
 [![React Router](https://img.shields.io/badge/React%20Router-red?style=for-the-badge&logo=reactrouter&logoColor=white)](https://reactrouter.com/)
-
 
 #### Testing
 
@@ -86,16 +86,42 @@ _Use Node Package Manager in the install folder and run the following command to
 npm install
 ```
 
+<!-- Running -->
+
+## Running
+
+The current available `NPM` scripts are:
+
+- `dev` | run a dev server
+- `build` | build the current project
+- `start` | run a built project
+- `lint` | check for linting errors
+
+To run any of the above commands use this format in terminal:
+
+```sh
+npm run {command}
+```
+
+> [!IMPORTANT]
+> Replace `{command}` with desired NPM script name.
+
 <!-- Testing -->
 
 ## Testing
 
-> [!IMPORTANT]
+> [!NOTE]
 > This section is under construction and subject to change.
 
 ### Vitest
 
 Use **_Vitest_** to run and write various tests for general application functionality and stability.
+
+### Usage
+
+```sh
+todo
+```
 
 ### Accessbility
 
@@ -107,20 +133,16 @@ Google Lighthouse is used to audit our accessibility standards to meet the follo
 > [!NOTE]
 > WCAG 3 will be implemented once the full release is available. Check here: [Status](https://www.w3.org/TR/wcag-3.0/#sotd)
 
-### Usage
-
-```sh
-todo
-```
-
 ## Linting
 
 ESLint is used to verify code practices and syntax is being properly followed.
 
+To use ESLint to check all files, run in project folder:
+
 ### Usage
 
 ```sh
-todo
+npm run lint
 ```
 
 <!-- License -->
