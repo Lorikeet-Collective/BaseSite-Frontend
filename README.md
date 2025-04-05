@@ -1,6 +1,6 @@
 <!-- Header -->
 
-<div style="text-align:center;">
+<div align="center">
   <img src="images/logo.png" alt="Logo" width="80" height="80">
   <h3>Lorikeet Collective Frontend</h3>
   <span>v0.0.1 | <a href="">Changelog</a></span>
@@ -29,7 +29,7 @@ This is the official Lorikeet Collective main website frontend.
 
 ## Built With
 
-<div style="text-align:center;">
+<div align="center">
 
 #### Languages
 
