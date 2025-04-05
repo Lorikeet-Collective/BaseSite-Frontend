@@ -161,3 +161,15 @@ Distributed under the MIT License. See [LICENSE.txt](https://github.com/Lorikeet
 > - All test cases must be passed with **_zero_** errors.
 > - Documentation must be relevant and updated to any changes presented.
 > - Comment any code and update old comments to reflect changes.
+
+Git commits will be prefixed with one of the following. Commit messages are in past tense:
+
+- `fix` | Fix / Patch
+- `create` | New Feature or Add-on
+- `delete` | Removal of Code
+- `temp` | Temp Change or Work Around
+- `change` | Code Edit / Modification
+- `perf` | Performance Change for Slow Code
+- `sec` | Security Update / Change
+- `dev` | Add Service / Tool to Dev Environment
+- `prod` | Add Service / Tool to Production Environment
