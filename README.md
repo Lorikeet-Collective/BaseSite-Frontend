@@ -18,6 +18,7 @@
 - [Testing](#testing)
 - [Linting](#linting)
 - [License](#license)
+- [Notes](#notes)
 
 <!-- About -->
 
