@@ -45,7 +45,7 @@ This is the official Lorikeet Collective main website frontend.
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://react.dev/)
 [![React Router](https://img.shields.io/badge/React%20Router-red?style=for-the-badge&logo=reactrouter&logoColor=white)](https://reactrouter.com/)
 
-#### Testing
+#### Test Tools
 
 [![Vitest](https://img.shields.io/badge/-Vitest-252529?style=for-the-badge&logo=vitest&logoColor=FCC72B)](https://vitest.dev/)
 [![Lighthouse](https://img.shields.io/badge/Google_Lighthouse-blue?style=for-the-badge&logo=lighthouse&logoColor=white)](https://developer.chrome.com/docs/lighthouse/overview)
