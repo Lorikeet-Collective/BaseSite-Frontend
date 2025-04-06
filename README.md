@@ -150,7 +150,7 @@ npm run lint
 
 ## License
 
-Distributed under the MIT License. See [LICENSE.txt](https://github.com/Lorikeet-Collective/BaseSite-Backend?tab=MIT-1-ov-file) for more information.
+Distributed under the MIT License. See [LICENSE.txt](https://github.com/Lorikeet-Collective/BaseSite-Frontend?tab=MIT-1-ov-file) for more information.
 
 ## Notes
 
