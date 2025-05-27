@@ -21,10 +21,10 @@ const Header: React.FC = (): React.ReactElement => {
             <Link to="/resources">Non-Carceral Resources</Link>
           </li>
           <li>
-            <Link to="">Services</Link>
+            <Link to="/services">Services</Link>
           </li>
           <li>
-            <Link to="">AContact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
             <button>
