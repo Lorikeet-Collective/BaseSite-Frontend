@@ -1,15 +1,14 @@
 import { Link } from "react-router";
-// import "./Header.css";
-import header from "./Header.module.css";
+import styles from "./Header.module.css";
 
 const Header: React.FC = (): React.ReactElement => {
   return (
-    <header className={header.test}>
+    <header className={styles.test}>
       <div>
         <h1>
           <Link to="/home">Lorikeet Collective</Link>
         </h1>
-        <img src="" alt="logo" />
+        <img src="null" alt="logo" />
       </div>
       <nav>
         <ul>

@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import Home from "./views/Home";
 
 const App: React.FC = (): React.ReactElement => {
