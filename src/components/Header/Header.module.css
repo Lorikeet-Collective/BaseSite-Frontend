@@ -1,0 +1,18 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 40px; */
+}
+
+.header-name {
+  display: inline;
+  margin-right: 5px;
+}
+
+.header-name a:link,
+.header-name a:visited {
+  color: var(--secondary-color);
+  text-decoration: none;
+}

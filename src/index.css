@@ -1,5 +1,13 @@
+@import "node_modules/modern-normalize/modern-normalize.css";
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  --primary-color: rgb(247, 241, 252);
+  --secondary-color: rgb(75, 129, 129);
+  --tertiary-color: rgb(110, 80, 132);
+  font-size: 1em;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
