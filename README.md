@@ -170,6 +170,7 @@ Git commits will be prefixed with one of the following. Commit messages are in p
 - `delete` | Removal of Code
 - `temp` | Temp Change or Work Around
 - `change` | Code Edit / Modification
+- `iter` | Regular Code Iteration
 - `update` | NPM Package / Tool Update
 - `perf` | Performance Change for Slow Code
 - `sec` | Security Update / Change
