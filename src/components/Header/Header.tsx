@@ -26,13 +26,23 @@ const Header: React.FC = (): React.ReactElement => {
           interaction={menuHandler}
         />
         {isNavOpen && (
-          <ul>
+          <ul className={styles.navContainer}>
             <li>
-              <Link to="/about">About Us</Link>
-              <Link to="/philosophy">Our Philosophy</Link>
-              <Link to="/flock">Meet the Flock</Link>
-              <Link to="/insurance">Insurance FAQs</Link>
-              <Link to="/resources">Non-Carceral Resources</Link>
+              About Us
+              <ul>
+                <li>
+                  <Link to="/philosophy">Our Philosophy</Link>
+                </li>
+                <li>
+                  <Link to="/flock">Meet the Flock</Link>
+                </li>
+                <li>
+                  <Link to="/insurance">Insurance FAQs</Link>
+                </li>
+                <li>
+                  <Link to="/resources">Non-Carceral Resources</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link to="/services">Services</Link>
