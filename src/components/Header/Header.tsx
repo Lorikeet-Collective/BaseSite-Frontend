@@ -25,43 +25,49 @@ const Header: React.FC = (): React.ReactElement => {
           icon={isNavOpen ? exitIcon : accordianIcon}
           interaction={menuHandler}
         />
-        {isNavOpen && (
-          <ul className={styles.navContainer}>
-            <li>
-              About Us
-              <ul>
-                <li>
-                  <Link to="/philosophy">Our Philosophy</Link>
-                </li>
-                <li>
-                  <Link to="/flock">Meet the Flock</Link>
-                </li>
-                <li>
-                  <Link to="/insurance">Insurance FAQs</Link>
-                </li>
-                <li>
-                  <Link to="/resources">Non-Carceral Resources</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/services">Services</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li>
-              <button>
-                <a
-                  href="https://lorikeetcollective.sessionshealth.com/"
-                  target="_blank"
-                >
-                  BOOK NOW
-                </a>
-              </button>
-            </li>
-          </ul>
-        )}
+        <ul
+          key={String(Math.random())}
+          className={styles.navContainer}
+          style={
+            {
+              animationDirection: isNavOpen ? "normal" : "reverse",
+            }
+          }
+        >
+          <li>
+            About Us
+            <ul>
+              <li>
+                <Link to="/philosophy">Our Philosophy</Link>
+              </li>
+              <li>
+                <Link to="/flock">Meet the Flock</Link>
+              </li>
+              <li>
+                <Link to="/insurance">Insurance FAQs</Link>
+              </li>
+              <li>
+                <Link to="/resources">Non-Carceral Resources</Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Link to="/services">Services</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <button>
+              <a
+                href="https://lorikeetcollective.sessionshealth.com/"
+                target="_blank"
+              >
+                BOOK NOW
+              </a>
+            </button>
+          </li>
+        </ul>
       </nav>
     </header>
   );

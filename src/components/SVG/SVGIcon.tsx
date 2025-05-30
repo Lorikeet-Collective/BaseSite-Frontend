@@ -12,8 +12,6 @@ interface SVGIconProps {
   };
 }
 
-console.log(styles);
-
 const SVGIcon: React.FC<SVGIconProps> = ({
   icon,
   interaction,
