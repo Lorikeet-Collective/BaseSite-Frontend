@@ -20,7 +20,9 @@
 .nav-container {
   animation-name: slide;
   animation-duration: 0.5s;
+  animation-direction: normal;
   animation-fill-mode: forwards;
+  animation-play-state: running;
   animation-timing-function: ease-in-out;
   margin: 50px 0 0 0;
   width: 100%;
@@ -34,10 +36,10 @@
 }
 
 @keyframes slide {
-  0% {
-    transform: translateX(100%);
+  from {
+    left: 100%;
   }
-  100% {
-    transform: translateX(0);
+  to {
+    left: 0;
   }
 }

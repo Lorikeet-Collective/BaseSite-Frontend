@@ -1,6 +1,6 @@
 // import styles from "./SVGIcon.module.css";
 
-export const accordianIcon = (
+export const enterIcon = (
   <g
     fill="none"
     stroke="black"

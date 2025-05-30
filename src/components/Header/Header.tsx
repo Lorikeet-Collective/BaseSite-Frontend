@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router";
 import SVGIcon from "../SVG/SVGIcon";
-import { accordianIcon, exitIcon } from "../SVG/icons";
+import { enterIcon, exitIcon } from "../SVG/icons";
 import styles from "./Header.module.css";
 
 const Header: React.FC = (): React.ReactElement => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const menuHandler = () => {
+  const modalHandler = () => {
     setIsNavOpen((prevState) => !prevState);
   };
 
@@ -22,17 +22,13 @@ const Header: React.FC = (): React.ReactElement => {
       <nav>
         <SVGIcon
           key={String(Math.random())}
-          icon={isNavOpen ? exitIcon : accordianIcon}
-          interaction={menuHandler}
+          icon={isNavOpen ? exitIcon : enterIcon}
+          interaction={modalHandler}
         />
         <ul
           key={String(Math.random())}
           className={styles.navContainer}
-          style={
-            {
-              animationDirection: isNavOpen ? "normal" : "reverse",
-            }
-          }
+          style={{ animationDirection: isNavOpen ? "normal" : "reverse" }}
         >
           <li>
             About Us
