@@ -1,5 +1,3 @@
-// import styles from "./SVGIcon.module.css";
-
 export const enterIcon = (
   <g
     fill="none"
