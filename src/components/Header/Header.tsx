@@ -22,7 +22,6 @@ const Header: React.FC = (): React.ReactElement => {
         ) : (
           <SVGIcon icon={enterIcon} interaction={() => setIsModalOpen(true)} />
         )}
-        {/* <MenuModal setIsModalOpen={setIsModalOpen} /> */}
       </nav>
     </header>
   );
