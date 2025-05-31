@@ -16,30 +16,3 @@
   color: var(--secondary-color);
   text-decoration: none;
 }
-
-.nav-container {
-  animation-name: slide;
-  animation-duration: 0.5s;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-  animation-timing-function: ease-in-out;
-  margin: 50px 0 0 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--primary-color);
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-@keyframes slide {
-  from {
-    left: 100%;
-  }
-  to {
-    left: 0;
-  }
-}

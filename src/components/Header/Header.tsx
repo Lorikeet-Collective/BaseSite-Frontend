@@ -1,15 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router";
+import { enterIcon } from "../SVG/icons";
 import SVGIcon from "../SVG/SVGIcon";
-import { enterIcon, exitIcon } from "../SVG/icons";
+import MenuModal from "./MenuModal";
 import styles from "./Header.module.css";
 
 const Header: React.FC = (): React.ReactElement => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-
-  const modalHandler = () => {
-    setIsNavOpen((prevState) => !prevState);
-  };
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <header className={styles.headerContainer}>
@@ -20,50 +17,12 @@ const Header: React.FC = (): React.ReactElement => {
         <img src="null" alt="logo" />
       </div>
       <nav>
-        <SVGIcon
-          key={String(Math.random())}
-          icon={isNavOpen ? exitIcon : enterIcon}
-          interaction={modalHandler}
-        />
-        <ul
-          key={String(Math.random())}
-          className={styles.navContainer}
-          style={{ animationDirection: isNavOpen ? "normal" : "reverse" }}
-        >
-          <li>
-            About Us
-            <ul>
-              <li>
-                <Link to="/philosophy">Our Philosophy</Link>
-              </li>
-              <li>
-                <Link to="/flock">Meet the Flock</Link>
-              </li>
-              <li>
-                <Link to="/insurance">Insurance FAQs</Link>
-              </li>
-              <li>
-                <Link to="/resources">Non-Carceral Resources</Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <button>
-              <a
-                href="https://lorikeetcollective.sessionshealth.com/"
-                target="_blank"
-              >
-                BOOK NOW
-              </a>
-            </button>
-          </li>
-        </ul>
+        {isModalOpen ? (
+          <MenuModal setIsModalOpen={setIsModalOpen} />
+        ) : (
+          <SVGIcon icon={enterIcon} interaction={() => setIsModalOpen(true)} />
+        )}
+        {/* <MenuModal setIsModalOpen={setIsModalOpen} /> */}
       </nav>
     </header>
   );
