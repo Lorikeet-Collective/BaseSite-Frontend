@@ -1,4 +1,4 @@
-@import "node_modules/modern-normalize/modern-normalize.css";
+@import '../node_modules/modern-normalize/modern-normalize.css';
 
 * {
   --primary-color: rgb(247, 241, 252);
