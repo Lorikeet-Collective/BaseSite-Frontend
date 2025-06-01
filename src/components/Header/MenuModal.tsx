@@ -6,7 +6,7 @@ import styles from "./MenuModal.module.css";
 
 const MenuModal: React.FC = (): React.ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isFirstRender, setIsFirstRender] = useState(false);
+  const [isRendered, setIsRendered] = useState(false);
   const modal = useRef<HTMLUListElement>(null);
 
   return (
@@ -15,11 +15,11 @@ const MenuModal: React.FC = (): React.ReactElement => {
         key={String(Math.random())}
         icon={isOpen ? exitIcon : enterIcon}
         interaction={() => {
-          if (!isFirstRender) setIsFirstRender(true);
+          if (!isRendered) setIsRendered(true);
           setIsOpen(!isOpen);
         }}
       />
-      {isFirstRender && (
+      {isRendered && (
         <ul
           // TEMP: This keygen needs to be moved to a proper function
           key={String(Math.random())}
