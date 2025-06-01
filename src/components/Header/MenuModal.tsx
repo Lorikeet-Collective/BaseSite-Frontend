@@ -1,7 +1,8 @@
 import { useState, useRef } from "react";
-import { Link } from "react-router";
 import { enterIcon, exitIcon } from "../SVG/icons";
 import SVGIcon from "../SVG/SVGIcon";
+import MenuCatagory from "./MenuCatagory";
+import MenuLink from "./MenuLink";
 import styles from "./MenuModal.module.css";
 
 const MenuModal: React.FC = (): React.ReactElement => {
@@ -33,29 +34,14 @@ const MenuModal: React.FC = (): React.ReactElement => {
               setIsOpen(false);
           }}
         >
-          <li>
-            About Us
-            <ul>
-              <li>
-                <Link to="/philosophy">Our Philosophy</Link>
-              </li>
-              <li>
-                <Link to="/flock">Meet the Flock</Link>
-              </li>
-              <li>
-                <Link to="/insurance">Insurance FAQs</Link>
-              </li>
-              <li>
-                <Link to="/resources">Non-Carceral Resources</Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
+          <MenuCatagory title="About Us">
+            <MenuLink to="/philosophy" title="Our Philosophy" />
+            <MenuLink to="/flock" title="Meet the Flock" />
+            <MenuLink to="/insurance" title="Insurance FAQs" />
+            <MenuLink to="/resources" title="Non-Carceral Resources" />
+          </MenuCatagory>
+          <MenuLink to="/services" title="Services" />
+          <MenuLink to="/contact" title="Contact" />
           <li>
             <button>
               <a
