@@ -1,65 +1,74 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Link } from "react-router";
-import { exitIcon } from "../SVG/icons";
+import { enterIcon, exitIcon } from "../SVG/icons";
 import SVGIcon from "../SVG/SVGIcon";
 import styles from "./MenuModal.module.css";
 
-interface MenuModalProps {
-  setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const MenuModal: React.FC<MenuModalProps> = ({
-  setIsModalOpen,
-}): React.ReactElement => {
-  const [isOpen, setIsOpen] = useState(true);
+const MenuModal: React.FC = (): React.ReactElement => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isFirstRender, setIsFirstRender] = useState(false);
+  const modal = useRef<HTMLUListElement>(null);
 
   return (
-    <>
-      <SVGIcon icon={exitIcon} interaction={() => setIsOpen(false)} />
-      <ul
-        // TEMP: This keygen needs to be moved to a proper function
+    <nav>
+      <SVGIcon
         key={String(Math.random())}
-        className={styles.modalContainer}
-        style={{ animationDirection: isOpen ? "normal" : "reverse" }}
-        onAnimationEnd={() => {
-          if (!isOpen) setIsModalOpen(false);
+        icon={isOpen ? exitIcon : enterIcon}
+        interaction={() => {
+          if (!isFirstRender) setIsFirstRender(true);
+          setIsOpen(!isOpen);
         }}
-      >
-        <li>
-          About Us
-          <ul>
-            <li>
-              <Link to="/philosophy">Our Philosophy</Link>
-            </li>
-            <li>
-              <Link to="/flock">Meet the Flock</Link>
-            </li>
-            <li>
-              <Link to="/insurance">Insurance FAQs</Link>
-            </li>
-            <li>
-              <Link to="/resources">Non-Carceral Resources</Link>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <Link to="/services">Services</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <button>
-            <a
-              href="https://lorikeetcollective.sessionshealth.com/"
-              target="_blank"
-            >
-              BOOK NOW
-            </a>
-          </button>
-        </li>
-      </ul>
-    </>
+      />
+      {isFirstRender && (
+        <ul
+          // TEMP: This keygen needs to be moved to a proper function
+          key={String(Math.random())}
+          ref={modal}
+          className={styles.modalContainer}
+          style={{
+            animationDirection: isOpen ? "normal" : "reverse",
+          }}
+          onAnimationEnd={() => {
+            if (modal.current!.style.animationDirection === "reverse")
+              setIsOpen(false);
+          }}
+        >
+          <li>
+            About Us
+            <ul>
+              <li>
+                <Link to="/philosophy">Our Philosophy</Link>
+              </li>
+              <li>
+                <Link to="/flock">Meet the Flock</Link>
+              </li>
+              <li>
+                <Link to="/insurance">Insurance FAQs</Link>
+              </li>
+              <li>
+                <Link to="/resources">Non-Carceral Resources</Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Link to="/services">Services</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <button>
+              <a
+                href="https://lorikeetcollective.sessionshealth.com/"
+                target="_blank"
+              >
+                BOOK NOW
+              </a>
+            </button>
+          </li>
+        </ul>
+      )}
+    </nav>
   );
 };
 
