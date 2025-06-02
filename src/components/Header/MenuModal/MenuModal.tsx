@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
-import { enterIcon, exitIcon } from "../SVG/icons";
-import SVGIcon from "../SVG/SVGIcon";
+import { enterIcon, exitIcon } from "../../SVG/icons";
+import SVGIcon from "../../SVG/SVGIcon";
 import MenuCatagory from "./MenuCatagory";
 import MenuLink from "./MenuLink";
 import styles from "./MenuModal.module.css";
