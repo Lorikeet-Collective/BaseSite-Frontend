@@ -1,7 +1,14 @@
+* {
+  --menu-link-height: 35px;
+}
+
 .menu-link {
   list-style: none;
-  margin-bottom: 10px;
+  height: var(--menu-link-height);
   font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-link a,
