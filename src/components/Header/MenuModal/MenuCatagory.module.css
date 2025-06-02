@@ -1,9 +1,9 @@
 .menu-catagory-container {
   animation-name: dropdown;
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
   animation-direction: normal;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--animation-path);
   overflow: clip;
   height: 0;
 }
