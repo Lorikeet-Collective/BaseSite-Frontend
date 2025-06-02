@@ -3,7 +3,6 @@ import MenuModal from "./MenuModal/MenuModal";
 import styles from "./Header.module.css";
 
 const Header: React.FC = (): React.ReactElement => {
-
   return (
     <header className={styles.headerContainer}>
       <div>
@@ -12,6 +11,14 @@ const Header: React.FC = (): React.ReactElement => {
         </h1>
         <img src="null" alt="logo" />
       </div>
+      <button>
+        <a
+          href="https://lorikeetcollective.sessionshealth.com/"
+          target="_blank"
+        >
+          BOOK NOW
+        </a>
+      </button>
       <MenuModal />
     </header>
   );

@@ -42,14 +42,6 @@ const MenuModal: React.FC = (): React.ReactElement => {
           </MenuCatagory>
           <MenuLink to="/services" title="Services" />
           <MenuLink to="/contact" title="Contact" />
-          <button>
-            <a
-              href="https://lorikeetcollective.sessionshealth.com/"
-              target="_blank"
-            >
-              BOOK NOW
-            </a>
-          </button>
         </ul>
       )}
     </nav>
