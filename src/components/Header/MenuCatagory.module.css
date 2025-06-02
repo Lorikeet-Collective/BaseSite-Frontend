@@ -1,8 +1,28 @@
 .menu-catagory-container {
+  animation-name: dropdown;
+  animation-duration: 0.5s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
   margin-top: 5px;
+  height: 0%;
+  overflow: hidden;
 }
 
 .menu-catagory-title {
   font-size: 1.3em;
   list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes dropdown {
+  from {
+    height: 0%;
+    opacity: 0;
+  }
+  to {
+    height: calc(1em * 8);
+    opacity: 1;
+  }
 }

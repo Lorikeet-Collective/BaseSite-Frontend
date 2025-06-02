@@ -6,7 +6,12 @@ export const enterIcon = (
     strokeLinejoin="round"
     strokeWidth={1}
   >
-    <path strokeDasharray={16} strokeDashoffset={16} d="M19 5h-14">
+    <path
+      stroke="currentColor"
+      strokeDasharray={16}
+      strokeDashoffset={16}
+      d="M19 5h-14"
+    >
       <animate
         fill="freeze"
         attributeName="stroke-dashoffset"
@@ -14,7 +19,12 @@ export const enterIcon = (
         values="16;0"
       ></animate>
     </path>
-    <path strokeDasharray={10} strokeDashoffset={10} d="M19 12h-9">
+    <path
+      stroke="currentColor"
+      strokeDasharray={10}
+      strokeDashoffset={10}
+      d="M19 12h-9"
+    >
       <animate
         fill="freeze"
         attributeName="stroke-dashoffset"
@@ -23,7 +33,12 @@ export const enterIcon = (
         values="10;0"
       ></animate>
     </path>
-    <path strokeDasharray={16} strokeDashoffset={16} d="M19 19h-14">
+    <path
+      stroke="currentColor"
+      strokeDasharray={16}
+      strokeDashoffset={16}
+      d="M19 19h-14"
+    >
       <animate
         fill="freeze"
         attributeName="stroke-dashoffset"
@@ -32,7 +47,12 @@ export const enterIcon = (
         values="16;0"
       ></animate>
     </path>
-    <path strokeDasharray={10} strokeDashoffset={10} d="M7 9l-3 3l3 3">
+    <path
+      stroke="currentColor"
+      strokeDasharray={10}
+      strokeDashoffset={10}
+      d="M7 9l-3 3l3 3"
+    >
       <animate
         fill="freeze"
         attributeName="stroke-dashoffset"
@@ -52,7 +72,12 @@ export const exitIcon = (
     strokeLinejoin="round"
     strokeWidth={1}
   >
-    <path strokeDasharray={16} strokeDashoffset={16} d="M5 5h14">
+    <path
+      stroke="currentColor"
+      strokeDasharray={16}
+      strokeDashoffset={16}
+      d="M5 5h14"
+    >
       <animate
         fill="freeze"
         attributeName="stroke-dashoffset"
@@ -60,7 +85,12 @@ export const exitIcon = (
         values="16;0"
       ></animate>
     </path>
-    <path strokeDasharray={10} strokeDashoffset={10} d="M5 12h9">
+    <path
+      stroke="currentColor"
+      strokeDasharray={10}
+      strokeDashoffset={10}
+      d="M5 12h9"
+    >
       <animate
         fill="freeze"
         attributeName="stroke-dashoffset"
@@ -69,7 +99,12 @@ export const exitIcon = (
         values="10;0"
       ></animate>
     </path>
-    <path strokeDasharray={16} strokeDashoffset={16} d="M5 19h14">
+    <path
+      stroke="currentColor"
+      strokeDasharray={16}
+      strokeDashoffset={16}
+      d="M5 19h14"
+    >
       <animate
         fill="freeze"
         attributeName="stroke-dashoffset"
@@ -78,12 +113,65 @@ export const exitIcon = (
         values="16;0"
       ></animate>
     </path>
-    <path strokeDasharray={10} strokeDashoffset={10} d="M17 9l3 3l-3 3">
+    <path
+      stroke="currentColor"
+      strokeDasharray={10}
+      strokeDashoffset={10}
+      d="M17 9l3 3l-3 3"
+    >
       <animate
         fill="freeze"
         attributeName="stroke-dashoffset"
         begin="0.45s"
         dur="0.15s"
+        values="10;0"
+      ></animate>
+    </path>
+  </g>
+);
+
+export const downCarot = (
+  <g
+    fill="none"
+    stroke="black"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={1}
+  >
+    <path
+      stroke="currentColor"
+      strokeDasharray={10}
+      strokeDashoffset={10}
+      d="M12 15l-5 -5M12 15l5 -5"
+    >
+      <animate
+        fill="freeze"
+        attributeName="stroke-dashoffset"
+        dur="0.225s"
+        values="10;0"
+      ></animate>
+    </path>
+  </g>
+);
+
+export const upCarot = (
+  <g
+    fill="none"
+    stroke="black"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={1}
+  >
+    <path
+      stroke="currentColor"
+      strokeDasharray={10}
+      strokeDashoffset={10}
+      d="M12 9l-5 5M12 9l5 5"
+    >
+      <animate
+        fill="freeze"
+        attributeName="stroke-dashoffset"
+        dur="0.225s"
         values="10;0"
       ></animate>
     </path>
