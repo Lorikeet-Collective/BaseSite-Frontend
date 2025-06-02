@@ -15,6 +15,7 @@ const MenuModal: React.FC = (): React.ReactElement => {
       <SVGIcon
         key={String(Math.random())}
         icon={isOpen ? exitIcon : enterIcon}
+        width={40}
         interaction={() => {
           if (!isRendered) setIsRendered(true);
           setIsOpen(!isOpen);
