@@ -147,7 +147,7 @@ export const downCarot = (
       <animate
         fill="freeze"
         attributeName="stroke-dashoffset"
-        dur="0.225s"
+        dur="0.5s"
         values="10;0"
       ></animate>
     </path>
@@ -171,7 +171,7 @@ export const upCarot = (
       <animate
         fill="freeze"
         attributeName="stroke-dashoffset"
-        dur="0.225s"
+        dur="0.5s"
         values="10;0"
       ></animate>
     </path>
