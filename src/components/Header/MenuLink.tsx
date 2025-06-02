@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import styles from "./MenuLink.module.css";
 
 interface MenuLinkProps {
   to: string;
@@ -13,7 +14,7 @@ const MenuLink: React.FC<MenuLinkProps> = ({
 }): React.ReactElement => {
   const linkType = () => {
     return (
-      <li>
+      <li className={styles.menuLink}>
         {external ? (
           <a href={to} target="_blank">
             {title}

@@ -1,0 +1,12 @@
+.menu-link {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.menu-link a,
+.menu-link a:link,
+.menu-link a:visited {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}

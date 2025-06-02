@@ -1,3 +1,5 @@
+import styles from "./MenuCatagory.module.css";
+
 interface MenuCatagoryProps {
   title?: string;
   children: React.ReactNode[];
@@ -8,10 +10,10 @@ const MenuCatagory: React.FC<MenuCatagoryProps> = ({
   title,
 }): React.ReactElement => {
   return (
-    <li>
-      {title}
-      <ul>{...children.map((elem) => <li>{elem}</li>)}</ul>
-    </li>
+    <>
+      <li className={styles.menuCatagoryTitle}>{title}</li>
+      <ul className={styles.menuCatagoryContainer}>{...children}</ul>
+    </>
   );
 };
 
