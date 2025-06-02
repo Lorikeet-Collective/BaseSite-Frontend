@@ -10,7 +10,16 @@
   padding: 0;
 }
 
-body {
+#root {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  padding-top: calc(var(--header-height) + 5px);
+  padding-bottom: 10px;
 }
