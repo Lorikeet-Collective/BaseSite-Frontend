@@ -21,3 +21,17 @@
   color: var(--secondary-color);
   text-decoration: none;
 }
+
+.book-btn {
+  font-size: 0.9em;
+  background-color: var(--tertiary-color);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.book-btn a:link,
+.book-btn a:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+}

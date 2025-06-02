@@ -11,7 +11,7 @@ const Header: React.FC = (): React.ReactElement => {
         </h1>
         <img src="null" alt="logo" />
       </div>
-      <button>
+      <button className={styles.bookBtn}>
         <a
           href="https://lorikeetcollective.sessionshealth.com/"
           target="_blank"
