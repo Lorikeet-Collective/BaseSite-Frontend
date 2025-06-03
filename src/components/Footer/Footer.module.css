@@ -1,7 +1,37 @@
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  font-size: 0.6em;
+  height: 75px;
+  padding: 5px;
   background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.footer-title-section {
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-org-name {
+  font-size: 1.3em;
+}
+
+.footer-title {
+  font-size: 1.2em;
+}
+
+.footer-link {
+  list-style: none;
+}
+
+.footer-link a:link,
+.footer-link:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary-color);
 }
