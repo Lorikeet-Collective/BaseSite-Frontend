@@ -3,9 +3,7 @@ import styles from "./Footer.module.css";
 const Footer: React.FC = (): React.ReactElement => {
   return (
     <footer className={styles.footerContainer}>
-      <div className={styles.footerTitleSection}>
-        <h2 className={styles.footerOrgName}>Lorikeet Collective, PLLC.</h2>
-      </div>
+      <h2 className={styles.footerOrgName}>Lorikeet Collective, PLLC.</h2>
       <div className={styles.footerSection}>
         <h3 className={styles.footerTitle}>Location</h3>
         <p>1 Liberty Square</p>
