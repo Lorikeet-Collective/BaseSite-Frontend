@@ -10,7 +10,7 @@ const Footer: React.FC = (): React.ReactElement => {
         <p>Suite 301</p>
         <p>New Britain, CT 06052</p>
       </div>
-      <ul className={styles.footerSection}>
+      <ul className={(styles.footerSection, styles.footerSectionLinks)}>
         <h3 className={styles.footerTitle}>Links</h3>
         <li className={styles.footerLink}>
           <a href="null">Contact</a>
