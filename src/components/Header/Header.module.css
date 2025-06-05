@@ -27,11 +27,15 @@
 }
 
 .book-btn {
-  font-size: 0.9em;
+  font-size: 0.7em;
   background-color: var(--tertiary-color);
   border: none;
   padding: 5px 10px;
   border-radius: 20px;
+}
+
+.book-btn a {
+  font-weight: 800;
 }
 
 .book-btn a:link,
