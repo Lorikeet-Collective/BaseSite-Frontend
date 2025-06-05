@@ -1,21 +1,22 @@
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 2fr;
   grid-template-areas:
     "title title"
     "address links";
   height: 150px;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 .footer-org-name {
-  font-size: 1.3em;
+  font-size: 1.5em;
+  font-weight: 800;
   grid-area: title;
+  color: var(--secondary-color);
 }
 
-.footer-section {
+.footer-section-address {
   grid-area: address;
 }
 
@@ -23,8 +24,8 @@
   grid-area: links;
 }
 
-.footer-section,
 .footer-org-name,
+.footer-section-address,
 .footer-section-links {
   display: flex;
   flex-direction: column;
@@ -33,16 +34,18 @@
 }
 
 .footer-title {
-  font-size: 1.1em;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 .footer-link {
   list-style: none;
+  border-bottom: 1px solid var(--tertiary-color);
+  font-style: italic;
 }
 
 .footer-link a:link,
-.footer-link:visited {
-  color: var(--primary-color);
+.footer-link a:visited {
+  color: var(--tertiary-color);
   text-decoration: none;
-  border-bottom: 1px solid var(--primary-color);
 }
