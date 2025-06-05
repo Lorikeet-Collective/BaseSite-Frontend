@@ -3,7 +3,6 @@
 }
 
 .menu-link {
-  list-style: none;
   height: var(--menu-link-height);
   font-size: 1.5em;
   display: flex;

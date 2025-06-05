@@ -1,3 +1,11 @@
+.menu-catagory-title-container {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--menu-link-height);
+}
+
 .menu-catagory-container {
   animation-name: dropdown;
   animation-duration: 0.4s;
@@ -6,15 +14,6 @@
   animation-timing-function: var(--animation-path);
   overflow: clip;
   height: 0;
-}
-
-.menu-catagory-title {
-  font-size: 1.5em;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--menu-link-height);
 }
 
 @keyframes dropdown {

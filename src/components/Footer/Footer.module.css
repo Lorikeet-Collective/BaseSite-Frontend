@@ -41,7 +41,6 @@
 }
 
 .footer-link {
-  list-style: none;
   border-bottom: 1px solid var(--tertiary-color);
   font-style: italic;
 }

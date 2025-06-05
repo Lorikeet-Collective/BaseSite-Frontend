@@ -17,9 +17,9 @@ const MenuCatagory: React.FC<MenuCatagoryProps> = ({
   const menu = useRef<HTMLUListElement>(null);
 
   return (
-    <>
-      <li
-        className={styles.menuCatagoryTitle}
+    <li>
+      <div
+        className={styles.menuCatagoryTitleContainer}
         onClick={() => {
           if (!isRendered) setIsRendered(true);
           setIsOpen(!isOpen);
@@ -36,7 +36,7 @@ const MenuCatagory: React.FC<MenuCatagoryProps> = ({
           icon={isOpen ? upCarot : downCarot}
           width={25}
         />
-      </li>
+      </div>
       {isRendered && (
         <ul
           // TEMP: This keygen needs to be moved to a proper function
@@ -54,7 +54,7 @@ const MenuCatagory: React.FC<MenuCatagoryProps> = ({
           {...children}
         </ul>
       )}
-    </>
+    </li>
   );
 };
 
