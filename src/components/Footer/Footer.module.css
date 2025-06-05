@@ -5,14 +5,15 @@
   grid-template-areas:
     "title title"
     "address links";
-  height: 150px;
   color: var(--tertiary-color);
+  padding: 20px;
 }
 
 .footer-org-name {
   font-size: 1.5em;
   font-weight: 800;
   grid-area: title;
+  margin: 15px 0;
   color: var(--secondary-color);
 }
 
@@ -29,8 +30,9 @@
 .footer-section-links {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  text-align: center;
 }
 
 .footer-title {
