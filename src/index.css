@@ -1,4 +1,5 @@
 @import "../node_modules/modern-normalize/modern-normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 * {
   --primary-color: rgb(247, 241, 252);
@@ -8,6 +9,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-family: "Lora", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 #root {
