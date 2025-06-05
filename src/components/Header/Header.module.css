@@ -2,6 +2,12 @@
   --header-height: 65px;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header-container {
   background-color: var(--primary-color);
   position: fixed;
