@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useInsertionEffect } from "react";
 import { enterIcon, exitIcon } from "../../SVG/icons";
 import SVGIcon from "../../SVG/SVGIcon";
 import MenuCatagory from "./MenuCatagory";
@@ -9,6 +9,10 @@ const MenuModal: React.FC = (): React.ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const [isRendered, setIsRendered] = useState(false);
   const modal = useRef<HTMLUListElement>(null);
+
+  useInsertionEffect(() => {
+    document.body.style.overflowY = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
 
   return (
     <nav>
