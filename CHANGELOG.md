@@ -29,8 +29,13 @@
 <details>
     <summary>Changes</summary>
 
+- New Features
+  - Created nav menu modal (mobile)
+  - Created footer (mobile)
 - Updates
   - Updated all NPM modules
+- Temporary
+  - Added body lorem ipsum for font scaling
 
 </details>
 
