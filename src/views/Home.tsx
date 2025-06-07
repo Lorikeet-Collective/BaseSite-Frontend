@@ -22,7 +22,7 @@ const Home: React.FC = (): React.ReactElement => {
         <h3 className={styles.header}>Transforming LGBTQIA2S+ care</h3>
         <p className={styles.textBody}>
           We’re gender identity, expression, sexual orientation, and
-          relationship orientation/ ethical non-monogamy (ENM)/ polyamorous
+          relationship orientation / ethical non-monogamy (ENM) / polyamorous
           (poly) competent and affirming, with a variety of lived experiences.
         </p>
         <p className={styles.textBody}>
@@ -60,7 +60,7 @@ const Home: React.FC = (): React.ReactElement => {
       <div className={styles.container}>
         <h3 className={styles.header}>Uplifting voices of color</h3>
         <p className={styles.textBody}>
-          We honor our BIPOC, AAPI, Latinx/ Hispanix and all non-White
+          We honor our BIPOC, AAPI, Latinx / Hispanix and all non-White
           identifying communities by challenging systemic racial biases in and
           out of therapeutic spaces, advocating for racial, ethnic, and cultural
           equity in legislature, and driving accountability for our therapists
