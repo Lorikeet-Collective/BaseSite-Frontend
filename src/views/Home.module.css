@@ -1,7 +1,10 @@
+.container {
+  margin: 40px 0;
+}
+
 .welcome-container {
   position: relative;
   height: 200px;
-  margin: 20px 0;
 }
 
 .welcome-background {
@@ -19,10 +22,46 @@
   color: var(--tertiary-color);
   background-color: var(--primary-color);
   filter: opacity(0.9);
-  line-height: normal;
   font-size: 2.4em;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
+}
+
+.sub-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-header {
+  font-size: 1.4em;
+}
+
+.bottom-header {
+  font-size: 2.1em;
+}
+
+.img {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  color: var(--tertiary-color);
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text-body {
+  color: var(--tertiary-color);
+}
+
+.text-body:not(:last-child) {
+  margin-bottom: 20px;
 }

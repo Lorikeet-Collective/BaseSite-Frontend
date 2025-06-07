@@ -8,7 +8,7 @@
   font-family: "Lora", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-optical-sizing: auto;
-  line-height: 23px;
+  line-height: normal;
   letter-spacing: 0.2px;
   font-size: 1em;
   box-sizing: border-box;
