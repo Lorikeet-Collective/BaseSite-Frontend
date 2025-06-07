@@ -1,5 +1,6 @@
 .menu-catagory-title-container {
   font-size: 1.5em;
+  color: var(--secondary-color);
   display: flex;
   align-items: center;
   justify-content: center;
