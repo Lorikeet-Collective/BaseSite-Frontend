@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import MenuModal from "./MenuModal/MenuModal";
+import MenuModal from "../MenuModal/MenuModal";
 import styles from "./Header.module.css";
 
 const Header: React.FC = (): React.ReactElement => {

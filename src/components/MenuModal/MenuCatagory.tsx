@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
-import { upCarot, downCarot } from "../../SVG/icons";
-import SVGIcon from "../../SVG/SVGIcon";
+import { upCarot, downCarot } from "../SVG/icons";
+import SVGIcon from "../SVG/SVGIcon";
 import styles from "./MenuCatagory.module.css";
 
 interface MenuCatagoryProps {

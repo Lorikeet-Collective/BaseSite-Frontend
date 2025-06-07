@@ -1,43 +1,11 @@
+import styles from "./Home.module.css";
+
 const Home: React.FC = (): React.ReactElement => {
   return (
     <main>
-      <div>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
-        amet eaque beatae. Inventore eligendi facilis dolorum exercitationem
-        animi. Odio nobis quod dolorum temporibus sunt at excepturi nemo tenetur
-        quaerat atque? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Asperiores amet eaque beatae. Inventore eligendi facilis dolorum
-        exercitationem animi. Odio nobis quod dolorum temporibus sunt at
-        excepturi nemo tenetur quaerat atque? Lorem ipsum dolor sit amet
-        consectetur, adipisicing elit. Asperiores amet eaque beatae. Inventore
-        eligendi facilis dolorum exercitationem animi. Odio nobis quod dolorum
-        temporibus sunt at excepturi nemo tenetur quaerat atque? Lorem ipsum
-        dolor sit amet consectetur, adipisicing elit. Asperiores amet eaque
-        beatae. Inventore eligendi facilis dolorum exercitationem animi. Odio
-        nobis quod dolorum temporibus sunt at excepturi nemo tenetur quaerat
-        atque? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Asperiores amet eaque beatae. Inventore eligendi facilis dolorum
-        exercitationem animi. Odio nobis quod dolorum temporibus sunt at
-        excepturi nemo tenetur quaerat atque?
-      </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
-        amet eaque beatae. Inventore eligendi facilis dolorum exercitationem
-        animi. Odio nobis quod dolorum temporibus sunt at excepturi nemo tenetur
-        quaerat atque? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Asperiores amet eaque beatae. Inventore eligendi facilis dolorum
-        exercitationem animi. Odio nobis quod dolorum temporibus sunt at
-        excepturi nemo tenetur quaerat atque? Lorem ipsum dolor sit amet
-        consectetur, adipisicing elit. Asperiores amet eaque beatae. Inventore
-        eligendi facilis dolorum exercitationem animi. Odio nobis quod dolorum
-        temporibus sunt at excepturi nemo tenetur quaerat atque? Lorem ipsum
-        dolor sit amet consectetur, adipisicing elit. Asperiores amet eaque
-        beatae. Inventore eligendi facilis dolorum exercitationem animi. Odio
-        nobis quod dolorum temporibus sunt at excepturi nemo tenetur quaerat
-        atque? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Asperiores amet eaque beatae. Inventore eligendi facilis dolorum
-        exercitationem animi. Odio nobis quod dolorum temporibus sunt at
-        excepturi nemo tenetur quaerat atque?
+      <div className={styles.welcomeContainer}>
+        <div className={styles.welcomeBackground}></div>
+        <h1 className={styles.welcomeHeader}>Welcome to the Collective</h1>
       </div>
     </main>
   );
