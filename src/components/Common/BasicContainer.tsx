@@ -20,8 +20,10 @@ const BasicContainer: React.FC<BasicContainerProps> = ({
       <h3 className={useSubHeader ? styles.subHeader : styles.header}>
         {header}
       </h3>
-      {body.map((text) => (
-        <p className={styles.textBody}>{text}</p>
+      {body.map((text, i) => (
+        <p key={i + Math.random()} className={styles.textBody}>
+          {text}
+        </p>
       ))}
     </div>
   </>
