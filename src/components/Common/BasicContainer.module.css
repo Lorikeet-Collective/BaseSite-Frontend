@@ -3,8 +3,17 @@
 }
 
 .header {
+  color: var(--secondary-color);
+  font-size: 2em;
+}
+
+.subHeader {
   color: var(--tertiary-color);
   font-size: 1.2em;
+}
+
+.header,
+.subHeader {
   margin-bottom: 20px;
   text-align: center;
 }

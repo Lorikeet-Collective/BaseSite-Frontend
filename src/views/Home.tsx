@@ -54,6 +54,15 @@ const Home: React.FC = (): React.ReactElement => {
           land.`,
         ]}
       />
+      <hr />
+      <BasicContainer
+        header={"Who we are"}
+        useSubHeader={false}
+        body={[
+          `We’re here to do therapy not just differently: affordably, accessibly, de-colonially, and inclusively, from a framework of that centers healing justice.`,
+          `For community members, clients, and therapists.`,
+        ]}
+      />
     </main>
   );
 };
