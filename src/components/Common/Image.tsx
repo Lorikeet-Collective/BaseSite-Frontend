@@ -6,7 +6,7 @@ interface ImageProps {
 
 const Image: React.FC<ImageProps> = ({ img }): React.ReactElement => (
   <div
-    className={`${styles.imgContainer} ${styles.img}`}
+    className={styles.img}
     style={{
       backgroundImage: `url("${img}")`,
     }}

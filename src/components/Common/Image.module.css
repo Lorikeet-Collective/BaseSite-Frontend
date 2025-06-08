@@ -1,8 +1,5 @@
-.img-container {
-  margin: var(--container-margin);
-}
-
 .img {
+  margin: var(--container-margin);
   height: 350px;
   width: 100%;
   background-size: cover;
