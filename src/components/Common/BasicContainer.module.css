@@ -1,5 +1,5 @@
 .container {
-  margin: 40px 0;
+  margin: var(--container-margin);
 }
 
 .header {
@@ -24,12 +24,4 @@
 
 .text-body:not(:last-child) {
   margin-bottom: 20px;
-}
-
-.img {
-  height: 350px;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }

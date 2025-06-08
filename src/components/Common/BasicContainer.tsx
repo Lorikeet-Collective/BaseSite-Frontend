@@ -1,3 +1,4 @@
+import Image from "./Image";
 import styles from "./BasicContainer.module.css";
 
 interface BasicContainerProps {
@@ -14,14 +15,7 @@ const BasicContainer: React.FC<BasicContainerProps> = ({
   body,
 }): React.ReactElement => (
   <>
-    {img && (
-      <div
-        className={`${styles.container} ${styles.img}`}
-        style={{
-          backgroundImage: `url("${img}")`,
-        }}
-      ></div>
-    )}
+    {img && <Image img={img} />}
     <div className={styles.container}>
       <h3 className={useSubHeader ? styles.subHeader : styles.header}>
         {header}

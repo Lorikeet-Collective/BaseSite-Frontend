@@ -5,6 +5,7 @@
   --primary-color: rgb(247, 241, 252);
   --secondary-color: rgb(75, 129, 129);
   --tertiary-color: rgb(110, 80, 132);
+  --container-margin: 40px 0;
   font-family: "Lora", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-optical-sizing: auto;
@@ -14,10 +15,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-li {
-  list-style: none;
 }
 
 #root {
@@ -31,4 +28,8 @@ li {
 
 main {
   padding: calc(var(--header-height) + 5px) 20px 0 20px;
+}
+
+li {
+  list-style: none;
 }
