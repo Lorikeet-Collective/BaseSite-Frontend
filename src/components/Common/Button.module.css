@@ -1,0 +1,15 @@
+.button {
+  background-color: var(--tertiary-color);
+  border-radius: 25px;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.button-link,
+.button-link:link,
+.button-link:visited {
+  font-size: 0.7em;
+  font-weight: 800;
+  color: var(--primary-color);
+  text-decoration: none;
+}

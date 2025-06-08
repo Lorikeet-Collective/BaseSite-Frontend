@@ -1,4 +1,6 @@
 import BasicContainer from "../components/Common/BasicContainer";
+import Image from "../components/Common/Image";
+import Button from "../components/Common/Button";
 import styles from "./Home.module.css";
 
 const Home: React.FC = (): React.ReactElement => {
@@ -61,6 +63,21 @@ const Home: React.FC = (): React.ReactElement => {
         body={[
           `We’re here to do therapy not just differently: affordably, accessibly, de-colonially, and inclusively, from a framework of that centers healing justice.`,
           `For community members, clients, and therapists.`,
+        ]}
+      />
+      <Button title={"LEARN MORE"} link={"/philosophy"} isLocal />
+      <Image
+        img={
+          "https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745468860354-SY5D0VQ9ICLGTR6RNLVU/unsplash-image-LPwLkzl1nd8.jpg?format=1500w"
+        }
+      />
+      <hr />
+      <BasicContainer
+        header={"Keep Up with Us!"}
+        useSubHeader={false}
+        body={[
+          `As a community-driven collective of multiply marginalized folx, our mission is to connect directly with those who feel their identities are otherwise overlooked or erased, and remind those who would oppress us that we aren’t going anywhere.`,
+          `Look for us out-and-about near you!`,
         ]}
       />
     </main>
