@@ -2,7 +2,7 @@
   --animation-path: cubic-bezier(0.5, 1.25, 0.5, 1.25);
 }
 
-nav {
+.nav-container {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -16,7 +16,7 @@ const MenuModal: React.FC = (): React.ReactElement => {
   }, [isOpen]);
 
   return (
-    <nav>
+    <nav className={styles.navContainer}>
       <SVGIcon
         key={String(Math.random())}
         icon={isOpen ? exitIcon : enterIcon}
