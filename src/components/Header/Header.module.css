@@ -2,17 +2,11 @@
   --header-height: 65px;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .header-container {
   background-color: var(--primary-color);
   position: fixed;
-  z-index: 999;
   top: 0;
+  z-index: 999;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -22,13 +16,13 @@ nav {
   padding: 0 7px;
 }
 
-.header-name {
+.org-name {
   display: inline;
   margin-right: 5px;
 }
 
-.header-name a:link,
-.header-name a:visited {
+.org-link:link,
+.org-link:visited {
   color: var(--secondary-color);
   text-decoration: none;
 }
@@ -37,16 +31,14 @@ nav {
   font-size: 0.7em;
   background-color: var(--tertiary-color);
   border: none;
-  padding: 5px 10px;
+  padding: 10px;
   border-radius: 20px;
 }
 
-.book-btn a {
+.book-btn-link,
+.book-btn-link:link,
+.book-btn-link:visited {
   font-weight: 800;
-}
-
-.book-btn a:link,
-.book-btn a:visited {
   color: var(--primary-color);
   text-decoration: none;
 }
