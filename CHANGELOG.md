@@ -32,6 +32,7 @@
 - New Features
   - Created nav menu modal (mobile)
   - Created footer (mobile)
+  - Added home page layout
 - Updates
   - Updated all NPM modules
 - Temporary
