@@ -1,4 +1,4 @@
-.menu-catagory-title-container {
+.title-container {
   font-size: 1.5em;
   color: var(--secondary-color);
   display: flex;
@@ -7,7 +7,7 @@
   height: var(--menu-link-height);
 }
 
-.menu-catagory-container {
+.catagory-container {
   animation-name: dropdown;
   animation-duration: 0.4s;
   animation-direction: normal;

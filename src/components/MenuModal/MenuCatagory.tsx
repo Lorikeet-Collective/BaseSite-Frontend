@@ -19,7 +19,7 @@ const MenuCatagory: React.FC<MenuCatagoryProps> = ({
   return (
     <li>
       <div
-        className={styles.menuCatagoryTitleContainer}
+        className={styles.titleContainer}
         onClick={() => {
           if (!isRendered) setIsRendered(true);
           setIsOpen(!isOpen);
@@ -42,7 +42,7 @@ const MenuCatagory: React.FC<MenuCatagoryProps> = ({
           // TEMP: This keygen needs to be moved to a proper function
           key={String(Math.random())}
           ref={menu}
-          className={styles.menuCatagoryContainer}
+          className={styles.catagoryContainer}
           style={{
             animationDirection: isOpen ? "normal" : "reverse",
           }}
