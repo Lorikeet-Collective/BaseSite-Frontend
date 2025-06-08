@@ -1,0 +1,26 @@
+.container {
+  margin: 40px 0;
+}
+
+.header {
+  color: var(--tertiary-color);
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text-body {
+  color: var(--tertiary-color);
+}
+
+.text-body:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.img {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
