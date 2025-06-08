@@ -1,7 +1,3 @@
-* {
-  --menu-link-height: 35px;
-}
-
 .menu-link-container {
   height: var(--menu-link-height);
   font-size: 1.5em;

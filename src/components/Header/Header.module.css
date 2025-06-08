@@ -1,7 +1,3 @@
-* {
-  --header-height: 65px;
-}
-
 .header-container {
   background-color: var(--primary-color);
   position: fixed;
