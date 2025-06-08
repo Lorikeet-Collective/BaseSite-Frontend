@@ -11,22 +11,18 @@ const MenuLink: React.FC<MenuLinkProps> = ({
   to,
   title,
   external = false,
-}): React.ReactElement => {
-  const linkType = () => {
-    return (
-      <li className={styles.menuLink}>
-        {external ? (
-          <a href={to} target="_blank">
-            {title}
-          </a>
-        ) : (
-          <Link to={to}>{title}</Link>
-        )}
-      </li>
-    );
-  };
-
-  return linkType();
-};
+}): React.ReactElement => (
+  <li className={styles.menuLinkContainer}>
+    {external ? (
+      <a href={to} target="_blank">
+        {title}
+      </a>
+    ) : (
+      <Link className={styles.menuLink} to={to}>
+        {title}
+      </Link>
+    )}
+  </li>
+);
 
 export default MenuLink;

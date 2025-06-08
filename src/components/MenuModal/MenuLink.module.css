@@ -2,7 +2,7 @@
   --menu-link-height: 35px;
 }
 
-.menu-link {
+.menu-link-container {
   height: var(--menu-link-height);
   font-size: 1.5em;
   display: flex;
@@ -10,9 +10,9 @@
   justify-content: center;
 }
 
-.menu-link a,
-.menu-link a:link,
-.menu-link a:visited {
+.menu-link,
+.menu-link:link,
+.menu-link:visited {
   text-decoration: none;
   color: var(--tertiary-color);
 }
