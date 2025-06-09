@@ -11,6 +11,7 @@ const Home: React.FC = (): React.ReactElement => {
         <div className={styles.welcomeBackground}></div>
         <h1 className={styles.welcomeHeader}>Welcome to the Collective</h1>
       </div>
+      <SinWave />
       <h2 className={styles.subHeaderContainer}>
         <p className={styles.topHeader}>Therapy for your community,</p>
         <p className={styles.bottomHeader}>by your community</p>
