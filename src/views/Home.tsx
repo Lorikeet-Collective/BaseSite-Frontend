@@ -1,4 +1,5 @@
 import BasicContainer from "../components/Common/BasicContainer";
+import SinWave from "../components/SVG/sinWave";
 import Image from "../components/Common/Image";
 import Button from "../components/Common/Button";
 import styles from "./Home.module.css";
@@ -56,7 +57,7 @@ const Home: React.FC = (): React.ReactElement => {
           land.`,
         ]}
       />
-      <hr />
+      <SinWave />
       <BasicContainer
         header={"Who we are"}
         useSubHeader={false}
@@ -71,7 +72,7 @@ const Home: React.FC = (): React.ReactElement => {
           "https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745468860354-SY5D0VQ9ICLGTR6RNLVU/unsplash-image-LPwLkzl1nd8.jpg?format=1500w"
         }
       />
-      <hr />
+      <SinWave />
       <BasicContainer
         header={"Keep Up with Us!"}
         useSubHeader={false}
