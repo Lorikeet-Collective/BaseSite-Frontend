@@ -7,25 +7,24 @@ interface SinWaveProps {
   frequency?: number;
 }
 
-interface SinData {
-  width: number;
-  height: number;
-  amplitude: number;
-  frequency: number;
-}
-
 const SineWave: React.FC<SinWaveProps> = ({
   width = window.innerWidth,
   height = 25,
   amplitude = 7,
   frequency = 0.05,
 }): React.ReactElement => {
-  const [sinData, setSinData] = useState<SinData>({
+  const [sinData, setSinData] = useState<SinWaveProps>({
     width,
     height,
     amplitude,
     frequency,
   });
+
+  // Development rerendering function
+  useEffect(
+    () => setSinData({ width, height, amplitude, frequency }),
+    [width, height, amplitude, frequency]
+  );
 
   useEffect(() => {
     const event: EventListener = (e: Event) => {
@@ -38,17 +37,19 @@ const SineWave: React.FC<SinWaveProps> = ({
 
   const generateSineWavePath = (): string => {
     let path: string = "";
-    for (let i = 0; i <= sinData.width; i++) {
+    for (let i = 0; i <= sinData.width!; i++) {
       const y =
-        sinData.height / 2 +
-        sinData.amplitude * Math.sin(i * sinData.frequency);
+        sinData.height! / 2 +
+        sinData.amplitude! * Math.sin(i * sinData.frequency!);
       path += `${i},${y} `;
     }
     return `L${path}`;
   };
 
-  const pathData: string = `M0,${sinData.height / 2} ${generateSineWavePath()}`;
-  
+  const pathData: string = `M0,${
+    sinData.height! / 2
+  } ${generateSineWavePath()}`;
+
   return (
     <svg
       width={"100%"}
