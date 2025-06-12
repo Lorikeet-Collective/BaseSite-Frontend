@@ -1,8 +1,17 @@
+import { useState, useEffect } from "react";
+
 interface SinWaveProps {
   width?: number;
   height?: number;
   amplitude?: number;
   frequency?: number;
+}
+
+interface SinData {
+  width: number;
+  height: number;
+  amplitude: number;
+  frequency: number;
 }
 
 const SineWave: React.FC<SinWaveProps> = ({
@@ -11,27 +20,41 @@ const SineWave: React.FC<SinWaveProps> = ({
   amplitude = 7,
   frequency = 0.05,
 }): React.ReactElement => {
-  const generateSineWavePath = (
-    width: number,
-    height: number,
-    amplitude: number,
-    frequency: number
-  ): string => {
+  const [sinData, setSinData] = useState<SinData>({
+    width,
+    height,
+    amplitude,
+    frequency,
+  });
+
+  useEffect(() => {
+    const event: EventListener = (e: Event) => {
+      const target = e.target as Window;
+      setSinData((prevData) => ({ ...prevData, width: target.innerWidth }));
+    };
+    addEventListener("resize", event);
+    return () => removeEventListener("resize", event);
+  }, []);
+
+  const generateSineWavePath = (): string => {
     let path: string = "";
-    for (let i = 0; i <= width; i++) {
-      const y = height / 2 + amplitude * Math.sin(i * frequency);
+    for (let i = 0; i <= sinData.width; i++) {
+      const y =
+        sinData.height / 2 +
+        sinData.amplitude * Math.sin(i * sinData.frequency);
       path += `${i},${y} `;
     }
     return `L${path}`;
   };
-  const pathData: string = `M0,${height / 2} ${generateSineWavePath(
-    width,
-    height,
-    amplitude,
-    frequency
-  )}`;
+
+  const pathData: string = `M0,${sinData.height / 2} ${generateSineWavePath()}`;
+  
   return (
-    <svg width={"100%"} height={height} viewBox={`0 0 ${width} ${height}`}>
+    <svg
+      width={"100%"}
+      height={sinData.height}
+      viewBox={`0 0 ${sinData.width} ${sinData.height}`}
+    >
       <path d={pathData} fill="none" stroke={`var(--tertiary-color)`} />
     </svg>
   );
