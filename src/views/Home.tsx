@@ -1,5 +1,5 @@
 import BasicContainer from "../components/Common/BasicContainer";
-import SinWave from "../components/SVG/sinWave";
+import SinWave from "../components/Common/SinWave";
 import Image from "../components/Common/Image";
 import Button from "../components/Common/Button";
 import styles from "./Home.module.css";
