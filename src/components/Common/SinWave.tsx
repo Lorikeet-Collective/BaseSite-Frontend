@@ -27,7 +27,7 @@ const SineWave: React.FC<SinWaveProps> = ({
   amplitude = 7,
   frequency = 0.05,
 }): React.ReactElement => {
-  const [sinData, setSinData] = useState<SinWaveProps>({
+  const [sinData, setSinData] = useState({
     width,
     height,
     amplitude,
@@ -58,7 +58,7 @@ const SineWave: React.FC<SinWaveProps> = ({
       viewBox={`0 0 ${sinData.width} ${sinData.height}`}
     >
       <path
-        d={`M0,${height / 2} ${generateSineWavePath(sinData)}`}
+        d={`M0,${sinData.height / 2} ${generateSineWavePath(sinData)}`}
         fill="none"
         stroke={`var(--tertiary-color)`}
       />
