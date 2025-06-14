@@ -7,7 +7,7 @@ interface SinWaveProps {
   frequency?: number;
 }
 
-const generateSineWavePath = ({
+const generateSinWavePath = ({
   width,
   height,
   amplitude,
@@ -21,7 +21,7 @@ const generateSineWavePath = ({
   return `L${path}`;
 };
 
-const SineWave: React.FC<SinWaveProps> = ({
+const SinWave: React.FC<SinWaveProps> = ({
   width = window.innerWidth,
   height = 25,
   amplitude = 7,
@@ -58,7 +58,7 @@ const SineWave: React.FC<SinWaveProps> = ({
       viewBox={`0 0 ${sinData.width} ${sinData.height}`}
     >
       <path
-        d={`M0,${sinData.height / 2} ${generateSineWavePath(sinData)}`}
+        d={`M0,${sinData.height / 2} ${generateSinWavePath(sinData)}`}
         fill="none"
         stroke={`var(--tertiary-color)`}
       />
@@ -66,4 +66,4 @@ const SineWave: React.FC<SinWaveProps> = ({
   );
 };
 
-export default SineWave;
+export default SinWave;
