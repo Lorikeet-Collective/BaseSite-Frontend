@@ -18,47 +18,45 @@ const MenuCatagory: React.FC<MenuCatagoryProps> = ({
   const menu = useRef<HTMLUListElement>(null);
 
   return (
-    <>
-      <li>
-        <div
-          className={styles.titleContainer}
-          onClick={() => {
-            if (!isRendered) setIsRendered(true);
-            setIsOpen(!isOpen);
+    <li>
+      <div
+        className={styles.titleContainer}
+        onClick={() => {
+          if (!isRendered) setIsRendered(true);
+          setIsOpen(!isOpen);
+        }}
+      >
+        <SVGIcon
+          key={String(Math.random())}
+          icon={isOpen ? upCarot : downCarot}
+          width={25}
+        />
+        {title}
+        <SVGIcon
+          key={String(Math.random())}
+          icon={isOpen ? upCarot : downCarot}
+          width={25}
+        />
+      </div>
+      {isRendered && (
+        <ul
+          // TEMP: This keygen needs to be moved to a proper function
+          key={String(Math.random())}
+          ref={menu}
+          className={styles.catagoryContainer}
+          style={{
+            animationDirection: isOpen ? "normal" : "reverse",
+          }}
+          onAnimationEnd={() => {
+            if (menu.current!.style.animationDirection === "reverse")
+              setIsOpen(false);
           }}
         >
-          <SVGIcon
-            key={String(Math.random())}
-            icon={isOpen ? upCarot : downCarot}
-            width={25}
-          />
-          {title}
-          <SVGIcon
-            key={String(Math.random())}
-            icon={isOpen ? upCarot : downCarot}
-            width={25}
-          />
-        </div>
-        {isRendered && (
-          <ul
-            // TEMP: This keygen needs to be moved to a proper function
-            key={String(Math.random())}
-            ref={menu}
-            className={styles.catagoryContainer}
-            style={{
-              animationDirection: isOpen ? "normal" : "reverse",
-            }}
-            onAnimationEnd={() => {
-              if (menu.current!.style.animationDirection === "reverse")
-                setIsOpen(false);
-            }}
-          >
-            {...children}
-          </ul>
-        )}
-      </li>
-      <SinWave />
-    </>
+          {...children}
+          <SinWave useDynamicHeight amplitude={3} />
+        </ul>
+      )}
+    </li>
   );
 };
 

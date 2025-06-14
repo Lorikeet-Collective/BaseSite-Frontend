@@ -23,7 +23,7 @@
     opacity: 0;
   }
   to {
-    height: calc(var(--menu-link-height) * 4);
+    height: calc(var(--menu-link-height) * 5);
     opacity: 1;
   }
 }
