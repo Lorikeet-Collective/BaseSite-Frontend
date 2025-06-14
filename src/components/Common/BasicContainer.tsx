@@ -3,7 +3,7 @@ import styles from "./BasicContainer.module.css";
 
 interface BasicContainerProps {
   img?: string;
-  header: string;
+  header?: string;
   useSubHeader?: boolean;
   body: string[];
 }
@@ -17,9 +17,11 @@ const BasicContainer: React.FC<BasicContainerProps> = ({
   <>
     {img && <Image img={img} />}
     <div className={styles.container}>
-      <h3 className={useSubHeader ? styles.subHeader : styles.header}>
-        {header}
-      </h3>
+      {header && (
+        <h3 className={useSubHeader ? styles.subHeader : styles.header}>
+          {header}
+        </h3>
+      )}
       {body.map((text, i) => (
         <p key={i + Math.random()} className={styles.textBody}>
           {text}
