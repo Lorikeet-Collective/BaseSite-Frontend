@@ -68,6 +68,7 @@ const SinWave: React.FC<SinWaveProps> = ({
       <path
         d={`M0,${sinData.height / 2} ${generateSinWavePath(sinData)}`}
         fill="none"
+        strokeWidth={1.2}
         stroke={"var(--tertiary-color)"}
       />
     </svg>
