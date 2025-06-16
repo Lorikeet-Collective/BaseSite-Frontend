@@ -6,18 +6,16 @@ import styles from "./Dropdown.module.css";
 
 interface DropdownProps extends PropsWithChildren {
   title: string;
-  body?: string[];
 }
 
 const Dropdown: React.FC<DropdownProps> = ({
   title,
-  body = [],
   children,
 }): React.ReactElement => {
   const dropdown = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [calcHeight, setCalcHeight] = useState<number>(0);
-  const [animationEffect] = useState<{
+  const animationEffect = useRef<{
     open: Animation | null;
     close: Animation | null;
   }>({ open: null, close: null });
@@ -27,41 +25,37 @@ const Dropdown: React.FC<DropdownProps> = ({
   }, []);
 
   useEffect(() => {
-    if (!animationEffect.open && !animationEffect.close && calcHeight !== 0) {
-      const animationOpen = new KeyframeEffect(
-        dropdown.current,
-        [
-          { height: "0", opacity: "0" },
-          { height: `${calcHeight + 10}px`, opacity: "1" },
-        ],
-        {
-          duration: 500,
-          fill: "forwards",
-        }
+    if (
+      !animationEffect.current.open &&
+      !animationEffect.current.close &&
+      calcHeight !== 0
+    ) {
+      const keyFrames: Keyframe[] = [
+        { height: "0", opacity: "0" },
+        { height: `${calcHeight + 10}px`, opacity: "1" },
+      ];
+      const keyOptions: KeyframeEffectOptions = {
+        duration: 300,
+        fill: "forwards",
+      };
+      animationEffect.current.open = new Animation(
+        new KeyframeEffect(dropdown.current, keyFrames, keyOptions),
+        document.timeline
       );
-      const animationClose = new KeyframeEffect(
-        dropdown.current,
-        [
-          { height: `${calcHeight + 10}px`, opacity: "1" },
-          { height: "0", opacity: "0" },
-        ],
-        {
-          duration: 500,
-          fill: "forwards",
-        }
+      animationEffect.current.close = new Animation(
+        new KeyframeEffect(dropdown.current, keyFrames.reverse(), keyOptions),
+        document.timeline
       );
-      animationEffect.open = new Animation(animationOpen, document.timeline);
-      animationEffect.close = new Animation(animationClose, document.timeline);
       dropdown.current!.style.height = "0px";
     }
   }, [calcHeight, animationEffect]);
 
   useEffect(() => {
-    if (isOpen) animationEffect.open?.play();
-    else animationEffect.close?.play();
+    if (isOpen) animationEffect.current.open?.play();
+    else animationEffect.current.close?.play();
     return () => {
-      animationEffect.open?.cancel();
-      animationEffect.close?.cancel();
+      animationEffect!.current.open?.cancel();
+      animationEffect!.current.close?.cancel();
     };
   }, [isOpen, animationEffect]);
 
@@ -80,11 +74,6 @@ const Dropdown: React.FC<DropdownProps> = ({
         />
       </div>
       <div ref={dropdown} className={styles.bodyContainer}>
-        {body.map((text, i) => (
-          <p className={styles.bodyText} key={i + Math.random()}>
-            {text}
-          </p>
-        ))}
         {children}
       </div>
     </div>

@@ -19,16 +19,34 @@
 .title {
   color: var(--tertiary-color);
   font-size: 1.1em;
+  max-width: 75%;
 }
 
 .body-container {
   padding: 0 5px;
-}
-
-.body-text {
   color: var(--tertiary-color);
 }
 
-.body-text:last-child {
+.body-container p {
   margin-bottom: 10px;
+}
+
+.body-container p:last-child {
+  padding-bottom: 0;
+}
+
+.body-container ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.body-container ul li {
+  list-style-type: square;
+  padding-left: 10px;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.body-container ul li:last-child {
+  margin-bottom: 0;
 }
