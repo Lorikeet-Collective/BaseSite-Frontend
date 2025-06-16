@@ -2,14 +2,12 @@ import BasicContainer from "../components/Common/BasicContainer";
 import Dropdown from "../components/Common/Dropdown";
 import SinWave from "../components/Common/SinWave";
 import Image from "../components/Common/Image";
-import styles from "./Philosophy.module.css";
+import Title from "../components/Common/Title";
 
 const Philosophy: React.FC = (): React.ReactElement => {
   return (
     <main>
-      <h2 className={styles.title}>
-        Better therapy for clients and therapists
-      </h2>
+      <Title title={"Better therapy for clients and therapists"} />
       <BasicContainer
         img={
           "https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1743928005549-U658USYAB90BEF90PHM8/unsplash-image-rIRM66unoW4.jpg?format=1500w"
