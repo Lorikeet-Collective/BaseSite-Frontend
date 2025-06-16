@@ -32,7 +32,7 @@ const Dropdown: React.FC<DropdownProps> = ({
     ) {
       const keyFrames: Keyframe[] = [
         { height: "0", opacity: "0" },
-        { height: `${calcHeight + 10}px`, opacity: "1" },
+        { height: `${calcHeight + 20}px`, opacity: "1" },
       ];
       const keyOptions: KeyframeEffectOptions = {
         duration: 300,

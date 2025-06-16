@@ -23,8 +23,9 @@
 }
 
 .body-container {
-  padding: 0 5px;
+  padding: 0 10px;
   color: var(--tertiary-color);
+  font-size: 0.9em;
 }
 
 .body-container p {
