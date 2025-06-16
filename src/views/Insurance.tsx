@@ -1,11 +1,15 @@
 import Title from "../components/Common/Title";
 import BasicContainer from "../components/Common/BasicContainer";
 import Dropdown from "../components/Common/Dropdown";
+import Video from "../components/Common/Video";
 
 const Insurance: React.FC = (): React.ReactElement => {
   return (
     <main>
       <Title title={"Insurance FAQs"} />
+      <Video
+        video={"https://www.youtube.com/embed/-wpHszfnJns?si=9Abv1LaFGbBYuOkt"}
+      />
       <BasicContainer
         body={[
           `Having trouble understanding insurance policy jargon? Check out 
