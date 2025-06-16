@@ -12,6 +12,7 @@ interface SVGIconProps {
   };
   height?: number;
   width?: number;
+  color?: string;
 }
 
 const SVGIcon: React.FC<SVGIconProps> = ({
@@ -21,6 +22,7 @@ const SVGIcon: React.FC<SVGIconProps> = ({
   position = { top: 0, left: undefined, right: 0, bottom: undefined },
   width = 50,
   height = width,
+  color = "",
 }): React.ReactElement => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -30,11 +32,12 @@ const SVGIcon: React.FC<SVGIconProps> = ({
     className={styles.svgContainer}
     onClick={interaction}
     style={{
-      zIndex: zIndex,
+      zIndex,
       top: position.top,
       left: position.left,
       right: position.right,
       bottom: position.bottom,
+      color,
     }}
   >
     {icon}

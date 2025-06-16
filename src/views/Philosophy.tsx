@@ -1,4 +1,5 @@
 import BasicContainer from "../components/Common/BasicContainer";
+import Dropdown from "../components/Common/Dropdown";
 import SinWave from "../components/Common/SinWave";
 import Image from "../components/Common/Image";
 import styles from "./Philosophy.module.css";
@@ -45,6 +46,20 @@ const Philosophy: React.FC = (): React.ReactElement => {
           "https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745885072291-YHSA1IT3UCL0QH1HPXJW/unsplash-image-7XGtYefMXiQ.jpg?format=1500w"
         }
       />
+      <Dropdown
+        title={"Which principles guide your therapeutic approach?"}
+        body={[
+          `Each clinician at Lorikeet Collective presents their own
+           unique background, identities, skills, and specialties. 
+           We are united by our use of the healing justice framework, 
+           and common beliefs regarding human rights that impact 
+           peoples’ quality of living on a constant basis.`,
+        ]}
+      >
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+      </Dropdown>
     </main>
   );
 };
