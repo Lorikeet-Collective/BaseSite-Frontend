@@ -28,26 +28,16 @@
   font-size: 0.9em;
 }
 
-.body-container p {
-  margin-bottom: 10px;
-}
-
-.body-container p:last-child {
-  padding-bottom: 0;
+.body-container * {
+  margin: 10px 0;
 }
 
 .body-container ul {
-  margin-top: 10px;
   padding-left: 20px;
 }
 
 .body-container ul li {
   list-style-type: square;
   padding-left: 10px;
-  font-size: 0.9em;
   margin-bottom: 5px;
-}
-
-.body-container ul li:last-child {
-  margin-bottom: 0;
 }
