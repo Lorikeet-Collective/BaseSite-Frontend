@@ -1,4 +1,4 @@
-# Current Version: [v0.0.3](#v002)
+# Current Version: [v0.0.3](#v003)
 
 > [!IMPORTANT]
 >
