@@ -1,5 +1,6 @@
 .dropdown-container {
   border-top: 2px dotted var(--tertiary-color);
+  overflow: hidden;
 }
 
 .dropdown-container:last-child {
@@ -21,24 +22,7 @@
 }
 
 .body-container {
-  animation-name: dropdown;
-  animation-duration: 0.5s;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-timing-function: var(--animation-path);
-  overflow: clip;
-  height: 0;
-}
-
-@keyframes dropdown {
-  from {
-    height: 0;
-    opacity: 0;
-  }
-  to {
-    height: 200px;
-    opacity: 1;
-  }
+  padding: 0 5px;
 }
 
 .body-text {
