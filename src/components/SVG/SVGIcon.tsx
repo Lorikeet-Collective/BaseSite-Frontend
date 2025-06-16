@@ -3,7 +3,6 @@ import styles from "./SVGIcon.module.css";
 interface SVGIconProps {
   icon: React.ReactElement<React.SVGProps<SVGElement>>;
   interaction?: () => void;
-  zIndex?: number;
   position?: {
     top?: number;
     left?: number;
@@ -18,7 +17,6 @@ interface SVGIconProps {
 const SVGIcon: React.FC<SVGIconProps> = ({
   icon,
   interaction = undefined,
-  zIndex = 999,
   position = { top: 0, left: undefined, right: 0, bottom: undefined },
   width = 50,
   height = width,
@@ -32,7 +30,6 @@ const SVGIcon: React.FC<SVGIconProps> = ({
     className={styles.svgContainer}
     onClick={interaction}
     style={{
-      zIndex,
       top: position.top,
       left: position.left,
       right: position.right,
