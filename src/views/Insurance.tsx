@@ -1,10 +1,18 @@
 import Title from "../components/Common/Title";
+import BasicContainer from "../components/Common/BasicContainer";
 import Dropdown from "../components/Common/Dropdown";
 
 const Insurance: React.FC = (): React.ReactElement => {
   return (
     <main>
       <Title title={"Insurance FAQs"} />
+      <BasicContainer
+        body={[
+          `Having trouble understanding insurance policy jargon? Check out 
+           this video from Brian David Gilbert to learn more about various 
+           commonly-used health insurance terms!`,
+        ]}
+      />
       <Dropdown title={"Which insurances do you take?"}>
         <p>
           We’re always expanding the insurances we accept! To see an up-to-date
