@@ -6,14 +6,14 @@ interface VideoProps {
 
 const Video: React.FC<VideoProps> = ({ video }): React.ReactElement => {
   return (
-    <div className={styles.videoContainer}>
-      <iframe
-        className={styles.video}
-        src={video}
-        title="YouTube video"
-        allowFullScreen
-      ></iframe>
-    </div>
+    <iframe
+      className={styles.video}
+      src={video}
+      title="YouTube video"
+      allowFullScreen
+    >
+      Your browser does not support iFrame embedding.
+    </iframe>
   );
 };
 
