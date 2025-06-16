@@ -4,23 +4,23 @@ import styles from "./Button.module.css";
 interface ButtonProps {
   title: string;
   link: string;
-  isLocal?: boolean;
+  external?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
   title,
   link,
-  isLocal = true,
+  external = true,
 }): React.ReactElement => (
   <button className={styles.button}>
-    {isLocal ? (
-      <Link className={styles.buttonLink} to={link}>
-        {title}
-      </Link>
-    ) : (
+    {external ? (
       <a className={styles.buttonLink} href={link} target={"_blank"}>
         {title}
       </a>
+    ) : (
+      <Link className={styles.buttonLink} to={link}>
+        {title}
+      </Link>
     )}
   </button>
 );
