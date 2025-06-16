@@ -4,24 +4,18 @@ import styles from "./MenuLink.module.css";
 interface MenuLinkProps {
   to: string;
   title: string;
-  external?: boolean;
+  exitHandler: () => void;
 }
 
 const MenuLink: React.FC<MenuLinkProps> = ({
   to,
   title,
-  external = false,
+  exitHandler,
 }): React.ReactElement => (
   <li className={styles.menuLinkContainer}>
-    {external ? (
-      <a href={to} target="_blank">
-        {title}
-      </a>
-    ) : (
-      <Link className={styles.menuLink} to={to}>
-        {title}
-      </Link>
-    )}
+    <Link className={styles.menuLink} to={to} onClick={exitHandler}>
+      {title}
+    </Link>
   </li>
 );
 

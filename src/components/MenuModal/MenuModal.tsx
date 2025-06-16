@@ -11,6 +11,11 @@ const MenuModal: React.FC = (): React.ReactElement => {
   const [isRendered, setIsRendered] = useState(false);
   const modal = useRef<HTMLUListElement>(null);
 
+  const closeMenuHandler = () => {
+    setIsOpen(false);
+    setIsRendered(false);
+  };
+
   useInsertionEffect(() => {
     document.body.style.overflowY = isOpen ? "hidden" : "auto";
   }, [isOpen]);
@@ -42,13 +47,37 @@ const MenuModal: React.FC = (): React.ReactElement => {
             }}
           >
             <MenuCatagory title="About Us">
-              <MenuLink to="/philosophy" title="Our Philosophy" />
-              <MenuLink to="/flock" title="Meet the Flock" />
-              <MenuLink to="/insurance" title="Insurance FAQs" />
-              <MenuLink to="/resources" title="Non-Carceral Resources" />
+              <MenuLink
+                to="/philosophy"
+                title="Our Philosophy"
+                exitHandler={closeMenuHandler}
+              />
+              <MenuLink
+                to="/flock"
+                title="Meet the Flock"
+                exitHandler={closeMenuHandler}
+              />
+              <MenuLink
+                to="/insurance"
+                title="Insurance FAQs"
+                exitHandler={closeMenuHandler}
+              />
+              <MenuLink
+                to="/resources"
+                title="Non-Carceral Resources"
+                exitHandler={closeMenuHandler}
+              />
             </MenuCatagory>
-            <MenuLink to="/services" title="Services" />
-            <MenuLink to="/contact" title="Contact" />
+            <MenuLink
+              to="/services"
+              title="Services"
+              exitHandler={closeMenuHandler}
+            />
+            <MenuLink
+              to="/contact"
+              title="Contact"
+              exitHandler={closeMenuHandler}
+            />
           </ul>,
           document.body
         )}
