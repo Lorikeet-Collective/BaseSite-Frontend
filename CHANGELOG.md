@@ -31,6 +31,8 @@
 <details>
     <summary>Changes</summary>
 
+- New Features
+  - Added InsuranceFAQs page
 - Fixes
   - Fixed menu links not closing modal
 
