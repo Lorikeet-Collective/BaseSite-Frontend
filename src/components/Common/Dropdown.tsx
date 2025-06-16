@@ -13,12 +13,12 @@ const Dropdown: React.FC<DropdownProps> = ({
   children,
 }): React.ReactElement => {
   const dropdown = useRef<HTMLDivElement>(null);
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [calcHeight, setCalcHeight] = useState<number>(0);
   const animationEffect = useRef<{
     open: Animation | null;
     close: Animation | null;
   }>({ open: null, close: null });
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [calcHeight, setCalcHeight] = useState<number>(0);
 
   useEffect(() => {
     setCalcHeight(dropdown.current?.clientHeight as number);
@@ -65,7 +65,14 @@ const Dropdown: React.FC<DropdownProps> = ({
         className={styles.titleContainer}
         onClick={() => setIsOpen((prev) => !prev)}
       >
-        <h3 className={styles.title}>{title}</h3>
+        <h3
+          className={styles.title}
+          style={{
+            color: isOpen ? "var(--secondary-color)" : "var(--tertiary-color)",
+          }}
+        >
+          {title}
+        </h3>
         <SVGIcon
           key={String(Math.random())}
           icon={isOpen ? upCarot : downCarot}
