@@ -22,7 +22,7 @@
 
 .body-container {
   animation-name: dropdown;
-  animation-duration: 0.7s;
+  animation-duration: 0.5s;
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-timing-function: var(--animation-path);
@@ -36,7 +36,7 @@
     opacity: 0;
   }
   to {
-    height: 284px;
+    height: 200px;
     opacity: 1;
   }
 }

@@ -55,11 +55,7 @@ const Philosophy: React.FC = (): React.ReactElement => {
            and common beliefs regarding human rights that impact 
            peoples’ quality of living on a constant basis.`,
         ]}
-      >
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-      </Dropdown>
+      ></Dropdown>
     </main>
   );
 };
