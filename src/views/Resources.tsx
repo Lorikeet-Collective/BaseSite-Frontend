@@ -1,4 +1,5 @@
 import Title from "../components/Common/Title";
+import Image from "../components/Common/Image";
 import Text from "../components/Common/Text";
 import Button from "../components/Common/Button";
 
@@ -39,6 +40,12 @@ const Resources: React.FC = (): React.ReactElement => (
         mandatory reporting, confidentiality, and security.
       </b>
     </Text>
+    <Title>Emergency Resources</Title>
+    <Text>For immediate access to support when you need it. Age 18+.</Text>
+    <Text>
+      Looking for resources for under age 18? Scroll down to “For Kids & Teens.”
+    </Text>
+    <Image fit src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/8cccb2a2-c7fe-4ac1-ac44-2729fdd1bbbb/lgbt-branding_logo-horiz-large.png?format=1500w" />
   </main>
 );
 

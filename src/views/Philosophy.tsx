@@ -7,7 +7,7 @@ import Dropdown from "../components/Common/Dropdown";
 const Philosophy: React.FC = (): React.ReactElement => (
   <main>
     <Title>Better therapy for clients and therapists</Title>
-    <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1743928005549-U658USYAB90BEF90PHM8/unsplash-image-rIRM66unoW4.jpg?format=1500w" />
+    <Image src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1743928005549-U658USYAB90BEF90PHM8/unsplash-image-rIRM66unoW4.jpg?format=1500w" />
     <Text>
       Lorikeet Collective, PLLC. was founded on the principle that therapeutic
       spaces should inclusive and affirming for all LGBTQAI2S+, disabled,
@@ -16,7 +16,7 @@ const Philosophy: React.FC = (): React.ReactElement => (
       others.
     </Text>
     <SinWave />
-    <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745885154959-WRCI5BBUXBJ08HA8J0YO/unsplash-image-AqK0Sw2Gj-c.jpg?format=1500w" />
+    <Image src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745885154959-WRCI5BBUXBJ08HA8J0YO/unsplash-image-AqK0Sw2Gj-c.jpg?format=1500w" />
     <Title subTitle>Beyond Talk</Title>
     <Text>
       Mental health care is more than having a professional to help guide your
@@ -28,7 +28,7 @@ const Philosophy: React.FC = (): React.ReactElement => (
       continuing education.
     </Text>
     <SinWave />
-    <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745885072291-YHSA1IT3UCL0QH1HPXJW/unsplash-image-7XGtYefMXiQ.jpg?format=1500w" />
+    <Image src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745885072291-YHSA1IT3UCL0QH1HPXJW/unsplash-image-7XGtYefMXiQ.jpg?format=1500w" />
     <Dropdown title="Which principles guide your therapeutic approach?">
       <p>
         Each clinician at Lorikeet Collective presents their own unique

@@ -1,16 +1,23 @@
 import styles from "./Image.module.css";
 
 interface ImageProps {
-  img: string;
+  src: string;
+  fit?: boolean;
 }
 
-const Image: React.FC<ImageProps> = ({ img }): React.ReactElement => (
-  <div
-    className={styles.img}
-    style={{
-      backgroundImage: `url("${img}")`,
-    }}
-  ></div>
-);
+const Image: React.FC<ImageProps> = ({
+  src,
+  fit = false,
+}): React.ReactElement =>
+  fit ? (
+    <img className={styles.imgFit} src={src} />
+  ) : (
+    <div
+      className={styles.img}
+      style={{
+        backgroundImage: `url("${src}")`,
+      }}
+    ></div>
+  );
 
 export default Image;

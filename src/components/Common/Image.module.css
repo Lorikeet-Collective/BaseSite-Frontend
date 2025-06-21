@@ -1,9 +1,17 @@
 .img {
-  margin: var(--container-margin);
   height: 350px;
-  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
+}
+
+.img-fit {
+  object-fit: contain;
+}
+
+.img,
+.img-fit {
+  margin: var(--container-margin);
+  width: 100%;
 }

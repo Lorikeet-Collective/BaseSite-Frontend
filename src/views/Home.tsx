@@ -16,7 +16,7 @@ const Home: React.FC = (): React.ReactElement => (
       <p className={styles.topHeader}>Therapy for your community,</p>
       <p className={styles.bottomHeader}>by your community</p>
     </h2>
-    <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1744681200969-JXHJHCYRVIF83TMDSWQO/unsplash-image-rTXxVtMn8PA.jpg?format=1500w" />
+    <Image src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1744681200969-JXHJHCYRVIF83TMDSWQO/unsplash-image-rTXxVtMn8PA.jpg?format=1500w" />
     <Title subTitle>Transforming LGBTQIA2S+ care</Title>
     <Text>
       We’re gender identity, expression, sexual orientation, and relationship
@@ -27,7 +27,7 @@ const Home: React.FC = (): React.ReactElement => (
       We’re also sex-, kink-, and BDSM-positive, pro-choice, and believe sex
       work is work.
     </Text>
-    <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1744681250970-13D5RP35PLA2RE62K3DO/unsplash-image-FHiJWoBodrs.jpg?format=1500w" />
+    <Image src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1744681250970-13D5RP35PLA2RE62K3DO/unsplash-image-FHiJWoBodrs.jpg?format=1500w" />
     <Title subTitle>Celebrating disabilities</Title>
     <Text>
       We elevate individuality, equitable representation, empowerment,
@@ -39,7 +39,7 @@ const Home: React.FC = (): React.ReactElement => (
       should feel safe to take up space in every space within their community
       without censorship.
     </Text>
-    <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1744681287149-1TYWZ82T6WR9UIYGGY0N/unsplash-image-aM-BRQtrng8.jpg?format=1500w" />
+    <Image src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1744681287149-1TYWZ82T6WR9UIYGGY0N/unsplash-image-aM-BRQtrng8.jpg?format=1500w" />
     <Title subTitle>Uplifting voices of color</Title>
     <Text>
       We honor our BIPOC, AAPI, Latinx / Hispanix and all non-White identifying
@@ -60,7 +60,7 @@ const Home: React.FC = (): React.ReactElement => (
     </Text>
     <Text>For community members, clients, and therapists.</Text>
     <Button link="/philosophy">LEARN MORE</Button>
-    <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745468860354-SY5D0VQ9ICLGTR6RNLVU/unsplash-image-LPwLkzl1nd8.jpg?format=1500w" />
+    <Image src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745468860354-SY5D0VQ9ICLGTR6RNLVU/unsplash-image-LPwLkzl1nd8.jpg?format=1500w" />
     <SinWave />
     <Title>Keep Up with Us!</Title>
     <Text>
