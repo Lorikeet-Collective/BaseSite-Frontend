@@ -25,7 +25,10 @@ const Resources: React.FC = (): React.ReactElement => (
       in Connecticut, police officers are only required to undergo{" "}
       <u>40 hours</u> of Crisis Intervention Team (CIT) training. That amounts
       to 2% of their{" "}
-      <a href="https://portal.ct.gov/post/basictraining-division/entry-certification--renewal-requirements?language=en_US">
+      <a
+        href="https://portal.ct.gov/post/basictraining-division/entry-certification--renewal-requirements?language=en_US"
+        target="_blank"
+      >
         1,800-hour minimum training
       </a>
       .
@@ -59,21 +62,34 @@ const Resources: React.FC = (): React.ReactElement => (
     />
     <Title subTitle>LGBT National Talkline and Coming Out Hotline:</Title>
     <Text>
-      Call <a href="tel:8888434564">888-843-4564</a> for LGBT National Hotline
-      to access crisis support for ages 18+,{" "}
-      <a href="tel:8886885428">888-688-5428</a> for LGBT National Coming Out
-      Support Line for coming out support, or{" "}
-      <a href="tel:8882347243">888-234-7243</a> for LGBT National Senior Hotline
-      to access crisis support for ages 50+{" "}
+      Call{" "}
+      <a href="tel:8888434564" target="_blank">
+        888-843-4564
+      </a>{" "}
+      for LGBT National Hotline to access crisis support for ages 18+,{" "}
+      <a href="tel:8886885428" target="_blank">
+        888-688-5428
+      </a>{" "}
+      for LGBT National Coming Out Support Line for coming out support, or{" "}
+      <a href="tel:8882347243" target="_blank">
+        888-234-7243
+      </a>{" "}
+      for LGBT National Senior Hotline to access crisis support for ages 50+{" "}
       <b>Mondays through Fridays 2pm-11pm EST and Saturdays 12pm-5pm EST</b>, or{" "}
-      <a href="https://volunteerlogin.org/chat/chat.php?groupChatTransferFlag=0&groupChatCallerId=H5aMQje1elT9u6eaL0YI">
+      <a
+        href="https://volunteerlogin.org/chat/chat.php?groupChatTransferFlag=0&groupChatCallerId=H5aMQje1elT9u6eaL0YI"
+        target="_blank"
+      >
         chat one-on-one
       </a>{" "}
       with peers online.
       <ul>
         <li>
           Live crisis, coming out, and{" "}
-          <a href="https://lgbthotline.org/self-harm-prevention/">
+          <a
+            href="https://lgbthotline.org/self-harm-prevention/"
+            target="_blank"
+          >
             self-harm prevention/ safety planning
           </a>{" "}
           support for LGBTQIA2S+ of all ages across the USA
@@ -94,14 +110,23 @@ const Resources: React.FC = (): React.ReactElement => (
     />
     <Title subTitle>Call BlackLine:</Title>
     <Text>
-      Call or text <a href="tel:18006045841">+1-800-604-5841</a> from anywhere
-      24/7/365 to access the crisis line, or access crisis supports directly
-      from the app through either the{" "}
-      <a href="https://apps.apple.com/us/app/call-blackline/id6474581521">
+      Call or text{" "}
+      <a href="tel:18006045841" target="_blank">
+        +1-800-604-5841
+      </a>{" "}
+      from anywhere 24/7/365 to access the crisis line, or access crisis
+      supports directly from the app through either the{" "}
+      <a
+        href="https://apps.apple.com/us/app/call-blackline/id6474581521"
+        target="_blank"
+      >
         App Store
       </a>{" "}
       or{" "}
-      <a href="https://play.google.com/store/apps/details?id=com.tse.cbl.call_black_line&pcampaignid=web_share&pli=1">
+      <a
+        href="https://play.google.com/store/apps/details?id=com.tse.cbl.call_black_line&pcampaignid=web_share&pli=1"
+        target="_blank"
+      >
         Google Play
       </a>
       .
@@ -121,9 +146,13 @@ const Resources: React.FC = (): React.ReactElement => (
     />
     <Title subTitle>Trans LifeLine:</Title>
     <Text>
-      Call <a href="tel:18775658860">+1-877-565-8860</a> from the US to access
-      the crisis line <b>Mondays through Fridays 1pm–9pm EST</b> (10am-6pm PST |
-      11am–7pm MST | 12pm–8pm CST).
+      Call{" "}
+      <a href="tel:18775658860" target="_blank">
+        +1-877-565-8860
+      </a>{" "}
+      from the US to access the crisis line{" "}
+      <b>Mondays through Fridays 1pm–9pm EST</b> (10am-6pm PST | 11am–7pm MST |
+      12pm–8pm CST).
       <ul>
         <li>LGBTQIA2S+, BIPOC affirming</li>
         <li>Crisis and peer supports</li>
@@ -135,7 +164,7 @@ const Resources: React.FC = (): React.ReactElement => (
     <Text>
       <b>
         NOTE: Trans Lifeline is unavailable during{" "}
-        <a href="https://translifeline.org/hotline/#faq">
+        <a href="https://translifeline.org/hotline/#faq" target="_blank">
           select recognized holidays.
         </a>
       </b>
@@ -148,8 +177,11 @@ const Resources: React.FC = (): React.ReactElement => (
     />
     <Title subTitle>StrongHearts Native Helpline:</Title>
     <Text>
-      Call or text <a href="tel:18447628483">1+844-7NATIVE</a> (762-8483) from
-      the US, or chat online to access the helpline 24/7/365.
+      Call or text{" "}
+      <a href="tel:18447628483" target="_blank">
+        1+844-7NATIVE
+      </a>{" "}
+      (762-8483) from the US, or chat online to access the helpline 24/7/365.
       <ul>
         <li>Alaskan Natives and Native Americans community support </li>
         <li>
@@ -170,8 +202,11 @@ const Resources: React.FC = (): React.ReactElement => (
     <Title subTitle>DEQH · DESI LGBTQ+ Helpline for South Asians</Title>
     <Text>
       Write to the contact form online or call{" "}
-      <a href="tel:19083673374">+1-908-367-3374</a> for peer support{" "}
-      <b>Thursdays and Sundays from 8pm-10pm EST</b> (5pm-7PM PST).
+      <a href="tel:19083673374" target="_blank">
+        +1-908-367-3374
+      </a>{" "}
+      for peer support <b>Thursdays and Sundays from 8pm-10pm EST</b> (5pm-7PM
+      PST).
       <ul>
         <li>
           LGBQ/TGNB+ South Asian community support and connection throughout USA
@@ -190,7 +225,11 @@ const Resources: React.FC = (): React.ReactElement => (
     />
     <Title subTitle>Wildflower Alliance:</Title>
     <Text>
-      Call <a href="tel:18884074515">+1-888-407-4515</a> for peer support{" "}
+      Call{" "}
+      <a href="tel:18884074515" target="_blank">
+        +1-888-407-4515
+      </a>{" "}
+      for peer support{" "}
       <b>
         Mondays through Thursdays 7pm-9pm EST or Fridays through Sundays
         7pm-10pm EST.
@@ -219,12 +258,20 @@ const Resources: React.FC = (): React.ReactElement => (
     />
     <Title subTitle>Project LETS:</Title>
     <Text>
-      Text <a href="tel:14014002905">+1-401-400-2905</a> for urgent support{" "}
-      <b>Mondays through Saturdays 10am-4pm EST</b>, submit the{" "}
-      <a href="https://form.jotform.com/250564539905060">contact form</a>{" "}
+      Text{" "}
+      <a href="tel:14014002905" target="_blank">
+        +1-401-400-2905
+      </a>{" "}
+      for urgent support <b>Mondays through Saturdays 10am-4pm EST</b>, submit
+      the{" "}
+      <a href="https://form.jotform.com/250564539905060" target="_blank">
+        contact form
+      </a>{" "}
       online, or email{" "}
-      <a href="mailto:support@projectlets.org">support@projectlets.org</a> to
-      request support.
+      <a href="mailto:support@projectlets.org" target="_blank">
+        support@projectlets.org
+      </a>{" "}
+      to request support.
       <ul>
         <li>
           Supporting all folx at urgent risk of experiencing psychiatric
@@ -249,9 +296,14 @@ const Resources: React.FC = (): React.ReactElement => (
     <Title subTitle>Fireweed Collective:</Title>
     <Text>
       Join the closed{" "}
-      <a href="https://www.facebook.com/groups/2394863930/">Facebook</a> group
-      for access to peer support online or register for support groups on the{" "}
-      <a href="https://fireweedcollective.org/support-groups/">Groups page.</a>
+      <a href="https://www.facebook.com/groups/2394863930/" target="_blank">
+        Facebook
+      </a>{" "}
+      group for access to peer support online or register for support groups on
+      the{" "}
+      <a href="https://fireweedcollective.org/support-groups/" target="_blank">
+        Groups page.
+      </a>
       <ul>
         <li>
           Affinity and peer support online spaces held for 60-90 minutes weekly
@@ -277,7 +329,9 @@ const Resources: React.FC = (): React.ReactElement => (
     <Text>
       Visit each respective service page for specific contact information or
       utilize the{" "}
-      <a href="https://www.theprojectheal.org/contact">online contact form</a>{" "}
+      <a href="https://www.theprojectheal.org/contact" target="_blank">
+        online contact form
+      </a>{" "}
       for direct communication.
       <ul>
         <li>
@@ -289,7 +343,10 @@ const Resources: React.FC = (): React.ReactElement => (
         </li>
         <li>
           Excellent for finding{" "}
-          <a href="https://www.theprojectheal.org/free-eating-disorder-support-groups">
+          <a
+            href="https://www.theprojectheal.org/free-eating-disorder-support-groups"
+            target="_blank"
+          >
             support groups
           </a>
           , establishing services, or navigating insurance coverage issues
@@ -318,8 +375,15 @@ const Resources: React.FC = (): React.ReactElement => (
           LGBTQIA2S+, BIPOC, and neurodiverse affirming support for ages 18+.
         </li>
         <li>
-          Partnership through Stronger U for community-based support that
-          doesn’t turn folx away for inability to pay.
+          Partnership through{" "}
+          <a
+            href="https://strongeruwellness.com/services/stubborn-survivors/"
+            target="_blank"
+          >
+            Stronger U
+          </a>{" "}
+          for community-based support that doesn’t turn folx away for inability
+          to pay.
         </li>
         <li>
           Provides free coping skill guides and Discord-based support groups for
@@ -341,7 +405,10 @@ const Resources: React.FC = (): React.ReactElement => (
     />
     <Title subTitle>National Empowerment Center:</Title>
     <Text>
-      Utilize the <a href="https://power2u.org/contact/">online contact form</a>{" "}
+      Utilize the{" "}
+      <a href="https://power2u.org/contact/" target="_blank">
+        online contact form
+      </a>{" "}
       for direct communication.
       <ul>
         <li>
@@ -350,11 +417,17 @@ const Resources: React.FC = (): React.ReactElement => (
         </li>
         <li>
           Directories of national peer respite houses and{" "}
-          <a href="https://www.warmline.org/">peer-run warmlines</a> provided
+          <a href="https://www.warmline.org/" target="_blank">
+            peer-run warmlines
+          </a>{" "}
+          provided
         </li>
         <li>
           Excellent for finding{" "}
-          <a href="https://www.theprojectheal.org/free-eating-disorder-support-groups">
+          <a
+            href="https://www.theprojectheal.org/free-eating-disorder-support-groups"
+            target="_blank"
+          >
             support groups
           </a>
           , establishing services, or navigating insurance coverage issues
@@ -381,9 +454,15 @@ const Resources: React.FC = (): React.ReactElement => (
     />
     <Title subTitle>Childhelp National Child Abuse Hotline:</Title>
     <Text>
-      Text “HELP” to <a href="tel:18004224453">+1-800-422-4453</a> or{" "}
-      <a href="https://www.childhelp.org/contact/">chat online</a> to access
-      crisis support throughout anywhere 24/7/365.
+      Text “HELP” to{" "}
+      <a href="tel:18004224453" target="_blank">
+        +1-800-422-4453
+      </a>{" "}
+      or{" "}
+      <a href="https://www.childhelp.org/contact/" target="_blank">
+        chat online
+      </a>{" "}
+      to access crisis support throughout anywhere 24/7/365.
       <ul>
         <li>
           Crisis support for all youth experiencing abuse, neglect, or
@@ -413,10 +492,19 @@ const Resources: React.FC = (): React.ReactElement => (
     />
     <Title subTitle>LGBT National Youth Talkline:</Title>
     <Text>
-      Call <a href="tel:18002467743">+1-800-246-7743</a> to access crisis
-      support{" "}
-      <b>Mondays through Fridays 2pm-11pm EST and Saturdays 12pm-5pm EST</b>, or
-      chat one-on-one with peers online.
+      Call{" "}
+      <a href="tel:18002467743" target="_blank">
+        +1-800-246-7743
+      </a>{" "}
+      to access crisis support{" "}
+      <b>Mondays through Fridays 2pm-11pm EST and Saturdays 12pm-5pm EST</b>, or{" "}
+      <a
+        href="https://volunteerlogin.org/chat/chat.php?groupChatTransferFlag=0&groupChatCallerId=gPWex3gSxNDoZv3pEAgZ"
+        target="_blank"
+      >
+        chat one-on-one
+      </a>{" "}
+      with peers online.
       <ul>
         <li>
           Crisis and coming out support for all LGBTQIA2S+ youth across the USA
@@ -424,7 +512,9 @@ const Resources: React.FC = (): React.ReactElement => (
         <li>
           Connects youth to nation-wide queer-affirming resources and education
           and hosts{" "}
-          <a href="https://lgbthotline.org/youthchatrooms/">online chatrooms</a>{" "}
+          <a href="https://lgbthotline.org/youthchatrooms/" target="_blank">
+            online chatrooms
+          </a>{" "}
           for safe and moderated peer support spaces
         </li>
         <li>Confidential and anonymous support.</li>
