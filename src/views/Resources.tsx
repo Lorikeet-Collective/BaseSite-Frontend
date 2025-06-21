@@ -22,9 +22,13 @@ const Resources: React.FC = (): React.ReactElement => (
       This is what folx expect when dialing 911, 988, or 211, but often not what
       they receive for support. Operators for these hotlines are trained to
       dispatch law enforcement— in our opinion, more often than necessary— and
-      in Connecticut, police officers are only required to undergo 40 hours of
-      Crisis Intervention Team (CIT) training. That amounts to 2% of their
-      1,800-hour minimum training.
+      in Connecticut, police officers are only required to undergo{" "}
+      <u>40 hours</u> of Crisis Intervention Team (CIT) training. That amounts
+      to 2% of their{" "}
+      <a href="https://portal.ct.gov/post/basictraining-division/entry-certification--renewal-requirements?language=en_US">
+        1,800-hour minimum training
+      </a>
+      .
     </Text>
     <Text>You deserve better.</Text>
     <Text>
