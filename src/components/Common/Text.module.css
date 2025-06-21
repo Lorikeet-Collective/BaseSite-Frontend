@@ -1,7 +1,4 @@
 .text {
   margin: 20px 0;
-}
-
-.text b {
   color: var(--tertiary-color);
 }

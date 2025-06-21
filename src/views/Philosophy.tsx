@@ -3,6 +3,7 @@ import Dropdown from "../components/Common/Dropdown";
 import SinWave from "../components/Common/SinWave";
 import Image from "../components/Common/Image";
 import Title from "../components/Common/Title";
+import Text from "../components/Common/Text";
 
 const Philosophy: React.FC = (): React.ReactElement => {
   return (
@@ -12,32 +13,32 @@ const Philosophy: React.FC = (): React.ReactElement => {
         img={
           "https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1743928005549-U658USYAB90BEF90PHM8/unsplash-image-rIRM66unoW4.jpg?format=1500w"
         }
-        body={[
-          `Lorikeet Collective, PLLC. was founded on the principle
-           that therapeutic spaces should inclusive and affirming 
-           for all LGBTQAI2S+, disabled, neurodiverse, BIPOC, 
-           and multiply marginalized folx— from those who find 
-           themselves looking for a safe place to heal to those 
-           called upon to heal others.`,
-        ]}
-      />
+      >
+        <Text>
+          Lorikeet Collective, PLLC. was founded on the principle that
+          therapeutic spaces should inclusive and affirming for all LGBTQAI2S+,
+          disabled, neurodiverse, BIPOC, and multiply marginalized folx— from
+          those who find themselves looking for a safe place to heal to those
+          called upon to heal others.
+        </Text>
+      </BasicContainer>
       <SinWave />
       <BasicContainer
         img={
           "https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745885154959-WRCI5BBUXBJ08HA8J0YO/unsplash-image-AqK0Sw2Gj-c.jpg?format=1500w"
         }
         header={"Beyond Talk"}
-        body={[
-          `Mental health care is more than having a professional
-           to help guide your journey. Truly equitable, accessible, 
-           and unifying therapy goes beyond the one-hour a week 
-           commitment, which is why our therapists take a community-first 
-           approach to treatment. Lorikeet Collective therapists center 
-           holistic community care by pledging to engage in political 
-           advocacy, facilitate mutual aid, and provide informed and 
-           affirming continuing education.`,
-        ]}
-      />
+      >
+        <Text>
+          Mental health care is more than having a professional to help guide
+          your journey. Truly equitable, accessible, and unifying therapy goes
+          beyond the one-hour a week commitment, which is why our therapists
+          take a community-first approach to treatment. Lorikeet Collective
+          therapists center holistic community care by pledging to engage in
+          political advocacy, facilitate mutual aid, and provide informed and
+          affirming continuing education.
+        </Text>
+      </BasicContainer>
       <SinWave />
       <Image
         img={
@@ -45,13 +46,13 @@ const Philosophy: React.FC = (): React.ReactElement => {
         }
       />
       <Dropdown title={"Which principles guide your therapeutic approach?"}>
-        <p>
+        <Text>
           Each clinician at Lorikeet Collective presents their own unique
           background, identities, skills, and specialties. We are united by our
           use of the healing justice framework, and common beliefs regarding
           human rights that impact peoples’ quality of living on a constant
           basis.
-        </p>
+        </Text>
         <ul>
           <li>Black, brown, and indigenous lives matter.</li>
           <li>There is no ethical consumption under capitalism.</li>
@@ -73,7 +74,7 @@ const Philosophy: React.FC = (): React.ReactElement => {
         </ul>
       </Dropdown>
       <Dropdown title={`What is "healing justice"?`}>
-        <p>
+        <Text>
           As one of its creators, Cara Page defines healing justice as work
           “that identifies how we can holistically respond to and intervene on
           intergenerational trauma and violence.” In systemically oppressed
@@ -82,58 +83,58 @@ const Philosophy: React.FC = (): React.ReactElement => {
           survive, but thrive; this allows us to pay homage to the visionaries
           and activists who led to where we are today and transform generational
           trauma to facilitate collective healing as a community.
-        </p>
+        </Text>
       </Dropdown>
       <Dropdown title={"Which demographics do you server?"}>
-        <p>
+        <Text>
           As a collective comprised largely of neurodiverse, queer, and disabled
           therapists, we utilize our unique intersection of lived experiences to
           deliver affirming, informed evidence-based interventions to those
           within our communities, across the lifespan.
-        </p>
-        <p>
+        </Text>
+        <Text>
           While this is a community near and dear to our heart, the Lorikeet
           Collective strives to promote inclusivity and accessibility. Our
           services are available to individuals of all identities and
           characteristics, and our clinicians pride themselves on their devotion
           to improving competency and quality of care for communities
           historically excluded from therapeutic spaces.
-        </p>
+        </Text>
       </Dropdown>
       <Dropdown title={"In which states are you licensed to provide care?"}>
-        <p>
+        <Text>
           A therapy collective is a non-hierarchical group of mental health
           professionals. Therapy has the capability to heal and in a day and age
           where therapists are expected to put others before themselves, it’s no
           wonder burnout and turnover are not matters of “if,” but “when.”
-        </p>
-        <p>
+        </Text>
+        <Text>
           Whereas traditional group practices function with a typical
           supervisory hierarchy, here at Lorikeet Collective, our therapists are
           all equal partners. This means more equitable wages, no long hours,
           support in continued growth, and no productivity requirements.
-        </p>
-        <p>
+        </Text>
+        <Text>
           Happy, empowered therapists provide more effective therapy that
           produces a higher likelihood for positive client outcomes.
-        </p>
+        </Text>
       </Dropdown>
       <Dropdown title={"What's the meaning behind your name?"}>
-        <p>
+        <Text>
           The namesake of our collective, rainbow lorikeets, are a species of
           parrot found in eastern Australia.
-        </p>
-        <p>
+        </Text>
+        <Text>
           Aside from their beautifully vivid plumage which naturally flaunts
           diversity and individuality, lorikeets are known for their tendency to
           commune in flocks, displaying a strong sense of togetherness,
           solidarity, and belonging. Lorikeets thrive in a variety of
           environments, symbolizing adaptability and resilience.
-        </p>
-        <p>
+        </Text>
+        <Text>
           Much like our community, lorikeets embody the message that love and
           authenticity can flourish in the face of oppressive environments.{" "}
-        </p>
+        </Text>
       </Dropdown>
     </main>
   );
