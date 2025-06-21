@@ -9,7 +9,7 @@ const Text: React.FC<TextProps> = ({
   className,
   children,
 }): React.ReactElement => (
-  <p className={`${styles.text} ${className}`}>{children}</p>
+  <div className={`${styles.text} ${className}`}>{children}</div>
 );
 
 export default Text;

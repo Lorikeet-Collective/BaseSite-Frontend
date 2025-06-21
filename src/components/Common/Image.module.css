@@ -8,6 +8,7 @@
 
 .img-fit {
   object-fit: contain;
+  max-height: 125px;
 }
 
 .img,
