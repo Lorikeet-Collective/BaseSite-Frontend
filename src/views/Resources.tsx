@@ -1,6 +1,6 @@
-import Button from "../components/Common/Button";
 import Title from "../components/Common/Title";
 import Text from "../components/Common/Text";
+import Button from "../components/Common/Button";
 
 const Resources: React.FC = (): React.ReactElement => (
   <main>

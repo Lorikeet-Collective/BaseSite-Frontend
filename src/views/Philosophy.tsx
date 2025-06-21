@@ -1,37 +1,32 @@
-import BasicContainer from "../components/Common/BasicContainer";
-import Dropdown from "../components/Common/Dropdown";
-import SinWave from "../components/Common/SinWave";
-import Image from "../components/Common/Image";
 import Title from "../components/Common/Title";
 import Text from "../components/Common/Text";
+import Image from "../components/Common/Image";
+import SinWave from "../components/Common/SinWave";
+import Dropdown from "../components/Common/Dropdown";
 
 const Philosophy: React.FC = (): React.ReactElement => (
   <main>
     <Title>Better therapy for clients and therapists</Title>
-    <BasicContainer>
-      <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1743928005549-U658USYAB90BEF90PHM8/unsplash-image-rIRM66unoW4.jpg?format=1500w" />
-      <Text>
-        Lorikeet Collective, PLLC. was founded on the principle that therapeutic
-        spaces should inclusive and affirming for all LGBTQAI2S+, disabled,
-        neurodiverse, BIPOC, and multiply marginalized folx— from those who find
-        themselves looking for a safe place to heal to those called upon to heal
-        others.
-      </Text>
-    </BasicContainer>
+    <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1743928005549-U658USYAB90BEF90PHM8/unsplash-image-rIRM66unoW4.jpg?format=1500w" />
+    <Text>
+      Lorikeet Collective, PLLC. was founded on the principle that therapeutic
+      spaces should inclusive and affirming for all LGBTQAI2S+, disabled,
+      neurodiverse, BIPOC, and multiply marginalized folx— from those who find
+      themselves looking for a safe place to heal to those called upon to heal
+      others.
+    </Text>
     <SinWave />
-    <BasicContainer>
-      <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745885154959-WRCI5BBUXBJ08HA8J0YO/unsplash-image-AqK0Sw2Gj-c.jpg?format=1500w" />
-      <Title subTitle>Beyond Talk</Title>
-      <Text>
-        Mental health care is more than having a professional to help guide your
-        journey. Truly equitable, accessible, and unifying therapy goes beyond
-        the one-hour a week commitment, which is why our therapists take a
-        community-first approach to treatment. Lorikeet Collective therapists
-        center holistic community care by pledging to engage in political
-        advocacy, facilitate mutual aid, and provide informed and affirming
-        continuing education.
-      </Text>
-    </BasicContainer>
+    <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745885154959-WRCI5BBUXBJ08HA8J0YO/unsplash-image-AqK0Sw2Gj-c.jpg?format=1500w" />
+    <Title subTitle>Beyond Talk</Title>
+    <Text>
+      Mental health care is more than having a professional to help guide your
+      journey. Truly equitable, accessible, and unifying therapy goes beyond the
+      one-hour a week commitment, which is why our therapists take a
+      community-first approach to treatment. Lorikeet Collective therapists
+      center holistic community care by pledging to engage in political
+      advocacy, facilitate mutual aid, and provide informed and affirming
+      continuing education.
+    </Text>
     <SinWave />
     <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745885072291-YHSA1IT3UCL0QH1HPXJW/unsplash-image-7XGtYefMXiQ.jpg?format=1500w" />
     <Dropdown title="Which principles guide your therapeutic approach?">

@@ -1,20 +1,18 @@
 import Title from "../components/Common/Title";
-import BasicContainer from "../components/Common/BasicContainer";
+import Text from "../components/Common/Text";
 import Dropdown from "../components/Common/Dropdown";
 import Video from "../components/Common/Video";
-import Text from "../components/Common/Text";
+
 
 const Insurance: React.FC = (): React.ReactElement => (
   <main>
     <Title>Insurance FAQs</Title>
     <Video video="https://www.youtube.com/embed/-wpHszfnJns?si=9Abv1LaFGbBYuOkt" />
-    <BasicContainer>
-      <Text>
-        Having trouble understanding insurance policy jargon? Check out this
-        video from Brian David Gilbert to learn more about various commonly-used
-        health insurance terms!
-      </Text>
-    </BasicContainer>
+    <Text>
+      Having trouble understanding insurance policy jargon? Check out this video
+      from Brian David Gilbert to learn more about various commonly-used health
+      insurance terms!
+    </Text>
     <Dropdown title="Which insurances do you take?">
       <p>
         We’re always expanding the insurances we accept! To see an up-to-date
