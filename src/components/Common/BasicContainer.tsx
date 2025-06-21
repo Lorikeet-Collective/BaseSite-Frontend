@@ -1,18 +1,18 @@
 import Image from "./Image";
 import styles from "./BasicContainer.module.css";
+import { PropsWithChildren } from "react";
 
-interface BasicContainerProps {
+interface BasicContainerProps extends PropsWithChildren {
   img?: string;
   header?: string;
   useSubHeader?: boolean;
-  body: string[];
 }
 
 const BasicContainer: React.FC<BasicContainerProps> = ({
   img,
   header,
   useSubHeader = true,
-  body,
+  children,
 }): React.ReactElement => (
   <>
     {img && <Image img={img} />}
@@ -22,11 +22,7 @@ const BasicContainer: React.FC<BasicContainerProps> = ({
           {header}
         </h3>
       )}
-      {body.map((text, i) => (
-        <p key={i + Math.random()} className={styles.textBody}>
-          {text}
-        </p>
-      ))}
+      {children}
     </div>
   </>
 );
