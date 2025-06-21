@@ -4,6 +4,7 @@ import Image from "../components/Common/Image";
 import Button from "../components/Common/Button";
 import Text from "../components/Common/Text";
 import styles from "./Home.module.css";
+import Title from "../components/Common/Title";
 
 const Home: React.FC = (): React.ReactElement => {
   return (
@@ -17,12 +18,9 @@ const Home: React.FC = (): React.ReactElement => {
         <p className={styles.topHeader}>Therapy for your community,</p>
         <p className={styles.bottomHeader}>by your community</p>
       </h2>
-      <BasicContainer
-        img={
-          "https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1744681200969-JXHJHCYRVIF83TMDSWQO/unsplash-image-rTXxVtMn8PA.jpg?format=1500w"
-        }
-        header={"Transforming LGBTQIA2S+ care"}
-      >
+      <BasicContainer>
+        <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1744681200969-JXHJHCYRVIF83TMDSWQO/unsplash-image-rTXxVtMn8PA.jpg?format=1500w" />
+        <Title subTitle>Transforming LGBTQIA2S+ care</Title>
         <Text>
           We’re gender identity, expression, sexual orientation, and
           relationship orientation / ethical non-monogamy (ENM) / polyamorous
@@ -33,12 +31,9 @@ const Home: React.FC = (): React.ReactElement => {
           work is work.
         </Text>
       </BasicContainer>
-      <BasicContainer
-        img={
-          "https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1744681250970-13D5RP35PLA2RE62K3DO/unsplash-image-FHiJWoBodrs.jpg?format=1500w"
-        }
-        header={"Celebrating disabilities"}
-      >
+      <BasicContainer>
+        <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1744681250970-13D5RP35PLA2RE62K3DO/unsplash-image-FHiJWoBodrs.jpg?format=1500w" />
+        <Title subTitle>Celebrating disabilities</Title>
         <Text>
           We elevate individuality, equitable representation, empowerment,
           accessibility, and self-acceptance— not in spite of disability, but
@@ -50,12 +45,9 @@ const Home: React.FC = (): React.ReactElement => {
           community without censorship.
         </Text>
       </BasicContainer>
-      <BasicContainer
-        img={
-          "https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1744681287149-1TYWZ82T6WR9UIYGGY0N/unsplash-image-aM-BRQtrng8.jpg?format=1500w"
-        }
-        header={"Uplifting voices of color"}
-      >
+      <BasicContainer>
+        <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1744681287149-1TYWZ82T6WR9UIYGGY0N/unsplash-image-aM-BRQtrng8.jpg?format=1500w" />
+        <Title subTitle>Uplifting voices of color</Title>
         <Text>
           We honor our BIPOC, AAPI, Latinx / Hispanix and all non-White
           identifying communities by challenging systemic racial biases in and
@@ -69,7 +61,8 @@ const Home: React.FC = (): React.ReactElement => {
         </Text>
       </BasicContainer>
       <SinWave />
-      <BasicContainer header={"Who we are"} useSubHeader={false}>
+      <BasicContainer>
+        <Title>Who we are</Title>
         <Text>
           We’re here to do therapy not just differently: affordably, accessibly,
           de-colonially, and inclusively, from a framework of that centers
@@ -84,7 +77,8 @@ const Home: React.FC = (): React.ReactElement => {
         }
       />
       <SinWave />
-      <BasicContainer header={"Keep Up with Us!"} useSubHeader={false}>
+      <BasicContainer>
+        <Title>Keep Up with Us!</Title>
         <Text>
           As a community-driven collective of multiply marginalized folx, our
           mission is to connect directly with those who feel their identities

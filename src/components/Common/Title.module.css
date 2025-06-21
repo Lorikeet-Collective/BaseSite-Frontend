@@ -1,7 +1,16 @@
 .title {
-  font-weight: 800;
-  font-size: 2.5em;
-  line-height: 1em;
-  margin: 20px 0;
+  font-size: 2em;
+}
+
+.subTitle {
+  font-size: 1.4em;
+  color: var(--tertiary-color);
+}
+
+.title,
+.subTitle {
   text-align: center;
+  margin: 25px 0;
+  line-height: 1em;
+  font-weight: 800;
 }
