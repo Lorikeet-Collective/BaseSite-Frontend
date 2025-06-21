@@ -10,7 +10,7 @@
 .title,
 .subTitle {
   text-align: center;
-  margin: 25px 0;
+  margin: var(--container-margin);
   line-height: 1em;
   font-weight: 800;
 }
