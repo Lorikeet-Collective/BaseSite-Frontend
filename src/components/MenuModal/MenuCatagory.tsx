@@ -1,12 +1,12 @@
+import type { PropsWithChildren } from "react";
 import { useState, useRef } from "react";
 import { upCarot, downCarot } from "../SVG/icons";
 import SVGIcon from "../SVG/SVGIcon";
 import SinWave from "../Common/SinWave";
 import styles from "./MenuCatagory.module.css";
 
-interface MenuCatagoryProps {
+interface MenuCatagoryProps extends PropsWithChildren {
   title?: string;
-  children: React.ReactNode[];
 }
 
 const MenuCatagory: React.FC<MenuCatagoryProps> = ({
@@ -52,7 +52,7 @@ const MenuCatagory: React.FC<MenuCatagoryProps> = ({
               setIsOpen(false);
           }}
         >
-          {...children}
+          {children}
           <SinWave useDynamicHeight amplitude={3} />
         </ul>
       )}

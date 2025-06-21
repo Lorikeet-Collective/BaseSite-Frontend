@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 import styles from "./Text.module.css";
 
 interface TextProps extends PropsWithChildren {

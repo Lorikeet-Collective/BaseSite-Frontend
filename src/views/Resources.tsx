@@ -6,10 +6,11 @@ const Resources: React.FC = (): React.ReactElement => (
   <main>
     <Title>Non-Carceral Resources</Title>
     <Button
-      title="LEARN WHY THIS MATTERS"
       external
       link="https://www.tac.org/criminalization/#:~:text=People%20with%20untreated%20mental%20illness%20are%2016%20times%20more%20likely,by%20the%20Treatment%20Advocacy%20Center."
-    />
+    >
+      LEARN WHY THIS MATTERS
+    </Button>
     <Text>
       We believe everyone should have free, confidential access to mental health
       support anytime, anywhere, by people who understand and are knowledgeable

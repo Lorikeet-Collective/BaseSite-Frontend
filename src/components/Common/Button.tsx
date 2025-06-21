@@ -1,25 +1,25 @@
+import type { PropsWithChildren } from "react";
 import { Link } from "react-router";
 import styles from "./Button.module.css";
 
-interface ButtonProps {
-  title: string;
+interface ButtonProps extends PropsWithChildren {
   link: string;
   external?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
-  title,
   link,
   external = true,
+  children,
 }): React.ReactElement => (
   <button className={styles.button}>
     {external ? (
       <a className={styles.buttonLink} href={link} target={"_blank"}>
-        {title}
+        {children}
       </a>
     ) : (
       <Link className={styles.buttonLink} to={link}>
-        {title}
+        {children}
       </Link>
     )}
   </button>
