@@ -46,13 +46,13 @@ const Philosophy: React.FC = (): React.ReactElement => {
         }
       />
       <Dropdown title={"Which principles guide your therapeutic approach?"}>
-        <Text>
+        <p>
           Each clinician at Lorikeet Collective presents their own unique
           background, identities, skills, and specialties. We are united by our
           use of the healing justice framework, and common beliefs regarding
           human rights that impact peoples’ quality of living on a constant
           basis.
-        </Text>
+        </p>
         <ul>
           <li>Black, brown, and indigenous lives matter.</li>
           <li>There is no ethical consumption under capitalism.</li>
@@ -74,7 +74,7 @@ const Philosophy: React.FC = (): React.ReactElement => {
         </ul>
       </Dropdown>
       <Dropdown title={`What is "healing justice"?`}>
-        <Text>
+        <p>
           As one of its creators, Cara Page defines healing justice as work
           “that identifies how we can holistically respond to and intervene on
           intergenerational trauma and violence.” In systemically oppressed
@@ -83,58 +83,58 @@ const Philosophy: React.FC = (): React.ReactElement => {
           survive, but thrive; this allows us to pay homage to the visionaries
           and activists who led to where we are today and transform generational
           trauma to facilitate collective healing as a community.
-        </Text>
+        </p>
       </Dropdown>
       <Dropdown title={"Which demographics do you server?"}>
-        <Text>
+        <p>
           As a collective comprised largely of neurodiverse, queer, and disabled
           therapists, we utilize our unique intersection of lived experiences to
           deliver affirming, informed evidence-based interventions to those
           within our communities, across the lifespan.
-        </Text>
-        <Text>
+        </p>
+        <p>
           While this is a community near and dear to our heart, the Lorikeet
           Collective strives to promote inclusivity and accessibility. Our
           services are available to individuals of all identities and
           characteristics, and our clinicians pride themselves on their devotion
           to improving competency and quality of care for communities
           historically excluded from therapeutic spaces.
-        </Text>
+        </p>
       </Dropdown>
       <Dropdown title={"In which states are you licensed to provide care?"}>
-        <Text>
+        <p>
           A therapy collective is a non-hierarchical group of mental health
           professionals. Therapy has the capability to heal and in a day and age
           where therapists are expected to put others before themselves, it’s no
           wonder burnout and turnover are not matters of “if,” but “when.”
-        </Text>
-        <Text>
+        </p>
+        <p>
           Whereas traditional group practices function with a typical
           supervisory hierarchy, here at Lorikeet Collective, our therapists are
           all equal partners. This means more equitable wages, no long hours,
           support in continued growth, and no productivity requirements.
-        </Text>
-        <Text>
+        </p>
+        <p>
           Happy, empowered therapists provide more effective therapy that
           produces a higher likelihood for positive client outcomes.
-        </Text>
+        </p>
       </Dropdown>
       <Dropdown title={"What's the meaning behind your name?"}>
-        <Text>
+        <p>
           The namesake of our collective, rainbow lorikeets, are a species of
           parrot found in eastern Australia.
-        </Text>
-        <Text>
+        </p>
+        <p>
           Aside from their beautifully vivid plumage which naturally flaunts
           diversity and individuality, lorikeets are known for their tendency to
           commune in flocks, displaying a strong sense of togetherness,
           solidarity, and belonging. Lorikeets thrive in a variety of
           environments, symbolizing adaptability and resilience.
-        </Text>
-        <Text>
+        </p>
+        <p>
           Much like our community, lorikeets embody the message that love and
           authenticity can flourish in the face of oppressive environments.{" "}
-        </Text>
+        </p>
       </Dropdown>
     </main>
   );
