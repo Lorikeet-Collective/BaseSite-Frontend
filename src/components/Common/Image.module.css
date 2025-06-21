@@ -12,6 +12,6 @@
 
 .img,
 .img-fit {
-  margin: var(--container-margin);
+  margin: 20px 0;
   width: 100%;
 }
