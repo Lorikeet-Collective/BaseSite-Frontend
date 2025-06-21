@@ -15,7 +15,7 @@ const Insurance: React.FC = (): React.ReactElement => (
         health insurance terms!
       </Text>
     </BasicContainer>
-    <Dropdown title={"Which insurances do you take?"}>
+    <Dropdown title="Which insurances do you take?">
       <p>
         We’re always expanding the insurances we accept! To see an up-to-date
         list of which insurances your specific therapist accepts, view their bio
@@ -37,7 +37,7 @@ const Insurance: React.FC = (): React.ReactElement => (
         </b>
       </p>
     </Dropdown>
-    <Dropdown title={"You don't accept my insurance. What are my options?"}>
+    <Dropdown title="You don't accept my insurance. What are my options?">
       <p>
         Reach out to us! We’re always looking to make therapy more accessible
         and affordable for communities who need it. If we aren’t yet paneled
@@ -110,7 +110,7 @@ const Insurance: React.FC = (): React.ReactElement => (
         </li>
       </ul>
     </Dropdown>
-    <Dropdown title={"How is sliding scale decided?"}>
+    <Dropdown title="How is sliding scale decided?">
       <p>
         Sliding scale is considered any rate lower than our full, standard
         service fee and is available to clients who are uninsured, unable or
@@ -134,7 +134,7 @@ const Insurance: React.FC = (): React.ReactElement => (
         to your therapist directly.
       </p>
     </Dropdown>
-    <Dropdown title={"What are your rates?"}>
+    <Dropdown title="What are your rates?">
       <p>
         We at Lorikeet Collective have seen how rising costs of living have
         impacted goods and services across so many industries, and mental health
@@ -162,7 +162,7 @@ const Insurance: React.FC = (): React.ReactElement => (
         </li>
       </ul>
     </Dropdown>
-    <Dropdown title={"Can Lorikeet Collective adjust my copay?"}>
+    <Dropdown title="Can Lorikeet Collective adjust my copay?">
       <p>
         Legally, we are not allowed to alter, discount, or increase your
         insurance coverage, copay responsibility, applicable deductibles, or any
@@ -170,9 +170,7 @@ const Insurance: React.FC = (): React.ReactElement => (
         afford your therapy, please speak with your therapist.
       </p>
     </Dropdown>
-    <Dropdown
-      title={"Insurance is confusing. How do I know if a service is covered?"}
-    >
+    <Dropdown title="Insurance is confusing. How do I know if a service is covered?">
       <p>
         Call your carrier or log into your insurance carrier’s official portal
         to find more information specific to your policy. Please note that while
@@ -181,7 +179,7 @@ const Insurance: React.FC = (): React.ReactElement => (
         restrictions, opt-in selections, and other factors.
       </p>
     </Dropdown>
-    <Dropdown title={"How do I recieve invoices?"}>
+    <Dropdown title="How do I recieve invoices?">
       <p>
         Our electronic health record, Sessions Health, automatically sends
         statements, bills, or super bills both in the client portal and to your
@@ -189,7 +187,7 @@ const Insurance: React.FC = (): React.ReactElement => (
         portal.
       </p>
     </Dropdown>
-    <Dropdown title={"My copay is $0. Why do you need my credit card?"}>
+    <Dropdown title="My copay is $0. Why do you need my credit card?">
       <p>
         Long story short: we don’t. We as a practice don’t require your credit
         card to be on file to receive services if you have a $0 copay. However,
@@ -202,7 +200,7 @@ const Insurance: React.FC = (): React.ReactElement => (
         update your information!
       </p>
     </Dropdown>
-    <Dropdown title={"What information does my insurance have access to?"}>
+    <Dropdown title="What information does my insurance have access to?">
       <p>
         Due to how insurance companies operate in mental health spaces within
         the US, your insurance requests information from each session in order
@@ -221,7 +219,7 @@ const Insurance: React.FC = (): React.ReactElement => (
         <li>Referrals made</li>
       </ul>
     </Dropdown>
-    <Dropdown title={"Where can I direct additional questions?"}>
+    <Dropdown title="Where can I direct additional questions?">
       <p>
         For questions about your specific policy regarding coverage,
         deductibles, co-pays, or network, please contact your insurance provider

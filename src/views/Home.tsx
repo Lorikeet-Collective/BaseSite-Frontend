@@ -70,12 +70,8 @@ const Home: React.FC = (): React.ReactElement => {
         </Text>
         <Text>For community members, clients, and therapists.</Text>
       </BasicContainer>
-      <Button title={"LEARN MORE"} link={"/philosophy"} />
-      <Image
-        img={
-          "https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745468860354-SY5D0VQ9ICLGTR6RNLVU/unsplash-image-LPwLkzl1nd8.jpg?format=1500w"
-        }
-      />
+      <Button title="LEARN MORE" link="/philosophy" />
+      <Image img="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1745468860354-SY5D0VQ9ICLGTR6RNLVU/unsplash-image-LPwLkzl1nd8.jpg?format=1500w" />
       <SinWave />
       <BasicContainer>
         <Title>Keep Up with Us!</Title>
