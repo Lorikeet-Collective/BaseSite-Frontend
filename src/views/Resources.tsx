@@ -113,7 +113,7 @@ const Resources: React.FC = (): React.ReactElement => (
         />
         <Text>
           Call or text{" "}
-          <a href="tel:18006045841" target="_blank">
+          <a href="sms:18006045841" target="_blank">
             +1-800-604-5841
           </a>{" "}
           from anywhere 24/7/365 to access the crisis line, or access crisis
@@ -183,7 +183,7 @@ const Resources: React.FC = (): React.ReactElement => (
         />
         <Text>
           Call or text{" "}
-          <a href="tel:18447628483" target="_blank">
+          <a href="sms:18447628483" target="_blank">
             1+844-7NATIVE
           </a>{" "}
           (762-8483) from the US, or chat online to access the helpline
@@ -269,7 +269,7 @@ const Resources: React.FC = (): React.ReactElement => (
         />
         <Text>
           Text{" "}
-          <a href="tel:14014002905" target="_blank">
+          <a href="sms:14014002905" target="_blank">
             +1-401-400-2905
           </a>{" "}
           for urgent support <b>Mondays through Saturdays 10am-4pm EST</b>,
@@ -471,7 +471,7 @@ const Resources: React.FC = (): React.ReactElement => (
         />
         <Text>
           Text “HELP” to{" "}
-          <a href="tel:18004224453" target="_blank">
+          <a href="sms:18004224453" target="_blank">
             +1-800-422-4453
           </a>{" "}
           or{" "}
