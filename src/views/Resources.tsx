@@ -4,6 +4,19 @@ import Text from "../components/Common/Text";
 import Button from "../components/Common/Button";
 import Dropdown from "../components/Common/Dropdown";
 import SinWave from "../components/Common/SinWave";
+// Image imports
+import lgbtNationalLogo from "../assets/logos/lgbt-national-help-center-logo.png";
+import blacklineLogo from "../assets/logos/blackline-logo.png";
+import transLifelineLogo from "../assets/logos/trans-lifeline-logo.png";
+import strongHeartsLogo from "../assets/logos/stronghearts-logo.png";
+import childHelpLogo from "../assets/logos/childhelp-logo.png";
+import desiLogo from "../assets/logos/desi-logo.png";
+import wildFlowerLogo from "../assets/logos/wildflower-logo.png";
+import projectLetsLogo from "../assets/logos/project-lets-logo.png";
+import fireWeedLogo from "../assets/logos/fireweed-collective-logo.png";
+import projectHealLogo from "../assets/logos/project-heal-logo.png";
+import thriveLogo from "../assets/logos/thrive-lifeline-logo.png";
+import nationalEmpowerLogo from "../assets/logos/national-empowerment-center-logo.png";
 
 const Resources: React.FC = (): React.ReactElement => (
   <main>
@@ -52,11 +65,7 @@ const Resources: React.FC = (): React.ReactElement => (
       <Title>Emergency Resources</Title>
       <Text>For immediate access to support when you need it. Age 18+.</Text>
       <Dropdown title="LGBT National Talkline and Coming Out Hotline">
-        <Image
-          fit
-          href="https://lgbthotline.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/8cccb2a2-c7fe-4ac1-ac44-2729fdd1bbbb/lgbt-branding_logo-horiz-large.png?format=1500w"
-        />
+        <Image fit href="https://lgbthotline.org/" src={lgbtNationalLogo} />
         <Text>
           Call{" "}
           <a href="tel:8888434564" target="_blank">
@@ -101,11 +110,7 @@ const Resources: React.FC = (): React.ReactElement => (
         </Text>
       </Dropdown>
       <Dropdown title="Call BlackLine">
-        <Image
-          fit
-          href="https://www.callblackline.com/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/bf5e1eeb-462b-4b71-b6d6-9bdef6c1ddff/blackline.png?format=1500w"
-        />
+        <Image fit href="https://www.callblackline.com/" src={blacklineLogo} />
         <Text>
           Call or text{" "}
           <a href="sms:18006045841" target="_blank">
@@ -140,11 +145,7 @@ const Resources: React.FC = (): React.ReactElement => (
         </Text>
       </Dropdown>
       <Dropdown title="Trans LifeLine">
-        <Image
-          fit
-          href="https://translifeline.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/3e4331b5-550a-4dc0-81e9-080284dba4a8/Trans_LifeLine_logo.png?format=1500w"
-        />
+        <Image fit href="https://translifeline.org/" src={transLifelineLogo} />
         <Text>
           Call{" "}
           <a href="tel:18775658860" target="_blank">
@@ -174,7 +175,7 @@ const Resources: React.FC = (): React.ReactElement => (
         <Image
           fit
           href="https://strongheartshelpline.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/a048d7f6-45c2-4158-97d6-b5cc249c764c/StrongHearts_Native_HelpLine_logo.png?format=1500w"
+          src={strongHeartsLogo}
         />
         <Text>
           Call or text{" "}
@@ -206,11 +207,7 @@ const Resources: React.FC = (): React.ReactElement => (
         </b>
       </Text>
       <Dropdown title="Childhelp National Child Abuse Hotline">
-        <Image
-          fit
-          href="https://www.childhelp.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/0adf4a16-719d-4311-9833-fff9be413835/Childhelp_Logo.svg.png?format=1500w"
-        />
+        <Image fit href="https://www.childhelp.org/" src={childHelpLogo} />
         <Text>
           Text “HELP” to{" "}
           <a href="sms:18004224453" target="_blank">
@@ -244,11 +241,7 @@ const Resources: React.FC = (): React.ReactElement => (
         </Text>
       </Dropdown>
       <Dropdown title="LGBT National Youth Talkline">
-        <Image
-          fit
-          href="https://lgbthotline.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/8cccb2a2-c7fe-4ac1-ac44-2729fdd1bbbb/lgbt-branding_logo-horiz-large.png?format=1500w"
-        />
+        <Image fit href="https://lgbthotline.org/" src={lgbtNationalLogo} />
         <Text>
           Call{" "}
           <a href="tel:18002467743" target="_blank">
@@ -286,11 +279,7 @@ const Resources: React.FC = (): React.ReactElement => (
       <Title>Non-Crisis Peer Support</Title>
       <Text>For when you just need someone who gets it.</Text>
       <Dropdown title="DEQH · DESI LGBTQ+ Helpline for South Asians">
-        <Image
-          fit
-          href="https://www.deqh.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/15eca608-6316-4cb1-a2ca-a96220049990/deqh_logo.png?format=1500w"
-        />
+        <Image fit href="https://www.deqh.org/" src={desiLogo} />
         <Text>
           Write to the contact form online or call{" "}
           <a href="tel:19083673374" target="_blank">
@@ -314,7 +303,7 @@ const Resources: React.FC = (): React.ReactElement => (
         <Image
           fit
           href="https://wildfloweralliance.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/5bcb71f4-b951-49bb-9558-e8b7f274d291/Wildflower_Alliance_logo.png?format=1500w"
+          src={wildFlowerLogo}
         />
         <Text>
           Call{" "}
@@ -346,11 +335,7 @@ const Resources: React.FC = (): React.ReactElement => (
         </Text>
       </Dropdown>
       <Dropdown title="Project LETS">
-        <Image
-          fit
-          href="https://projectlets.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/a13b11b3-9b69-4a38-b649-c76fb44791ee/Project_Lets_logo.png?format=1500w"
-        />
+        <Image fit href="https://projectlets.org/" src={projectLetsLogo} />
         <Text>
           Text{" "}
           <a href="sms:14014002905" target="_blank">
@@ -383,11 +368,7 @@ const Resources: React.FC = (): React.ReactElement => (
         </Text>
       </Dropdown>
       <Dropdown title="Fireweed Collective">
-        <Image
-          fit
-          href="https://fireweedcollective.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/8869cb4a-09a0-49ad-b977-531aa60494b6/fireweedcollective.png?format=1500w"
-        />
+        <Image fit href="https://fireweedcollective.org/" src={fireWeedLogo} />
         <Text>
           Join the closed{" "}
           <a href="https://www.facebook.com/groups/2394863930/" target="_blank">
@@ -422,7 +403,7 @@ const Resources: React.FC = (): React.ReactElement => (
         <Image
           fit
           href="https://www.theprojectheal.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/d21ae377-6a36-4c3d-8f63-735f44043510/ph-large-lockup-main-purple24.png?format=1500w"
+          src={projectHealLogo}
         />
         <Text>
           Visit each respective service page for specific contact information or
@@ -461,11 +442,7 @@ const Resources: React.FC = (): React.ReactElement => (
         </Text>
       </Dropdown>
       <Dropdown title="THRIVE Lifeline">
-        <Image
-          fit
-          href="https://thrivelifeline.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/1fccd9ac-f24a-470d-9ca1-674bce76863b/THRIVE_LifeLine_logo.png?format=1500w"
-        />
+        <Image fit href="https://thrivelifeline.org/" src={thriveLogo} />
         <Text>
           Navigate to the website to access services.
           <ul>
@@ -498,11 +475,7 @@ const Resources: React.FC = (): React.ReactElement => (
         </Text>
       </Dropdown>
       <Dropdown title="National Empowerment Center">
-        <Image
-          fit
-          href="https://power2u.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/b02af68b-a5e4-4661-923d-f06cbb8ccf24/national-empowerment-center-retina-logo-300x101.png?format=1500w"
-        />
+        <Image fit href="https://power2u.org/" src={nationalEmpowerLogo} />
         <Text>
           Utilize the{" "}
           <a href="https://power2u.org/contact/" target="_blank">
