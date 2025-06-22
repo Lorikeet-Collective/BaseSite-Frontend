@@ -51,10 +51,6 @@ const Resources: React.FC = (): React.ReactElement => (
     <div>
       <Title>Emergency Resources</Title>
       <Text>For immediate access to support when you need it. Age 18+.</Text>
-      <Text>
-        Looking for resources for under age 18? Scroll down to “For Kids &
-        Teens.”
-      </Text>
       <Dropdown title="LGBT National Talkline and Coming Out Hotline">
         <Image
           fit
@@ -193,6 +189,95 @@ const Resources: React.FC = (): React.ReactElement => (
               Immediate support for intimate partner violence or sexual assault
             </li>
             <li>Anonymous and confidential</li>
+          </ul>
+        </Text>
+      </Dropdown>
+    </div>
+    <div>
+      <Title>For Kids & Teens</Title>
+      <Text>Crisis services and resources for under 18 years.</Text>
+      <Text>
+        <b>
+          NOTE: Due to mandatory reporting laws, in specific instances of abuse
+          or a clear concern of an in-progress or imminent suicide, operators
+          may need to contact a child welfare agency or emergency service.
+          Please visit each organization’s Terms of Service or Privacy Policy to
+          learn more.
+        </b>
+      </Text>
+      <Dropdown title="Childhelp National Child Abuse Hotline">
+        <Image
+          fit
+          href="https://www.childhelp.org/"
+          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/0adf4a16-719d-4311-9833-fff9be413835/Childhelp_Logo.svg.png?format=1500w"
+        />
+        <Text>
+          Text “HELP” to{" "}
+          <a href="sms:18004224453" target="_blank">
+            +1-800-422-4453
+          </a>{" "}
+          or{" "}
+          <a href="https://www.childhelp.org/contact/" target="_blank">
+            chat online
+          </a>{" "}
+          to access crisis support throughout anywhere 24/7/365.
+          <ul>
+            <li>
+              Crisis support for all youth experiencing abuse, neglect, or
+              mistreatment
+            </li>
+            <li>
+              Helps connect children and families to local support services, and
+              provides online educational and supportive materials
+            </li>
+            <li>
+              Confidential and anonymous support available in over 170 different
+              language translations
+            </li>
+          </ul>
+        </Text>
+        <Text>
+          <b>
+            NOTE: Call feature is NOT anonymous and may result in reporting in
+            specific instances. Use with caution.
+          </b>
+        </Text>
+      </Dropdown>
+      <Dropdown title="LGBT National Youth Talkline">
+        <Image
+          fit
+          href="https://lgbthotline.org/"
+          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/8cccb2a2-c7fe-4ac1-ac44-2729fdd1bbbb/lgbt-branding_logo-horiz-large.png?format=1500w"
+        />
+        <Text>
+          Call{" "}
+          <a href="tel:18002467743" target="_blank">
+            +1-800-246-7743
+          </a>{" "}
+          to access crisis support{" "}
+          <b>Mondays through Fridays 2pm-11pm EST and Saturdays 12pm-5pm EST</b>
+          , or{" "}
+          <a
+            href="https://volunteerlogin.org/chat/chat.php?groupChatTransferFlag=0&groupChatCallerId=gPWex3gSxNDoZv3pEAgZ"
+            target="_blank"
+          >
+            chat one-on-one
+          </a>{" "}
+          with peers online.
+          <ul>
+            <li>
+              Crisis and coming out support for all LGBTQIA2S+ youth across the
+              USA
+            </li>
+            <li>
+              Connects youth to nation-wide queer-affirming resources and
+              education and hosts{" "}
+              <a href="https://lgbthotline.org/youthchatrooms/" target="_blank">
+                online chatrooms
+              </a>{" "}
+              for safe and moderated peer support spaces
+            </li>
+            <li>Confidential and anonymous support.</li>
           </ul>
         </Text>
       </Dropdown>
@@ -446,95 +531,6 @@ const Resources: React.FC = (): React.ReactElement => (
               </a>
               , establishing services, or navigating insurance coverage issues
             </li>
-          </ul>
-        </Text>
-      </Dropdown>
-    </div>
-    <div>
-      <Title>For Kids & Teens</Title>
-      <Text>Crisis services and resources for under 18 years.</Text>
-      <Text>
-        <b>
-          NOTE: Due to mandatory reporting laws, in specific instances of abuse
-          or a clear concern of an in-progress or imminent suicide, operators
-          may need to contact a child welfare agency or emergency service.
-          Please visit each organization’s Terms of Service or Privacy Policy to
-          learn more.
-        </b>
-      </Text>
-      <Dropdown title="Childhelp National Child Abuse Hotline">
-        <Image
-          fit
-          href="https://www.childhelp.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/0adf4a16-719d-4311-9833-fff9be413835/Childhelp_Logo.svg.png?format=1500w"
-        />
-        <Text>
-          Text “HELP” to{" "}
-          <a href="sms:18004224453" target="_blank">
-            +1-800-422-4453
-          </a>{" "}
-          or{" "}
-          <a href="https://www.childhelp.org/contact/" target="_blank">
-            chat online
-          </a>{" "}
-          to access crisis support throughout anywhere 24/7/365.
-          <ul>
-            <li>
-              Crisis support for all youth experiencing abuse, neglect, or
-              mistreatment
-            </li>
-            <li>
-              Helps connect children and families to local support services, and
-              provides online educational and supportive materials
-            </li>
-            <li>
-              Confidential and anonymous support available in over 170 different
-              language translations
-            </li>
-          </ul>
-        </Text>
-        <Text>
-          <b>
-            NOTE: Call feature is NOT anonymous and may result in reporting in
-            specific instances. Use with caution.
-          </b>
-        </Text>
-      </Dropdown>
-      <Dropdown title="LGBT National Youth Talkline">
-        <Image
-          fit
-          href="https://lgbthotline.org/"
-          src="https://images.squarespace-cdn.com/content/v1/67d14d44c6a49e3d4d030b00/8cccb2a2-c7fe-4ac1-ac44-2729fdd1bbbb/lgbt-branding_logo-horiz-large.png?format=1500w"
-        />
-        <Text>
-          Call{" "}
-          <a href="tel:18002467743" target="_blank">
-            +1-800-246-7743
-          </a>{" "}
-          to access crisis support{" "}
-          <b>Mondays through Fridays 2pm-11pm EST and Saturdays 12pm-5pm EST</b>
-          , or{" "}
-          <a
-            href="https://volunteerlogin.org/chat/chat.php?groupChatTransferFlag=0&groupChatCallerId=gPWex3gSxNDoZv3pEAgZ"
-            target="_blank"
-          >
-            chat one-on-one
-          </a>{" "}
-          with peers online.
-          <ul>
-            <li>
-              Crisis and coming out support for all LGBTQIA2S+ youth across the
-              USA
-            </li>
-            <li>
-              Connects youth to nation-wide queer-affirming resources and
-              education and hosts{" "}
-              <a href="https://lgbthotline.org/youthchatrooms/" target="_blank">
-                online chatrooms
-              </a>{" "}
-              for safe and moderated peer support spaces
-            </li>
-            <li>Confidential and anonymous support.</li>
           </ul>
         </Text>
       </Dropdown>
