@@ -29,9 +29,8 @@ const Resources: React.FC = (): React.ReactElement => (
         href="https://portal.ct.gov/post/basictraining-division/entry-certification--renewal-requirements?language=en_US"
         target="_blank"
       >
-        1,800-hour minimum training
+        1,800-hour minimum training.
       </a>
-      .
     </Text>
     <Text>You deserve better.</Text>
     <Text>
@@ -48,7 +47,6 @@ const Resources: React.FC = (): React.ReactElement => (
         mandatory reporting, confidentiality, and security.
       </b>
     </Text>
-
     <div>
       <Title>Emergency Resources</Title>
       <Text>For immediate access to support when you need it. Age 18+.</Text>
