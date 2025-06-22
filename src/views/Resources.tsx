@@ -3,6 +3,7 @@ import Image from "../components/Common/Image";
 import Text from "../components/Common/Text";
 import Button from "../components/Common/Button";
 import Dropdown from "../components/Common/Dropdown";
+import SinWave from "../components/Common/SinWave";
 
 const Resources: React.FC = (): React.ReactElement => (
   <main>
@@ -47,6 +48,7 @@ const Resources: React.FC = (): React.ReactElement => (
         mandatory reporting, confidentiality, and security.
       </b>
     </Text>
+    <SinWave />
     <div>
       <Title>Emergency Resources</Title>
       <Text>For immediate access to support when you need it. Age 18+.</Text>
