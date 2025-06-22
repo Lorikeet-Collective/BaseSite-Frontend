@@ -33,7 +33,6 @@ const Resources: React.FC = (): React.ReactElement => (
         1,800-hour minimum training.
       </a>
     </Text>
-    <Text>You deserve better.</Text>
     <Text>
       In a mental health emergency, instead of calling 911, 988, or 211, contact
       one of the Emergency Resources listed below. In the event you aren’t able
