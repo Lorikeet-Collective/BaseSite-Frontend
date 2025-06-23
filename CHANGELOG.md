@@ -33,6 +33,9 @@
 
 - New Features
   - Added InsuranceFAQs page
+  - Added Resources page
+- Changes
+  - Changed external images to internal
 - Fixes
   - Fixed menu links not closing modal
 
