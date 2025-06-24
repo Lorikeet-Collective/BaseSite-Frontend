@@ -1,3 +1,4 @@
+import BannerTitle from "../components/Common/BannerTitle";
 import Title from "../components/Common/Title";
 import Text from "../components/Common/Text";
 import Image from "../components/Common/Image";
@@ -5,6 +6,7 @@ import Button from "../components/Common/Button";
 import SinWave from "../components/Common/SinWave";
 import styles from "./Home.module.css";
 // Image imports
+import treeBloom from "../assets/tree-bloom.jpg";
 import prideRally from "../assets/pride-rally.jpg";
 import disabilityCompassion from "../assets/disability-compassion.jpg";
 import diversityGathering from "../assets/diversity-gathering.jpg";
@@ -12,10 +14,7 @@ import prideProtest from "../assets/pride-protest.jpg";
 
 const Home: React.FC = (): React.ReactElement => (
   <main>
-    <div className={styles.welcomeContainer}>
-      <div className={styles.welcomeBackground}></div>
-      <h1 className={styles.welcomeHeader}>Welcome to the Collective</h1>
-    </div>
+    <BannerTitle src={treeBloom}>Welcome to the Collective</BannerTitle>
     <SinWave />
     <h2 className={styles.subHeaderContainer}>
       <p className={styles.topHeader}>Therapy for your community,</p>
