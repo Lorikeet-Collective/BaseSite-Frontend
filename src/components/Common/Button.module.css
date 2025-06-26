@@ -2,15 +2,16 @@
   background-color: var(--tertiary-color);
   border-radius: 25px;
   width: 100%;
-  padding: 15px 0;
+  padding: 15px 20px;
   border-style: none;
   margin: var(--container-margin);
 }
 
+.button,
 .button-link,
 .button-link:link,
 .button-link:visited {
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-weight: 800;
   color: var(--primary-color);
   text-decoration: none;
