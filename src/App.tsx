@@ -6,6 +6,7 @@ import Home from "./views/Home";
 import Philosophy from "./views/Philosophy";
 import Insurance from "./views/Insurance";
 import Resources from "./views/Resources";
+import ContactUs from "./views/ContactUs";
 
 const App: React.FC = (): React.ReactElement => {
   const location = useLocation();
@@ -21,6 +22,7 @@ const App: React.FC = (): React.ReactElement => {
         <Route path="/philosophy" element={<Philosophy />} />
         <Route path="/insurance" element={<Insurance />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="/*" element={<Navigate to={"/"} />} />
       </Routes>
       <Footer />
