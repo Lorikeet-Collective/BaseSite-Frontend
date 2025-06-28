@@ -9,7 +9,7 @@
   font-size: 1.1em;
 }
 
-.input[type] {
+.input {
   color: var(--secondary-color);
   border: none;
   border-bottom: 1px solid var(--tertiary-color);
@@ -18,11 +18,11 @@
   padding: 5px 0;
 }
 
-.input[type]:focus {
+.input:focus {
   outline: none;
 }
 
-.input[type]::placeholder {
+.input::placeholder {
   color: var(--tertiary-color);
   font-size: 0.8em;
   font-style: italic;
