@@ -2,6 +2,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "../Common/Button";
 import Text from "../Common/Text";
+import Input from "../Inputs/Input";
 import styles from "./ContactForm.module.css";
 
 const ContactForm: React.FC = (): React.ReactElement => {
@@ -36,27 +37,19 @@ const ContactForm: React.FC = (): React.ReactElement => {
       </div>
       <div className={styles.rowDivider}>
         <div className={styles.divider}>
-          <label>
-            First Name<span className={styles.required}>*</span>
-          </label>
-          <input type="text" name="user_fname" />
+          <Input label="First Name" inputName="user_fname" isRequired />
         </div>
         <div className={styles.divider}>
-          <label>
-            Last Name<span className={styles.required}>*</span>
-          </label>
-          <input type="text" name="user_lname" />
+          <Input label="Last Name" inputName="user_lname" isRequired />
         </div>
       </div>
       <div className={styles.divider}>
-        <label>
-          Email<span className={styles.required}>*</span>
-        </label>
-        <input
+        <Input
+          label="Email"
           type="email"
-          name="user_email"
+          inputName="user_email"
           placeholder="no1_client@example.com"
-          required
+          isRequired
         />
       </div>
       <div className={styles.divider}>
