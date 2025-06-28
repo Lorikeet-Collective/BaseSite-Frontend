@@ -20,10 +20,6 @@
   column-gap: 15px;
 }
 
-.required {
-  color: red;
-}
-
 .info {
   padding: 0 10px;
   line-height: 1.1em;

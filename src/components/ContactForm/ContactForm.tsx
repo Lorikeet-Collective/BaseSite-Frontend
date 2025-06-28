@@ -1,10 +1,11 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Button from "../Common/Button";
 import Text from "../Common/Text";
+import Label from "../Inputs/Label";
 import Input from "../Inputs/Input";
 import Select from "../Inputs/Select";
 import TextArea from "../Inputs/TextArea";
+import Button from "../Common/Button";
 import styles from "./ContactForm.module.css";
 
 const ContactForm: React.FC = (): React.ReactElement => {
@@ -25,15 +26,11 @@ const ContactForm: React.FC = (): React.ReactElement => {
   return (
     <form className={styles.formContainer} ref={form} onSubmit={sendEmail}>
       <Text className={styles.info}>
-        <span className={styles.required}>*</span> - Required Field
+        <span style={{ color: "red" }}>*</span> - Required Field
       </Text>
       <div className={styles.divider}>
-        <Select
-          inputName="subject"
-          label="Subject"
-          defaultValue="General"
-          isRequired
-        >
+        <Label isRequired>Subject</Label>
+        <Select inputName="subject" defaultValue="General" isRequired>
           <option value="New Client">New Client</option>
           <option value="Insurance">Insurance</option>
           <option value="General">General</option>
@@ -41,15 +38,17 @@ const ContactForm: React.FC = (): React.ReactElement => {
       </div>
       <div className={styles.rowDivider}>
         <div className={styles.divider}>
-          <Input label="First Name" inputName="user_fname" isRequired />
+          <Label isRequired>First Name</Label>
+          <Input inputName="user_fname" isRequired />
         </div>
         <div className={styles.divider}>
-          <Input label="Last Name" inputName="user_lname" isRequired />
+          <Label isRequired>Last Name</Label>
+          <Input inputName="user_lname" isRequired />
         </div>
       </div>
       <div className={styles.divider}>
+        <Label isRequired>Email</Label>
         <Input
-          label="Email"
           type="email"
           inputName="user_email"
           placeholder="no1_client@example.com"
@@ -57,10 +56,10 @@ const ContactForm: React.FC = (): React.ReactElement => {
         />
       </div>
       <div className={styles.divider}>
+        <Label isRequired>Message</Label>
         <TextArea
           inputName="user_message"
           placeholder="I would like more information about..."
-          label="Message"
           isRequired
         />
         <Text className={styles.info}>
