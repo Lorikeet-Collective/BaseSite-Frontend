@@ -7,64 +7,6 @@
   margin: 10px 0;
 }
 
-.form-container textarea {
-  overflow-y: scroll;
-  resize: vertical;
-  margin-top: 10px;
-}
-
-.form-container select {
-  appearance: base-select;
-  border-radius: 0;
-}
-
-.form-container option {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-container select,
-.form-container textarea {
-  color: var(--secondary-color);
-  border: none;
-  border-bottom: 1px solid var(--tertiary-color);
-  background-color: var(--primary-color);
-  margin: 0;
-  padding: 5px 0;
-}
-
-.form-container textarea::-webkit-resizer {
-  border: 3px solid var(--tertiary-color);
-}
-
-.form-container option:checked {
-  font-weight: 600;
-}
-
-.form-container option:not(:last-child) {
-  border-bottom: 1px dotted var(--tertiary-color);
-}
-
-.form-container ::picker(select) {
-  appearance: base-select;
-  border-radius: 0 0 10px 10px;
-  border-top: none;
-  border: 1px solid var(--tertiary-color);
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  font-size: 1.2em;
-}
-
-select::picker-icon {
-  color: var(--tertiary-color);
-  transition: 0.4s rotate;
-}
-
-select:open::picker-icon {
-  rotate: 180deg;
-}
-
 .divider {
   display: flex;
   flex-direction: column;
@@ -83,7 +25,6 @@ select:open::picker-icon {
 }
 
 .info {
-  margin: 0;
   padding: 0 10px;
   line-height: 1.1em;
   color: var(--secondary-color);

@@ -3,6 +3,8 @@ import emailjs from "@emailjs/browser";
 import Button from "../Common/Button";
 import Text from "../Common/Text";
 import Input from "../Inputs/Input";
+import Select from "../Inputs/Select";
+import TextArea from "../Inputs/TextArea";
 import styles from "./ContactForm.module.css";
 
 const ContactForm: React.FC = (): React.ReactElement => {
@@ -26,14 +28,16 @@ const ContactForm: React.FC = (): React.ReactElement => {
         <span className={styles.required}>*</span> - Required Field
       </Text>
       <div className={styles.divider}>
-        <label>
-          Subject<span className={styles.required}>*</span>
-        </label>
-        <select name="subject" defaultValue={"General"} required>
+        <Select
+          inputName="subject"
+          label="Subject"
+          defaultValue="General"
+          isRequired
+        >
           <option value="New Client">New Client</option>
           <option value="Insurance">Insurance</option>
           <option value="General">General</option>
-        </select>
+        </Select>
       </div>
       <div className={styles.rowDivider}>
         <div className={styles.divider}>
@@ -53,21 +57,18 @@ const ContactForm: React.FC = (): React.ReactElement => {
         />
       </div>
       <div className={styles.divider}>
-        <label>
-          Message<span className={styles.required}>*</span>
-        </label>
+        <TextArea
+          inputName="user_message"
+          placeholder="I would like more information about..."
+          label="Message"
+          isRequired
+        />
         <Text className={styles.info}>
           For your safety, security, and confidentiality, please do not put
           sensitive information in this form that could be used to identify you
           (i.e.-- date of birth, social security numbers, or protected health
           information).
         </Text>
-        <textarea
-          rows={5}
-          name="user_message"
-          placeholder="I would like more information about..."
-          required
-        />
       </div>
       <Button>SEND</Button>
     </form>
