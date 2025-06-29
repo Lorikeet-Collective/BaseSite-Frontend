@@ -1,5 +1,3 @@
-import styles from "./SVGIcon.module.css";
-
 interface SVGIconProps {
   icon: React.ReactElement<React.SVGProps<SVGElement>>;
   interaction?: () => void;
@@ -27,7 +25,6 @@ const SVGIcon: React.FC<SVGIconProps> = ({
     width={width}
     height={height}
     viewBox="0 0 24 24"
-    className={styles.svgContainer}
     onClick={interaction}
     style={{
       top: position.top,

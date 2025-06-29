@@ -4,15 +4,16 @@
 }
 
 .title-container {
-  font-size: 1.5em;
+  height: var(--menu-link-height);
   color: var(--secondary-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: var(--menu-link-height);
+  font-size: 1.5em;
 }
 
 .catagory-container {
+  height: 0;
   padding: 0;
   animation-name: dropdown;
   animation-duration: 0.4s;
@@ -20,7 +21,6 @@
   animation-fill-mode: forwards;
   animation-timing-function: var(--animation-path);
   overflow: clip;
-  height: 0;
 }
 
 @keyframes dropdown {

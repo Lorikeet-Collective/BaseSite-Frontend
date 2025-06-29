@@ -1,8 +1,8 @@
 .sub-header-container {
+  margin: var(--container-margin);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: var(--container-margin);
 }
 
 .top-header {

@@ -13,7 +13,7 @@ const MenuLink: React.FC<MenuLinkProps> = ({
   exitHandler,
 }): React.ReactElement => (
   <li className={styles.menuLinkContainer}>
-    <Link className={styles.menuLink} to={to} onClick={exitHandler}>
+    <Link to={to} onClick={exitHandler}>
       {title}
     </Link>
   </li>

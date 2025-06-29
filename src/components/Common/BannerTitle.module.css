@@ -1,18 +1,18 @@
 .banner-img {
+  margin: var(--container-margin);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: var(--container-margin);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .banner-title {
-  filter: opacity(0.85);
-  line-height: 1.1em;
-  font-size: 2.3em;
-  text-align: center;
   width: 100%;
   padding: 10px 0;
+  font-size: 2.3em;
+  text-align: center;
+  line-height: 1.1em;
+  filter: opacity(0.85);
 }

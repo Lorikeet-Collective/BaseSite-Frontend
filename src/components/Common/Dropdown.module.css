@@ -4,22 +4,24 @@
 }
 
 .dropdown-container:last-child {
-  border-bottom: 2px dotted var(--tertiary-color);
   margin-bottom: 30px;
+  border-bottom: 2px dotted var(--tertiary-color);
 }
 
 .title-container {
+  margin: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  margin: 5px 0;
 }
 
 .title {
+  max-width: 75%;
+  margin: 0;
   color: var(--tertiary-color);
   font-size: 1.1em;
-  max-width: 75%;
+  text-align: left;
 }
 
 .body-container {
