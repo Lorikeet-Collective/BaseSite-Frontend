@@ -87,6 +87,11 @@ ul {
 li {
   margin-bottom: 5px;
   padding-left: 10px;
+  list-style: square;
+}
+
+li::marker {
+  color: var(--tertiary-color);
 }
 
 /* ---------- Input Styles ---------- */
