@@ -1,4 +1,6 @@
 .menu-link-container {
+  padding: 0;
+  margin: 0;
   height: var(--menu-link-height);
   font-size: 1.5em;
   display: flex;
@@ -9,6 +11,8 @@
 .menu-link,
 .menu-link:link,
 .menu-link:visited {
+  padding: 0;
   text-decoration: none;
+  font-weight: 400;
   color: var(--tertiary-color);
 }

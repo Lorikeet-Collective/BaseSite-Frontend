@@ -31,13 +31,3 @@
 .body-container * {
   margin: 10px 0;
 }
-
-.body-container ul {
-  padding-left: 20px;
-}
-
-.body-container ul li {
-  list-style-type: square;
-  padding-left: 10px;
-  margin-bottom: 5px;
-}

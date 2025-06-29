@@ -18,7 +18,7 @@ const MenuCatagory: React.FC<MenuCatagoryProps> = ({
   const menu = useRef<HTMLUListElement>(null);
 
   return (
-    <li>
+    <li className={styles.listContainer}>
       <div
         className={styles.titleContainer}
         onClick={() => {

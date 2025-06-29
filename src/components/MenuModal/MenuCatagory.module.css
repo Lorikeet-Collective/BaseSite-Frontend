@@ -1,3 +1,8 @@
+.list-container {
+  padding: 0;
+  list-style: none;
+}
+
 .title-container {
   font-size: 1.5em;
   color: var(--secondary-color);
@@ -8,6 +13,7 @@
 }
 
 .catagory-container {
+  padding: 0;
   animation-name: dropdown;
   animation-duration: 0.4s;
   animation-direction: normal;

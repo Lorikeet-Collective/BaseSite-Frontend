@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import MenuModal from "../MenuModal/MenuModal";
+import Button from "../Common/Button";
 import styles from "./Header.module.css";
 
 const Header: React.FC = (): React.ReactElement => (
@@ -12,15 +13,13 @@ const Header: React.FC = (): React.ReactElement => (
       </h1>
       <img src="null" alt="logo" />
     </div>
-    <button className={styles.bookBtn}>
-      <a
-        className={styles.bookBtnLink}
-        href="https://lorikeetcollective.sessionshealth.com/"
-        target="_blank"
-      >
-        BOOK NOW
-      </a>
-    </button>
+    <Button
+      isSmall
+      external
+      link="https://lorikeetcollective.sessionshealth.com/"
+    >
+      BOOK NOW
+    </Button>
     <MenuModal />
   </header>
 );

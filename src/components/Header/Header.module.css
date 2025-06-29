@@ -23,18 +23,8 @@
   text-decoration: none;
 }
 
-.book-btn {
+.header-container button {
+  width: auto;
   font-size: 0.7em;
-  background-color: var(--tertiary-color);
-  border: none;
-  padding: 10px;
-  border-radius: 20px;
-}
-
-.book-btn-link,
-.book-btn-link:link,
-.book-btn-link:visited {
-  font-weight: 800;
-  color: var(--primary-color);
-  text-decoration: none;
+  padding: 10px 15px;
 }
