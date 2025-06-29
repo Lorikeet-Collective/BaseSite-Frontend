@@ -11,7 +11,7 @@ const Footer: React.FC = (): React.ReactElement => (
     <h3>Links</h3>
     <ul>
       <li>
-        <Link to={"null"}>Contact</Link>
+        <Link to="/contact">Contact</Link>
       </li>
       <li>
         <Link to={"null"}>Help Squash Bugs</Link>
