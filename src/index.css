@@ -1,8 +1,6 @@
 @import "../node_modules/modern-normalize/modern-normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
-/* -------------------- General Styles -------------------- */
-
 * {
   /* ----------Global Variables ---------- */
 
@@ -16,23 +14,22 @@
 
   /* ---------- Resets ---------- */
 
-  font-family: "Lora", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-optical-sizing: auto;
-  line-height: 1.5em;
-  letter-spacing: 0.2px;
-  font-size: 1em;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 1em;
+  line-height: 1.5em;
+  letter-spacing: 0.2px;
 }
 
 /* ---------- Root Div Styles ---------- */
 
 #root {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   min-height: 100vh;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -57,16 +54,10 @@ li {
   list-style: none;
 }
 
-/* ---------- Ancor Styles ---------- */
-
-a:link,
-a:visited {
-  text-decoration: none;
-}
-
 /* ---------- Psuedo Styles ---------- */
 
 ::placeholder {
+  color: var(--tertiary-color);
   font-size: 0.8em;
   font-style: italic;
   opacity: 0.6;
@@ -76,51 +67,48 @@ a:visited {
   outline: none;
 }
 
-/* -------------------- Form Styles -------------------- */
+/* ---------- Input Styles ---------- */
 
-input,
-textarea,
-select {
+input {
+  width: 100%;
+  padding: 5px 0;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
   border: none;
   border-bottom: 1px solid var(--tertiary-color);
 }
 
-input,
-textarea,
-select,
-select::picker(select) {
+/* ---------- Ancor Styles ---------- */
+
+a,
+a:link,
+a:visited {
+  padding: 5px 0;
   color: var(--secondary-color);
   background-color: var(--primary-color);
-  padding: 5px 0;
+  font-size: 0.9em;
+  font-weight: 800;
+  text-decoration: none;
 }
 
-input,
-label,
-select,
-option,
-textarea {
+/* ---------- Label Styles ---------- */
+
+label {
   width: 100%;
-}
-
-label,
-::placeholder,
-select::picker-icon {
   color: var(--tertiary-color);
-}
-
-label,
-select::picker(select) {
   font-size: 1.1em;
-}
-
-label,
-option:checked {
   font-weight: 600;
 }
 
 /* ---------- Textarea Styles ---------- */
 
 textarea {
+  width: 100%;
+  padding: 5px 0;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-bottom: 1px solid var(--tertiary-color);
   overflow-y: scroll;
   resize: vertical;
 }
@@ -134,18 +122,26 @@ textarea::-webkit-resizer {
 select,
 select::picker(select) {
   appearance: base-select;
+  padding: 5px 0;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 select {
+  width: 100%;
+  border: none;
   border-radius: 0;
+  border-bottom: 1px solid var(--tertiary-color);
 }
 
 select::picker(select) {
   border-radius: 0 0 10px 10px;
   border: 1px solid var(--tertiary-color);
+  font-size: 1.1em;
 }
 
 select::picker-icon {
+  color: var(--tertiary-color);
   transition: 0.4s rotate;
 }
 
@@ -156,11 +152,30 @@ select:open::picker-icon {
 /* ---------- Option Styles ---------- */
 
 option {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+option:checked {
+  font-weight: 600;
+}
+
 option:not(:last-child) {
   border-bottom: 1px dotted var(--tertiary-color);
+}
+
+/* ---------- Button Styles ---------- */
+
+button {
+  margin: var(--container-margin);
+  padding: 15px 20px;
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  border-radius: 25px;
+  border-style: none;
+  font-size: 0.9em;
+  font-weight: 800;
+  text-decoration: none;
 }
