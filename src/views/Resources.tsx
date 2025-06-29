@@ -21,7 +21,7 @@ const Resources: React.FC = (): React.ReactElement => (
   <main>
     <h2>Non-Carceral Resources</h2>
     <Button
-      external
+      isExternal
       link="https://www.tac.org/criminalization/#:~:text=People%20with%20untreated%20mental%20illness%20are%2016%20times%20more%20likely,by%20the%20Treatment%20Advocacy%20Center."
     >
       LEARN WHY THIS MATTERS

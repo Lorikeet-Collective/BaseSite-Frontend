@@ -12,7 +12,7 @@ const Header: React.FC = (): React.ReactElement => (
       <img src="null" alt="logo" />
     </div>
     <div>
-      <Button external link="https://lorikeetcollective.sessionshealth.com/">
+      <Button isExternal link="https://lorikeetcollective.sessionshealth.com/">
         BOOK NOW
       </Button>
       <MenuModal />

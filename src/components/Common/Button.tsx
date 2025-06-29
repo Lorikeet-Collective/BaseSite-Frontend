@@ -3,17 +3,17 @@ import { Link } from "react-router";
 
 interface ButtonProps extends PropsWithChildren {
   link?: string;
-  external?: boolean;
+  isExternal?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
   link,
-  external = true,
+  isExternal = false,
   children,
 }): React.ReactElement => {
   return link ? (
     <button>
-      {external ? (
+      {isExternal ? (
         <a href={link} target={"_blank"}>
           {children}
         </a>
