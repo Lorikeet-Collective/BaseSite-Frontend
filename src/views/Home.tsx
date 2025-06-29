@@ -3,7 +3,6 @@ import Text from "../components/Common/Text";
 import Image from "../components/Common/Image";
 import Button from "../components/Common/Button";
 import SinWave from "../components/Common/SinWave";
-import styles from "./Home.module.css";
 // Image imports
 import treeBloom from "../assets/tree-bloom.jpg";
 import prideRally from "../assets/pride-rally.jpg";
@@ -15,10 +14,7 @@ const Home: React.FC = (): React.ReactElement => (
   <main>
     <BannerTitle src={treeBloom}>Welcome to the Collective</BannerTitle>
     <SinWave />
-    <h2 className={styles.subHeaderContainer}>
-      <p className={styles.topHeader}>Therapy for your community,</p>
-      <p className={styles.bottomHeader}>by your community</p>
-    </h2>
+    <h2>Therapy for your community, by your community</h2>
     <Image src={prideRally} />
     <h3>Transforming LGBTQIA2S+ care</h3>
     <Text>

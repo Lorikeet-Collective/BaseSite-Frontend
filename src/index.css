@@ -74,8 +74,8 @@ h2,
 h3 {
   margin: var(--container-margin);
   font-weight: 800;
+  line-height: 1.2em;
   text-align: center;
-  line-height: 1em;
 }
 
 /* ---------- List Styles ---------- */
