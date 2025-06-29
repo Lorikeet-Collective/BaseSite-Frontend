@@ -44,6 +44,13 @@ main {
   padding: calc(var(--header-height) + 5px) 20px 0 20px;
 }
 
+/* ---------- Misc Styles ---------- */
+
+.required::after {
+  color: red;
+  content: "*";
+}
+
 /* ---------- List Styles ---------- */
 
 li {

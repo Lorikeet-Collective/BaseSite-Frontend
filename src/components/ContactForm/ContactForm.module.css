@@ -1,20 +1,15 @@
-.form-container {
-  width: 100%;
-  margin: var(--container-margin);
-}
+/* ---------- ContactForm Styles ---------- */
 
-.form-container button {
-  margin: 10px 0;
+.form-container {
+  margin: var(--container-margin);
 }
 
 .divider {
   display: flex;
   flex-direction: column;
-  margin: 5px 0;
 }
 
 .row-divider {
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 15px;
@@ -22,8 +17,20 @@
 
 .info {
   padding: 0 10px;
-  line-height: 1.1em;
   color: var(--secondary-color);
+  line-height: 1.1em;
   font-size: 0.8em;
   font-style: italic;
+}
+
+/* ----------  Mixed Styles ---------- */
+
+.divider,
+.form-container button {
+  margin: 5px 0;
+}
+
+.form-container,
+.row-divider {
+  width: 100%;
 }

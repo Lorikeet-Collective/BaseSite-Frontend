@@ -1,10 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Text from "../Common/Text";
-import Label from "../Inputs/Label";
-import Input from "../Inputs/Input";
-import Select from "../Inputs/Select";
-import TextArea from "../Inputs/TextArea";
 import Button from "../Common/Button";
 import styles from "./ContactForm.module.css";
 
@@ -26,42 +22,55 @@ const ContactForm: React.FC = (): React.ReactElement => {
   return (
     <form className={styles.formContainer} ref={form} onSubmit={sendEmail}>
       <Text className={styles.info}>
-        <span style={{ color: "red" }}>*</span> - Required Field
+        <span className="required" /> - Required Field
       </Text>
       <div className={styles.divider}>
-        <Label isRequired>Subject</Label>
-        <Select inputName="subject" defaultValue="General" isRequired>
+        <label className="required" htmlFor="subject">
+          Subject
+        </label>
+        <select id="subject" name="subject" defaultValue="General" required>
           <option value="New Client">New Client</option>
           <option value="Insurance">Insurance</option>
           <option value="General">General</option>
-        </Select>
+        </select>
       </div>
       <div className={styles.rowDivider}>
         <div className={styles.divider}>
-          <Label isRequired>First Name</Label>
-          <Input inputName="user_fname" isRequired />
+          <label className="required" htmlFor="user_fname">
+            First Name
+          </label>
+          <input id="user_fname" type="text" name="user_fname" required />
         </div>
         <div className={styles.divider}>
-          <Label isRequired>Last Name</Label>
-          <Input inputName="user_lname" isRequired />
+          <label className="required" htmlFor="user_lname">
+            Last Name
+          </label>
+          <input id="user_lname" type="text" name="user_lname" required />
         </div>
       </div>
       <div className={styles.divider}>
-        <Label isRequired>Email</Label>
-        <Input
+        <label className="required" htmlFor="user_email">
+          Email
+        </label>
+        <input
+          id="user_email"
           type="email"
-          inputName="user_email"
+          name="user_email"
           placeholder="no1_client@example.com"
-          isRequired
+          required
         />
       </div>
       <div className={styles.divider}>
-        <Label isRequired>Message</Label>
-        <TextArea
-          inputName="user_message"
+        <label className="required" htmlFor="user_message">
+          Message
+        </label>
+        <textarea
+          id="user_message"
+          rows={5}
+          name="user_message"
           placeholder="I would like more information about..."
-          isRequired
-        />
+          required
+        ></textarea>
         <Text className={styles.info}>
           For your safety, security, and confidentiality, please do not put
           sensitive information in this form that could be used to identify you
