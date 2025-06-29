@@ -1,10 +1,8 @@
-/* ---------- ContactForm Styles ---------- */
-
 .form-container {
   margin: var(--container-margin);
 }
 
-.divider {
+.col-divider {
   display: flex;
   flex-direction: column;
 }
@@ -23,9 +21,7 @@
   font-style: italic;
 }
 
-/* ----------  Mixed Styles ---------- */
-
-.divider,
+.col-divider,
 .form-container button {
   margin: 5px 0;
 }

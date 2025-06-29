@@ -24,7 +24,7 @@ const ContactForm: React.FC = (): React.ReactElement => {
       <Text className={styles.info}>
         <span className="required" /> - Required Field
       </Text>
-      <div className={styles.divider}>
+      <div className={styles.colDivider}>
         <label className="required" htmlFor="subject">
           Subject
         </label>
@@ -35,20 +35,20 @@ const ContactForm: React.FC = (): React.ReactElement => {
         </select>
       </div>
       <div className={styles.rowDivider}>
-        <div className={styles.divider}>
+        <div className={styles.colDivider}>
           <label className="required" htmlFor="user_fname">
             First Name
           </label>
           <input id="user_fname" type="text" name="user_fname" required />
         </div>
-        <div className={styles.divider}>
+        <div className={styles.colDivider}>
           <label className="required" htmlFor="user_lname">
             Last Name
           </label>
           <input id="user_lname" type="text" name="user_lname" required />
         </div>
       </div>
-      <div className={styles.divider}>
+      <div className={styles.colDivider}>
         <label className="required" htmlFor="user_email">
           Email
         </label>
@@ -60,7 +60,7 @@ const ContactForm: React.FC = (): React.ReactElement => {
           required
         />
       </div>
-      <div className={styles.divider}>
+      <div className={styles.colDivider}>
         <label className="required" htmlFor="user_message">
           Message
         </label>
