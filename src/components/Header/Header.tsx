@@ -6,7 +6,9 @@ import styles from "./Header.module.css";
 const Header: React.FC = (): React.ReactElement => (
   <header className={styles.headerContainer}>
     <div>
-      <Link to="/home">Lorikeet Collective</Link>
+      <h1>
+        <Link to="/home">Lorikeet Collective</Link>
+      </h1>
       <img src="null" alt="logo" />
     </div>
     <div>

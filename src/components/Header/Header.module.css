@@ -18,14 +18,15 @@
   align-items: center;
 }
 
-.header-container > div > a,
+.header-container > div > h1,
 .header-container > div > button {
   margin-right: 5px;
 }
 
-.header-container h1 {
-  margin-right: 5px;
+.header-container h1 a {
   display: inline;
+  font-style: normal;
+  font-weight: 800;
 }
 
 .header-container a {
