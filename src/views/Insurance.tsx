@@ -3,11 +3,10 @@ import Text from "../components/Common/Text";
 import Dropdown from "../components/Common/Dropdown";
 import Video from "../components/Common/Video";
 
-
 const Insurance: React.FC = (): React.ReactElement => (
   <main>
     <Title>Insurance FAQs</Title>
-    <Video video="https://www.youtube.com/embed/-wpHszfnJns?si=9Abv1LaFGbBYuOkt" />
+    <Video src="https://www.youtube.com/embed/-wpHszfnJns?si=9Abv1LaFGbBYuOkt" />
     <Text>
       Having trouble understanding insurance policy jargon? Check out this video
       from Brian David Gilbert to learn more about various commonly-used health

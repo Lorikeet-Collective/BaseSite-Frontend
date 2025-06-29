@@ -192,3 +192,13 @@ button > a:visited {
   color: var(--primary-color);
   background-color: var(--tertiary-color);
 }
+
+/* ---------- iFrame Styles ---------- */
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  margin: var(--container-margin);
+}
+
