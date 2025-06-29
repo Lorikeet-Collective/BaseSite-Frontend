@@ -1,5 +1,4 @@
 import BannerTitle from "../components/Common/BannerTitle";
-import Title from "../components/Common/Title";
 import Text from "../components/Common/Text";
 import Image from "../components/Common/Image";
 import Button from "../components/Common/Button";
@@ -21,7 +20,7 @@ const Home: React.FC = (): React.ReactElement => (
       <p className={styles.bottomHeader}>by your community</p>
     </h2>
     <Image src={prideRally} />
-    <Title subTitle>Transforming LGBTQIA2S+ care</Title>
+    <h3>Transforming LGBTQIA2S+ care</h3>
     <Text>
       We’re gender identity, expression, sexual orientation, and relationship
       orientation / ethical non-monogamy (ENM) / polyamorous (poly) competent
@@ -32,7 +31,7 @@ const Home: React.FC = (): React.ReactElement => (
       work is work.
     </Text>
     <Image src={disabilityCompassion} />
-    <Title subTitle>Celebrating disabilities</Title>
+    <h3>Celebrating disabilities</h3>
     <Text>
       We elevate individuality, equitable representation, empowerment,
       accessibility, and self-acceptance— not in spite of disability, but
@@ -44,7 +43,7 @@ const Home: React.FC = (): React.ReactElement => (
       without censorship.
     </Text>
     <Image src={diversityGathering} />
-    <Title subTitle>Uplifting voices of color</Title>
+    <h3>Uplifting voices of color</h3>
     <Text>
       We honor our BIPOC, AAPI, Latinx / Hispanix and all non-White identifying
       communities by challenging systemic racial biases in and out of
@@ -56,7 +55,7 @@ const Home: React.FC = (): React.ReactElement => (
       We believe Black lives Matter and that nobody is illegal on stolen land.
     </Text>
     <SinWave />
-    <Title>Who we are</Title>
+    <h2>Who we are</h2>
     <Text>
       We’re here to do therapy not just differently: affordably, accessibly,
       de-colonially, and inclusively, from a framework of that centers healing
@@ -66,7 +65,7 @@ const Home: React.FC = (): React.ReactElement => (
     <Button link="/philosophy">LEARN MORE</Button>
     <Image src={prideProtest} />
     <SinWave />
-    <Title>Keep Up with Us!</Title>
+    <h2>Keep Up with Us!</h2>
     <Text>
       As a community-driven collective of multiply marginalized folx, our
       mission is to connect directly with those who feel their identities are

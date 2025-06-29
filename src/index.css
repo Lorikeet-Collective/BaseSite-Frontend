@@ -59,6 +59,25 @@ main {
   outline: none;
 }
 
+/* ---------- Header Styles ---------- */
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  color: var(--tertiary-color);
+  font-size: 1.4em;
+}
+
+h2,
+h3 {
+  margin: var(--container-margin);
+  font-weight: 800;
+  text-align: center;
+  line-height: 1em;
+}
+
 /* ---------- List Styles ---------- */
 
 ul {
@@ -201,4 +220,3 @@ iframe {
   height: auto;
   margin: var(--container-margin);
 }
-

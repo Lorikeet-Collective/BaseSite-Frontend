@@ -1,4 +1,3 @@
-import Title from "../components/Common/Title";
 import Image from "../components/Common/Image";
 import Text from "../components/Common/Text";
 import Button from "../components/Common/Button";
@@ -20,7 +19,7 @@ import nationalEmpowerLogo from "../assets/logos/national-empowerment-center-log
 
 const Resources: React.FC = (): React.ReactElement => (
   <main>
-    <Title>Non-Carceral Resources</Title>
+    <h2>Non-Carceral Resources</h2>
     <Button
       external
       link="https://www.tac.org/criminalization/#:~:text=People%20with%20untreated%20mental%20illness%20are%2016%20times%20more%20likely,by%20the%20Treatment%20Advocacy%20Center."
@@ -62,7 +61,7 @@ const Resources: React.FC = (): React.ReactElement => (
     </Text>
     <SinWave />
     <div>
-      <Title>Emergency Resources</Title>
+      <h2>Emergency Resources</h2>
       <Text>For immediate access to support when you need it. Age 18+.</Text>
       <Dropdown title="LGBT National Talkline and Coming Out Hotline">
         <Image fit href="https://lgbthotline.org/" src={lgbtNationalLogo} />
@@ -195,7 +194,7 @@ const Resources: React.FC = (): React.ReactElement => (
       </Dropdown>
     </div>
     <div>
-      <Title>For Kids & Teens</Title>
+      <h2>For Kids & Teens</h2>
       <Text>Crisis services and resources for under 18 years.</Text>
       <Text>
         <b>
@@ -276,7 +275,7 @@ const Resources: React.FC = (): React.ReactElement => (
       </Dropdown>
     </div>
     <div>
-      <Title>Non-Crisis Peer Support</Title>
+      <h2>Non-Crisis Peer Support</h2>
       <Text>For when you just need someone who gets it.</Text>
       <Dropdown title="DEQH · DESI LGBTQ+ Helpline for South Asians">
         <Image fit href="https://www.deqh.org/" src={desiLogo} />
@@ -397,7 +396,7 @@ const Resources: React.FC = (): React.ReactElement => (
       </Dropdown>
     </div>
     <div>
-      <Title>Information & Assistance</Title>
+      <h2>Information & Assistance</h2>
       <Text>For when you don’t know where to start looking.</Text>
       <Dropdown title="Project HEAL">
         <Image

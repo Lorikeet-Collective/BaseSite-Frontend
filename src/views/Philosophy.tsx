@@ -1,4 +1,3 @@
-import Title from "../components/Common/Title";
 import Text from "../components/Common/Text";
 import Image from "../components/Common/Image";
 import SinWave from "../components/Common/SinWave";
@@ -10,7 +9,7 @@ import welcomeSign from "../assets/welcome-sign.jpg";
 
 const Philosophy: React.FC = (): React.ReactElement => (
   <main>
-    <Title>Better therapy for clients and therapists</Title>
+    <h2>Better therapy for clients and therapists</h2>
     <Image src={lorikeets} />
     <Text>
       Lorikeet Collective, PLLC. was founded on the principle that therapeutic
@@ -21,7 +20,7 @@ const Philosophy: React.FC = (): React.ReactElement => (
     </Text>
     <SinWave />
     <Image src={prideWalk} />
-    <Title subTitle>Beyond Talk</Title>
+    <h3>Beyond Talk</h3>
     <Text>
       Mental health care is more than having a professional to help guide your
       journey. Truly equitable, accessible, and unifying therapy goes beyond the
