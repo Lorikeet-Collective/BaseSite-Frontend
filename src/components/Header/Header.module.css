@@ -1,30 +1,39 @@
 .header-container {
-  background-color: var(--primary-color);
-  position: fixed;
-  top: 0;
-  z-index: 999;
   width: 100%;
+  height: var(--header-height);
+  padding: 0 10px;
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: var(--header-height);
-  padding: 0 7px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
-.org-name {
-  display: inline;
+.header-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container > div > a,
+.header-container > div > button {
   margin-right: 5px;
 }
 
-.org-link:link,
-.org-link:visited {
-  color: var(--secondary-color);
+.header-container h1 {
+  margin-right: 5px;
+  display: inline;
+}
+
+.header-container a {
   text-decoration: none;
 }
 
 .header-container button {
   width: auto;
-  font-size: 0.7em;
   padding: 10px 15px;
+  font-size: 0.7em;
 }

@@ -5,22 +5,16 @@ import styles from "./Header.module.css";
 
 const Header: React.FC = (): React.ReactElement => (
   <header className={styles.headerContainer}>
-    <div className={styles.orgContainer}>
-      <h1 className={styles.orgName}>
-        <Link className={styles.orgLink} to="/home">
-          Lorikeet Collective
-        </Link>
-      </h1>
+    <div>
+      <Link to="/home">Lorikeet Collective</Link>
       <img src="null" alt="logo" />
     </div>
-    <Button
-      isSmall
-      external
-      link="https://lorikeetcollective.sessionshealth.com/"
-    >
-      BOOK NOW
-    </Button>
-    <MenuModal />
+    <div>
+      <Button external link="https://lorikeetcollective.sessionshealth.com/">
+        BOOK NOW
+      </Button>
+      <MenuModal />
+    </div>
   </header>
 );
 
