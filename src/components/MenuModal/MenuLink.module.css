@@ -13,6 +13,7 @@
 .menu-link:visited {
   padding: 0;
   text-decoration: none;
+  font-style: normal;
   font-weight: 400;
   color: var(--tertiary-color);
 }

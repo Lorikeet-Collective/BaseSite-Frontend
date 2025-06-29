@@ -4,13 +4,11 @@ import { Link } from "react-router";
 interface ButtonProps extends PropsWithChildren {
   link?: string;
   external?: boolean;
-  isSmall?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
   link,
   external = true,
-  isSmall = false,
   children,
 }): React.ReactElement => {
   return link ? (
@@ -24,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
       )}
     </button>
   ) : (
-    <button style={isSmall ? { width: "auto" } : {}}>{children}</button>
+    <button>{children}</button>
   );
 };
 

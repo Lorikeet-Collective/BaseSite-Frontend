@@ -2,28 +2,3 @@
   margin: var(--container-margin);
   color: var(--tertiary-color);
 }
-
-.text a {
-  text-decoration: underline;
-  font-style: italic;
-  font-weight: 600;
-}
-
-.text a:link,
-.text a:visited {
-  color: var(--secondary-color);
-}
-
-.text ul {
-  padding-left: 30px;
-  margin: 20px 0;
-}
-
-.text ul li {
-  list-style-position: inside;
-  list-style: square;
-}
-
-.text ul li:not(:last-child) {
-  padding-bottom: 10px;
-}

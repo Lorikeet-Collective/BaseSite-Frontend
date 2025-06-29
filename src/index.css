@@ -91,8 +91,9 @@ a:visited {
   color: var(--secondary-color);
   background-color: var(--primary-color);
   font-size: 0.9em;
-  font-weight: 800;
-  text-decoration: none;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 /* ---------- Label Styles ---------- */
@@ -188,6 +189,7 @@ button {
 button > a,
 button > a:link,
 button > a:visited {
+  text-decoration: none;
   color: var(--primary-color);
   background-color: var(--tertiary-color);
 }
