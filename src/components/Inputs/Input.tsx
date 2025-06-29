@@ -1,5 +1,3 @@
-import styles from "./Input.module.css";
-
 interface InputProps {
   type?: React.HTMLInputTypeAttribute;
   inputName: string;
@@ -15,7 +13,6 @@ const Input: React.FC<InputProps> = ({
 }): React.ReactElement => {
   return (
     <input
-      className={styles.input}
       type={type}
       placeholder={placeholder}
       name={inputName}

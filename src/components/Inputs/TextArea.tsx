@@ -1,5 +1,3 @@
-import styles from "./TextArea.module.css";
-
 interface TextAreaProps {
   inputName: string;
   placeholder?: string;
@@ -13,7 +11,6 @@ const TextArea: React.FC<TextAreaProps> = ({
 }): React.ReactElement => {
   return (
     <textarea
-      className={styles.textArea}
       rows={5}
       name={inputName}
       placeholder={placeholder}

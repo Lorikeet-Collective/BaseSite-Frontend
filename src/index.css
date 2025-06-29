@@ -1,7 +1,11 @@
 @import "../node_modules/modern-normalize/modern-normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
+/* -------------------- General Styles -------------------- */
+
 * {
+  /* ----------Global Variables ---------- */
+
   --primary-color: rgb(247, 241, 252);
   --secondary-color: rgb(35, 102, 99);
   --tertiary-color: rgb(110, 80, 132);
@@ -9,6 +13,9 @@
   --header-height: 65px;
   --menu-link-height: 35px;
   --animation-path: cubic-bezier(0.5, 1.25, 0.5, 1.25);
+
+  /* ---------- Resets ---------- */
+
   font-family: "Lora", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-optical-sizing: auto;
@@ -20,6 +27,8 @@
   padding: 0;
 }
 
+/* ---------- Root Div Styles ---------- */
+
 #root {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -29,15 +38,122 @@
   justify-content: space-between;
 }
 
+/* ---------- Views Styles ---------- */
+
 main {
   padding: calc(var(--header-height) + 5px) 20px 0 20px;
 }
+
+/* ---------- List Styles ---------- */
 
 li {
   list-style: none;
 }
 
+/* ---------- Ancor Styles ---------- */
+
 a:link,
 a:visited {
   text-decoration: none;
+}
+
+/* ---------- Psuedo Styles ---------- */
+
+::placeholder {
+  font-size: 0.8em;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+:focus {
+  outline: none;
+}
+
+/* -------------------- Form Styles -------------------- */
+
+input,
+textarea,
+select {
+  border: none;
+  border-bottom: 1px solid var(--tertiary-color);
+}
+
+input,
+textarea,
+select,
+select::picker(select) {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 5px 0;
+}
+
+input,
+label,
+select,
+option,
+textarea {
+  width: 100%;
+}
+
+label,
+::placeholder,
+select::picker-icon {
+  color: var(--tertiary-color);
+}
+
+label,
+select::picker(select) {
+  font-size: 1.1em;
+}
+
+label,
+option:checked {
+  font-weight: 600;
+}
+
+/* ---------- Textarea Styles ---------- */
+
+textarea {
+  overflow-y: scroll;
+  resize: vertical;
+}
+
+textarea::-webkit-resizer {
+  border: 3px solid var(--tertiary-color);
+}
+
+/* ---------- Select Styles ---------- */
+
+select,
+select::picker(select) {
+  appearance: base-select;
+}
+
+select {
+  border-radius: 0;
+}
+
+select::picker(select) {
+  border-radius: 0 0 10px 10px;
+  border: 1px solid var(--tertiary-color);
+}
+
+select::picker-icon {
+  transition: 0.4s rotate;
+}
+
+select:open::picker-icon {
+  rotate: 180deg;
+}
+
+/* ---------- Option Styles ---------- */
+
+option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+option:not(:last-child) {
+  border-bottom: 1px dotted var(--tertiary-color);
 }

@@ -1,5 +1,4 @@
 import type { PropsWithChildren } from "react";
-import styles from "./Select.module.css";
 
 interface SelectProps extends PropsWithChildren {
   inputName: string;
@@ -14,12 +13,7 @@ const Select: React.FC<SelectProps> = ({
   children,
 }): React.ReactElement => {
   return (
-    <select
-      className={styles.select}
-      name={inputName}
-      defaultValue={defaultValue}
-      required={isRequired}
-    >
+    <select name={inputName} defaultValue={defaultValue} required={isRequired}>
       {children}
     </select>
   );

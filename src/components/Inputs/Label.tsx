@@ -9,7 +9,7 @@ const Label: React.FC<LabelProps> = ({
   isRequired = false,
   children,
 }): React.ReactElement => (
-  <label className={styles.label}>
+  <label>
     {children}
     {isRequired && <span className={styles.required}>*</span>}
   </label>
