@@ -87,25 +87,25 @@ const Resources: React.FC = (): React.ReactElement => (
             chat one-on-one
           </a>{" "}
           with peers online.
-          <ul>
-            <li>
-              Live crisis, coming out, and{" "}
-              <a
-                href="https://lgbthotline.org/self-harm-prevention/"
-                target="_blank"
-              >
-                self-harm prevention/ safety planning
-              </a>{" "}
-              support for LGBTQIA2S+ of all ages across the USA
-            </li>
-            <li>
-              Offers information and definitions for folx looking to learn more
-              about sexuality and gender, as well as directories of books and
-              film for uplifting queer identities
-            </li>
-            <li>Confidential and anonymous support</li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            Live crisis, coming out, and{" "}
+            <a
+              href="https://lgbthotline.org/self-harm-prevention/"
+              target="_blank"
+            >
+              self-harm prevention/ safety planning
+            </a>{" "}
+            support for LGBTQIA2S+ of all ages across the USA
+          </li>
+          <li>
+            Offers information and definitions for folx looking to learn more
+            about sexuality and gender, as well as directories of books and film
+            for uplifting queer identities
+          </li>
+          <li>Confidential and anonymous support</li>
+        </ul>
       </Dropdown>
       <Dropdown title="Call BlackLine">
         <Image fit href="https://www.callblackline.com/" src={blacklineLogo} />
@@ -130,17 +130,16 @@ const Resources: React.FC = (): React.ReactElement => (
             Google Play
           </a>
           .
-          <ul>
-            <li>
-              Black, Black LGBTQI, Brown, Native and Muslim community support
-            </li>
-            <li>
-              Immediate support for difficult encounters with police or
-              vigilantes
-            </li>
-            <li>Anonymous and confidential</li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            Black, Black LGBTQI, Brown, Native and Muslim community support
+          </li>
+          <li>
+            Immediate support for difficult encounters with police or vigilantes
+          </li>
+          <li>Anonymous and confidential</li>
+        </ul>
       </Dropdown>
       <Dropdown title="Trans LifeLine">
         <Image fit href="https://translifeline.org/" src={transLifelineLogo} />
@@ -152,14 +151,14 @@ const Resources: React.FC = (): React.ReactElement => (
           from the US to access the crisis line{" "}
           <b>Mondays through Fridays 1pm–9pm EST</b> (10am-6pm PST | 11am–7pm
           MST | 12pm–8pm CST).
-          <ul>
-            <li>LGBTQIA2S+, BIPOC affirming</li>
-            <li>Crisis and peer supports</li>
-            <li>
-              Anonymous and confidential crisis support in English y en Español
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>LGBTQIA2S+, BIPOC affirming</li>
+          <li>Crisis and peer supports</li>
+          <li>
+            Anonymous and confidential crisis support in English y en Español
+          </li>
+        </ul>
         <p>
           <b>
             NOTE: Trans Lifeline is unavailable during{" "}
@@ -182,14 +181,14 @@ const Resources: React.FC = (): React.ReactElement => (
           </a>{" "}
           (762-8483) from the US, or chat online to access the helpline
           24/7/365.
-          <ul>
-            <li>Alaskan Natives and Native Americans community support </li>
-            <li>
-              Immediate support for intimate partner violence or sexual assault
-            </li>
-            <li>Anonymous and confidential</li>
-          </ul>
         </p>
+        <ul>
+          <li>Alaskan Natives and Native Americans community support </li>
+          <li>
+            Immediate support for intimate partner violence or sexual assault
+          </li>
+          <li>Anonymous and confidential</li>
+        </ul>
       </Dropdown>
     </div>
     <div>
@@ -216,21 +215,21 @@ const Resources: React.FC = (): React.ReactElement => (
             chat online
           </a>{" "}
           to access crisis support throughout anywhere 24/7/365.
-          <ul>
-            <li>
-              Crisis support for all youth experiencing abuse, neglect, or
-              mistreatment
-            </li>
-            <li>
-              Helps connect children and families to local support services, and
-              provides online educational and supportive materials
-            </li>
-            <li>
-              Confidential and anonymous support available in over 170 different
-              language translations
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            Crisis support for all youth experiencing abuse, neglect, or
+            mistreatment
+          </li>
+          <li>
+            Helps connect children and families to local support services, and
+            provides online educational and supportive materials
+          </li>
+          <li>
+            Confidential and anonymous support available in over 170 different
+            language translations
+          </li>
+        </ul>
         <p>
           <b>
             NOTE: Call feature is NOT anonymous and may result in reporting in
@@ -255,22 +254,22 @@ const Resources: React.FC = (): React.ReactElement => (
             chat one-on-one
           </a>{" "}
           with peers online.
-          <ul>
-            <li>
-              Crisis and coming out support for all LGBTQIA2S+ youth across the
-              USA
-            </li>
-            <li>
-              Connects youth to nation-wide queer-affirming resources and
-              education and hosts{" "}
-              <a href="https://lgbthotline.org/youthchatrooms/" target="_blank">
-                online chatrooms
-              </a>{" "}
-              for safe and moderated peer support spaces
-            </li>
-            <li>Confidential and anonymous support.</li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            Crisis and coming out support for all LGBTQIA2S+ youth across the
+            USA
+          </li>
+          <li>
+            Connects youth to nation-wide queer-affirming resources and
+            education and hosts{" "}
+            <a href="https://lgbthotline.org/youthchatrooms/" target="_blank">
+              online chatrooms
+            </a>{" "}
+            for safe and moderated peer support spaces
+          </li>
+          <li>Confidential and anonymous support.</li>
+        </ul>
       </Dropdown>
     </div>
     <div>
@@ -285,17 +284,17 @@ const Resources: React.FC = (): React.ReactElement => (
           </a>{" "}
           for peer support <b>Thursdays and Sundays from 8pm-10pm EST</b>{" "}
           (5pm-7PM PST).
-          <ul>
-            <li>
-              LGBQ/TGNB+ South Asian community support and connection throughout
-              USA
-            </li>
-            <li>
-              Same-day caller support, or support via online form within 1 week
-            </li>
-            <li>Anonymous, confidential non-crisis support</li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            LGBQ/TGNB+ South Asian community support and connection throughout
+            USA
+          </li>
+          <li>
+            Same-day caller support, or support via online form within 1 week
+          </li>
+          <li>Anonymous, confidential non-crisis support</li>
+        </ul>
       </Dropdown>
       <Dropdown title="Wildflower Alliance">
         <Image
@@ -313,19 +312,19 @@ const Resources: React.FC = (): React.ReactElement => (
             Mondays through Thursdays 7pm-9pm EST or Fridays through Sundays
             7pm-10pm EST.
           </b>
-          <ul>
-            <li>
-              Affirming and inclusive peer-to-peer free and paid supports for
-              individuals with mental health challenges, serious mental
-              illnesses (SMI), or psychiatric disabilities
-            </li>
-            <li>7-day peer respite in Northampton, MA</li>
-            <li>
-              Confidential non-crisis support in English, Español, and American
-              Sign Language
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            Affirming and inclusive peer-to-peer free and paid supports for
+            individuals with mental health challenges, serious mental illnesses
+            (SMI), or psychiatric disabilities
+          </li>
+          <li>7-day peer respite in Northampton, MA</li>
+          <li>
+            Confidential non-crisis support in English, Español, and American
+            Sign Language
+          </li>
+        </ul>
         <p>
           <b>
             NOTE: Voicemails are not monitored regardless of operating hours.
@@ -349,21 +348,21 @@ const Resources: React.FC = (): React.ReactElement => (
             support@projectlets.org
           </a>{" "}
           to request support.
-          <ul>
-            <li>
-              Supporting all folx at urgent risk of experiencing psychiatric
-              incarceration
-            </li>
-            <li>
-              Peer mental health advocacy mentors and free public mental health
-              education available
-            </li>
-            <li>
-              Anti-ableism and harm reduction training materials for schools,
-              families, and friends on providing support during crises
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            Supporting all folx at urgent risk of experiencing psychiatric
+            incarceration
+          </li>
+          <li>
+            Peer mental health advocacy mentors and free public mental health
+            education available
+          </li>
+          <li>
+            Anti-ableism and harm reduction training materials for schools,
+            families, and friends on providing support during crises
+          </li>
+        </ul>
       </Dropdown>
       <Dropdown title="Fireweed Collective">
         <Image fit href="https://fireweedcollective.org/" src={fireWeedLogo} />
@@ -380,18 +379,18 @@ const Resources: React.FC = (): React.ReactElement => (
           >
             Groups page.
           </a>
-          <ul>
-            <li>
-              Affinity and peer support online spaces held for 60-90 minutes
-              weekly for one month (available via sliding scale)
-            </li>
-            <li>
-              Free mental health education and mutual aid through the Healing
-              Justice framework
-            </li>
-            <li>Crisis toolkits and resources available to the public</li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            Affinity and peer support online spaces held for 60-90 minutes
+            weekly for one month (available via sliding scale)
+          </li>
+          <li>
+            Free mental health education and mutual aid through the Healing
+            Justice framework
+          </li>
+          <li>Crisis toolkits and resources available to the public</li>
+        </ul>
       </Dropdown>
     </div>
     <div>
@@ -410,26 +409,26 @@ const Resources: React.FC = (): React.ReactElement => (
             online contact form
           </a>{" "}
           for direct communication.
-          <ul>
-            <li>
-              Inclusive care platform to provide education on eating disorders
-            </li>
-            <li>
-              Offers assistance with treatment program placements, cash
-              assistance, meal support, group therapies, and assessment
-            </li>
-            <li>
-              Excellent for finding{" "}
-              <a
-                href="https://www.theprojectheal.org/free-eating-disorder-support-groups"
-                target="_blank"
-              >
-                support groups
-              </a>
-              , establishing services, or navigating insurance coverage issues
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            Inclusive care platform to provide education on eating disorders
+          </li>
+          <li>
+            Offers assistance with treatment program placements, cash
+            assistance, meal support, group therapies, and assessment
+          </li>
+          <li>
+            Excellent for finding{" "}
+            <a
+              href="https://www.theprojectheal.org/free-eating-disorder-support-groups"
+              target="_blank"
+            >
+              support groups
+            </a>
+            , establishing services, or navigating insurance coverage issues
+          </li>
+        </ul>
         <p>
           <b>
             WARNING: Project HEAL encourages use of the Crisis Text Line (CTL)
@@ -441,30 +440,27 @@ const Resources: React.FC = (): React.ReactElement => (
       </Dropdown>
       <Dropdown title="THRIVE Lifeline">
         <Image fit href="https://thrivelifeline.org/" src={thriveLogo} />
-        <p>
-          Navigate to the website to access services.
-          <ul>
-            <li>
-              LGBTQIA2S+, BIPOC, and neurodiverse affirming support for ages
-              18+.
-            </li>
-            <li>
-              Partnership through{" "}
-              <a
-                href="https://strongeruwellness.com/services/stubborn-survivors/"
-                target="_blank"
-              >
-                Stronger U
-              </a>{" "}
-              for community-based support that doesn’t turn folx away for
-              inability to pay.
-            </li>
-            <li>
-              Provides free coping skill guides and Discord-based support groups
-              for support.
-            </li>
-          </ul>
-        </p>
+        <p>Navigate to the website to access services.</p>
+        <ul>
+          <li>
+            LGBTQIA2S+, BIPOC, and neurodiverse affirming support for ages 18+.
+          </li>
+          <li>
+            Partnership through{" "}
+            <a
+              href="https://strongeruwellness.com/services/stubborn-survivors/"
+              target="_blank"
+            >
+              Stronger U
+            </a>{" "}
+            for community-based support that doesn’t turn folx away for
+            inability to pay.
+          </li>
+          <li>
+            Provides free coping skill guides and Discord-based support groups
+            for support.
+          </li>
+        </ul>
         <p>
           <b>
             NOTE: THRIVE’s crisis line is currently not available. Please
@@ -480,30 +476,30 @@ const Resources: React.FC = (): React.ReactElement => (
             online contact form
           </a>{" "}
           for direct communication.
-          <ul>
-            <li>
-              Neurodiversity and SMI educational platform for building community
-              care
-            </li>
-            <li>
-              Directories of national peer respite houses and{" "}
-              <a href="https://www.warmline.org/" target="_blank">
-                peer-run warmlines
-              </a>{" "}
-              provided
-            </li>
-            <li>
-              Excellent for finding{" "}
-              <a
-                href="https://www.theprojectheal.org/free-eating-disorder-support-groups"
-                target="_blank"
-              >
-                support groups
-              </a>
-              , establishing services, or navigating insurance coverage issues
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            Neurodiversity and SMI educational platform for building community
+            care
+          </li>
+          <li>
+            Directories of national peer respite houses and{" "}
+            <a href="https://www.warmline.org/" target="_blank">
+              peer-run warmlines
+            </a>{" "}
+            provided
+          </li>
+          <li>
+            Excellent for finding{" "}
+            <a
+              href="https://www.theprojectheal.org/free-eating-disorder-support-groups"
+              target="_blank"
+            >
+              support groups
+            </a>
+            , establishing services, or navigating insurance coverage issues
+          </li>
+        </ul>
       </Dropdown>
     </div>
   </main>
