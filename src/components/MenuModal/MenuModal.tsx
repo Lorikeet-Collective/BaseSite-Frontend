@@ -46,6 +46,7 @@ const MenuModal: React.FC = (): React.ReactElement => {
                 setIsOpen(false);
             }}
           >
+            <MenuLink to="/home" title="Home" exitHandler={closeMenuHandler} />
             <MenuCatagory title="About Us">
               <MenuLink
                 to="/philosophy"
