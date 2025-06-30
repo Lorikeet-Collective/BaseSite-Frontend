@@ -32,6 +32,7 @@
     <summary>Changes</summary>
 
 - New Features
+  - Added 'Services' page
   - Added 'InsuranceFAQs' page
   - Added 'Resources' page
 - Changes
