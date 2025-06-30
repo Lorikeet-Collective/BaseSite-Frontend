@@ -41,6 +41,7 @@
   - Updated footer to correct style
 - Fixes
   - Fixed menu links not closing modal
+  - Multiple css inconsistencies
 
 </details>
 
