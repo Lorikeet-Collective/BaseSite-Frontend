@@ -32,10 +32,12 @@
     <summary>Changes</summary>
 
 - New Features
-  - Added InsuranceFAQs page
-  - Added Resources page
+  - Added 'InsuranceFAQs' page
+  - Added 'Resources' page
 - Changes
   - Changed external images to internal
+  - Redone CSS system
+  - Updated footer to correct style
 - Fixes
   - Fixed menu links not closing modal
 
