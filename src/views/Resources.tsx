@@ -1,5 +1,4 @@
 import Image from "../components/Common/Image";
-import Text from "../components/Common/Text";
 import Button from "../components/Common/Button";
 import Dropdown from "../components/Common/Dropdown";
 import SinWave from "../components/Common/SinWave";
@@ -26,12 +25,12 @@ const Resources: React.FC = (): React.ReactElement => (
     >
       LEARN WHY THIS MATTERS
     </Button>
-    <Text>
+    <p>
       We believe everyone should have free, confidential access to mental health
       support anytime, anywhere, by people who understand and are knowledgeable
       in providing support.
-    </Text>
-    <Text>
+    </p>
+    <p>
       This is what folx expect when dialing 911, 988, or 211, but often not what
       they receive for support. Operators for these hotlines are trained to
       dispatch law enforcement— in our opinion, more often than necessary— and
@@ -44,28 +43,28 @@ const Resources: React.FC = (): React.ReactElement => (
       >
         1,800-hour minimum training.
       </a>
-    </Text>
-    <Text>
+    </p>
+    <p>
       In a mental health emergency, instead of calling 911, 988, or 211, contact
       one of the Emergency Resources listed below. In the event you aren’t able
       to reach a live person, try another resource— don’t give up. If you are
       experiencing a life-threatening physical health emergency, proceed to your
       local emergency room for immediate attention.
-    </Text>
-    <Text>
+    </p>
+    <p>
       <b>
         Clicking the links below will open a new tab. Before use, we strongly
         recommend you review any third party’s privacy policies for more info on
         mandatory reporting, confidentiality, and security.
       </b>
-    </Text>
+    </p>
     <SinWave />
     <div>
       <h2>Emergency Resources</h2>
-      <Text>For immediate access to support when you need it. Age 18+.</Text>
+      <p>For immediate access to support when you need it. Age 18+.</p>
       <Dropdown title="LGBT National Talkline and Coming Out Hotline">
         <Image fit href="https://lgbthotline.org/" src={lgbtNationalLogo} />
-        <Text>
+        <p>
           Call{" "}
           <a href="tel:8888434564" target="_blank">
             888-843-4564
@@ -106,11 +105,11 @@ const Resources: React.FC = (): React.ReactElement => (
             </li>
             <li>Confidential and anonymous support</li>
           </ul>
-        </Text>
+        </p>
       </Dropdown>
       <Dropdown title="Call BlackLine">
         <Image fit href="https://www.callblackline.com/" src={blacklineLogo} />
-        <Text>
+        <p>
           Call or text{" "}
           <a href="sms:18006045841" target="_blank">
             +1-800-604-5841
@@ -141,11 +140,11 @@ const Resources: React.FC = (): React.ReactElement => (
             </li>
             <li>Anonymous and confidential</li>
           </ul>
-        </Text>
+        </p>
       </Dropdown>
       <Dropdown title="Trans LifeLine">
         <Image fit href="https://translifeline.org/" src={transLifelineLogo} />
-        <Text>
+        <p>
           Call{" "}
           <a href="tel:18775658860" target="_blank">
             +1-877-565-8860
@@ -160,15 +159,15 @@ const Resources: React.FC = (): React.ReactElement => (
               Anonymous and confidential crisis support in English y en Español
             </li>
           </ul>
-        </Text>
-        <Text>
+        </p>
+        <p>
           <b>
             NOTE: Trans Lifeline is unavailable during{" "}
             <a href="https://translifeline.org/hotline/#faq" target="_blank">
               select recognized holidays.
             </a>
           </b>
-        </Text>
+        </p>
       </Dropdown>
       <Dropdown title="StrongHearts Native Helpline">
         <Image
@@ -176,7 +175,7 @@ const Resources: React.FC = (): React.ReactElement => (
           href="https://strongheartshelpline.org/"
           src={strongHeartsLogo}
         />
-        <Text>
+        <p>
           Call or text{" "}
           <a href="sms:18447628483" target="_blank">
             1+844-7NATIVE
@@ -190,13 +189,13 @@ const Resources: React.FC = (): React.ReactElement => (
             </li>
             <li>Anonymous and confidential</li>
           </ul>
-        </Text>
+        </p>
       </Dropdown>
     </div>
     <div>
       <h2>For Kids & Teens</h2>
-      <Text>Crisis services and resources for under 18 years.</Text>
-      <Text>
+      <p>Crisis services and resources for under 18 years.</p>
+      <p>
         <b>
           NOTE: Due to mandatory reporting laws, in specific instances of abuse
           or a clear concern of an in-progress or imminent suicide, operators
@@ -204,10 +203,10 @@ const Resources: React.FC = (): React.ReactElement => (
           Please visit each organization’s Terms of Service or Privacy Policy to
           learn more.
         </b>
-      </Text>
+      </p>
       <Dropdown title="Childhelp National Child Abuse Hotline">
         <Image fit href="https://www.childhelp.org/" src={childHelpLogo} />
-        <Text>
+        <p>
           Text “HELP” to{" "}
           <a href="sms:18004224453" target="_blank">
             +1-800-422-4453
@@ -231,17 +230,17 @@ const Resources: React.FC = (): React.ReactElement => (
               language translations
             </li>
           </ul>
-        </Text>
-        <Text>
+        </p>
+        <p>
           <b>
             NOTE: Call feature is NOT anonymous and may result in reporting in
             specific instances. Use with caution.
           </b>
-        </Text>
+        </p>
       </Dropdown>
       <Dropdown title="LGBT National Youth Talkline">
         <Image fit href="https://lgbthotline.org/" src={lgbtNationalLogo} />
-        <Text>
+        <p>
           Call{" "}
           <a href="tel:18002467743" target="_blank">
             +1-800-246-7743
@@ -271,15 +270,15 @@ const Resources: React.FC = (): React.ReactElement => (
             </li>
             <li>Confidential and anonymous support.</li>
           </ul>
-        </Text>
+        </p>
       </Dropdown>
     </div>
     <div>
       <h2>Non-Crisis Peer Support</h2>
-      <Text>For when you just need someone who gets it.</Text>
+      <p>For when you just need someone who gets it.</p>
       <Dropdown title="DEQH · DESI LGBTQ+ Helpline for South Asians">
         <Image fit href="https://www.deqh.org/" src={desiLogo} />
-        <Text>
+        <p>
           Write to the contact form online or call{" "}
           <a href="tel:19083673374" target="_blank">
             +1-908-367-3374
@@ -296,7 +295,7 @@ const Resources: React.FC = (): React.ReactElement => (
             </li>
             <li>Anonymous, confidential non-crisis support</li>
           </ul>
-        </Text>
+        </p>
       </Dropdown>
       <Dropdown title="Wildflower Alliance">
         <Image
@@ -304,7 +303,7 @@ const Resources: React.FC = (): React.ReactElement => (
           href="https://wildfloweralliance.org/"
           src={wildFlowerLogo}
         />
-        <Text>
+        <p>
           Call{" "}
           <a href="tel:18884074515" target="_blank">
             +1-888-407-4515
@@ -326,16 +325,16 @@ const Resources: React.FC = (): React.ReactElement => (
               Sign Language
             </li>
           </ul>
-        </Text>
-        <Text>
+        </p>
+        <p>
           <b>
             NOTE: Voicemails are not monitored regardless of operating hours.
           </b>
-        </Text>
+        </p>
       </Dropdown>
       <Dropdown title="Project LETS">
         <Image fit href="https://projectlets.org/" src={projectLetsLogo} />
-        <Text>
+        <p>
           Text{" "}
           <a href="sms:14014002905" target="_blank">
             +1-401-400-2905
@@ -364,11 +363,11 @@ const Resources: React.FC = (): React.ReactElement => (
               families, and friends on providing support during crises
             </li>
           </ul>
-        </Text>
+        </p>
       </Dropdown>
       <Dropdown title="Fireweed Collective">
         <Image fit href="https://fireweedcollective.org/" src={fireWeedLogo} />
-        <Text>
+        <p>
           Join the closed{" "}
           <a href="https://www.facebook.com/groups/2394863930/" target="_blank">
             Facebook
@@ -392,19 +391,19 @@ const Resources: React.FC = (): React.ReactElement => (
             </li>
             <li>Crisis toolkits and resources available to the public</li>
           </ul>
-        </Text>
+        </p>
       </Dropdown>
     </div>
     <div>
       <h2>Information & Assistance</h2>
-      <Text>For when you don’t know where to start looking.</Text>
+      <p>For when you don’t know where to start looking.</p>
       <Dropdown title="Project HEAL">
         <Image
           fit
           href="https://www.theprojectheal.org/"
           src={projectHealLogo}
         />
-        <Text>
+        <p>
           Visit each respective service page for specific contact information or
           utilize the{" "}
           <a href="https://www.theprojectheal.org/contact" target="_blank">
@@ -430,19 +429,19 @@ const Resources: React.FC = (): React.ReactElement => (
               , establishing services, or navigating insurance coverage issues
             </li>
           </ul>
-        </Text>
-        <Text>
+        </p>
+        <p>
           <b>
             WARNING: Project HEAL encourages use of the Crisis Text Line (CTL)
             for crisis support. CTL operators are trained to dispatch crisis
             services with or without caller consent. We recommend utilizing the
             Emergency Resources listed at the top of this page instead.
           </b>
-        </Text>
+        </p>
       </Dropdown>
       <Dropdown title="THRIVE Lifeline">
         <Image fit href="https://thrivelifeline.org/" src={thriveLogo} />
-        <Text>
+        <p>
           Navigate to the website to access services.
           <ul>
             <li>
@@ -465,17 +464,17 @@ const Resources: React.FC = (): React.ReactElement => (
               for support.
             </li>
           </ul>
-        </Text>
-        <Text>
+        </p>
+        <p>
           <b>
             NOTE: THRIVE’s crisis line is currently not available. Please
             utilize another listed service for this purpose.
           </b>
-        </Text>
+        </p>
       </Dropdown>
       <Dropdown title="National Empowerment Center">
         <Image fit href="https://power2u.org/" src={nationalEmpowerLogo} />
-        <Text>
+        <p>
           Utilize the{" "}
           <a href="https://power2u.org/contact/" target="_blank">
             online contact form
@@ -504,7 +503,7 @@ const Resources: React.FC = (): React.ReactElement => (
               , establishing services, or navigating insurance coverage issues
             </li>
           </ul>
-        </Text>
+        </p>
       </Dropdown>
     </div>
   </main>

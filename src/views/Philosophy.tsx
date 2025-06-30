@@ -1,4 +1,3 @@
-import Text from "../components/Common/Text";
 import Image from "../components/Common/Image";
 import SinWave from "../components/Common/SinWave";
 import Dropdown from "../components/Common/Dropdown";
@@ -11,17 +10,17 @@ const Philosophy: React.FC = (): React.ReactElement => (
   <main>
     <h2>Better therapy for clients and therapists</h2>
     <Image src={lorikeets} />
-    <Text>
+    <p>
       Lorikeet Collective, PLLC. was founded on the principle that therapeutic
       spaces should inclusive and affirming for all LGBTQAI2S+, disabled,
       neurodiverse, BIPOC, and multiply marginalized folx— from those who find
       themselves looking for a safe place to heal to those called upon to heal
       others.
-    </Text>
+    </p>
     <SinWave />
     <Image src={prideWalk} />
     <h3>Beyond Talk</h3>
-    <Text>
+    <p>
       Mental health care is more than having a professional to help guide your
       journey. Truly equitable, accessible, and unifying therapy goes beyond the
       one-hour a week commitment, which is why our therapists take a
@@ -29,7 +28,7 @@ const Philosophy: React.FC = (): React.ReactElement => (
       center holistic community care by pledging to engage in political
       advocacy, facilitate mutual aid, and provide informed and affirming
       continuing education.
-    </Text>
+    </p>
     <SinWave />
     <Image src={welcomeSign} />
     <Dropdown title="Which principles guide your therapeutic approach?">

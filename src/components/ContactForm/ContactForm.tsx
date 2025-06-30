@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Text from "../Common/Text";
 import Button from "../Common/Button";
 import styles from "./ContactForm.module.css";
 
@@ -21,9 +20,9 @@ const ContactForm: React.FC = (): React.ReactElement => {
 
   return (
     <form className={styles.formContainer} ref={form} onSubmit={sendEmail}>
-      <Text className={styles.info}>
+      <p className={styles.info}>
         <span className="required" /> - Required Field
-      </Text>
+      </p>
       <div className={styles.colDivider}>
         <label className="required" htmlFor="subject">
           Subject
@@ -71,12 +70,12 @@ const ContactForm: React.FC = (): React.ReactElement => {
           placeholder="I would like more information about..."
           required
         ></textarea>
-        <Text className={styles.info}>
+        <p className={styles.info}>
           For your safety, security, and confidentiality, please do not put
           sensitive information in this form that could be used to identify you
           (i.e.-- date of birth, social security numbers, or protected health
           information).
-        </Text>
+        </p>
       </div>
       <Button>SEND</Button>
     </form>

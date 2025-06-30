@@ -78,6 +78,13 @@ h3 {
   text-align: center;
 }
 
+/* ---------- Paragraph Styles ---------- */
+
+p {
+  margin: var(--container-margin);
+  color: var(--tertiary-color);
+}
+
 /* ---------- List Styles ---------- */
 
 ul {
