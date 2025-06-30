@@ -5,9 +5,13 @@ const Footer: React.FC = (): React.ReactElement => (
   <footer className={styles.footerContainer}>
     <h2>Lorikeet Collective, PLLC.</h2>
     <h3>Location</h3>
-    <p>1 Liberty Square</p>
-    <p>Suite 301</p>
-    <p>New Britain, CT 06052</p>
+    <address>
+      1 Liberty Square
+      <br />
+      Suite 301
+      <br />
+      New Britain, CT 06052
+    </address>
     <h3>Links</h3>
     <ul>
       <li>
