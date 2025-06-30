@@ -14,15 +14,14 @@
   margin-top: 20px;
   padding-bottom: 10px;
   color: var(--tertiary-color);
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-style: italic;
-  border-bottom: 2px dotted var(--secondary-color);
+  border-bottom: 1px dotted var(--secondary-color);
   text-align: center;
 }
 
 .footer-container h3 {
   margin: 10px 0;
-  color: var(--tertiary-color);
   font-size: 1.2em;
   text-align: left;
 }
