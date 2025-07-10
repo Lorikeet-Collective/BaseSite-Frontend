@@ -35,8 +35,9 @@ const Dropdown: React.FC<DropdownProps> = ({
         { height: `${calcHeight + 20}px`, opacity: "1" },
       ];
       const keyOptions: KeyframeEffectOptions = {
-        duration: 300,
+        duration: 500,
         fill: "forwards",
+        easing: "cubic-bezier(0.5, 1.25, 0.5, 1.25)",
       };
       animationEffect.current.open = new Animation(
         new KeyframeEffect(dropdown.current, keyFrames, keyOptions),
