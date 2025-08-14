@@ -6,7 +6,7 @@ import serenity from "../assets/serenity.jpg";
 import groupCompassion from "../assets/group-compassion.jpg";
 import lovingCouple from "../assets/loving-couple.jpg";
 import familyFun from "../assets/family-fun.jpg";
-import { Link } from "react-router";
+// import { Link } from "react-router";
 
 const Services: React.FC = (): React.ReactElement => {
   return (
@@ -19,7 +19,7 @@ const Services: React.FC = (): React.ReactElement => {
         by harnessing your unique strengths, customizing treatment to suit your
         challenges, and by treating you—
       </p>
-      <h3>..as a whole person.</h3>
+      <h3>...as a whole person.</h3>
       <Image src={serenity} />
       <h3>Individual Therapy</h3>
       <p>
@@ -56,20 +56,21 @@ const Services: React.FC = (): React.ReactElement => {
       </p>
       <SinWave />
       <h2>Here's how we make healing happen:</h2>
-      <p>
-        Scroll down to learn more about the many techniques our therapists use
-        to bring you the highest quality therapy.
-      </p>
-      {/* FINISH */}
-      <code>Insert Techniques Here</code>
-      <SinWave />
-      <h2>Current and Upcoming Groups</h2>
-      {/* FINISH */}
-      <code>Insert Upcoming Groups Here</code>
+      <ul>
+        <li>Art Therapy</li>
+        <li>Cognitive-Based Therapies (CBT, DBT, ACT, MBCT)</li>
+        <li>Exposure-Response Prevention (ERP)</li>
+        <li>Motivational Interviewing</li>
+        <li>Narrative Therapy</li>
+        <li>Nature-Assisted Therapy (Ecotherapy)</li>
+        <li>Neurodiverse-Affirming Therapy</li>
+        <li>Play Therapy</li>
+        <li>Solution-Focused Brief Therapy</li>
+        <li>Somatic and Body-Centered Healing</li>
+      </ul>
       <SinWave />
       <h2>Do you have more questions?</h2>
-      <h3>We got you.</h3>
-      <p>
+      {/* <p>
         Reach out today to get more information on the many services we provide,
         or{" "}
         <Link to="/flock">
@@ -77,7 +78,7 @@ const Services: React.FC = (): React.ReactElement => {
         </Link>{" "}
         to schedule a free 15-minute consultation call to learn more about what
         treatment is right for you.
-      </p>
+      </p> */}
       <Button link="/contact">Contact Us</Button>
     </main>
   );
