@@ -19,6 +19,8 @@ const Insurance: React.FC = (): React.ReactElement => (
       <p>We’re currently in network with:</p>
       <ul>
         <li>Aetna</li>
+        <li>Anthem/ BCBS</li>
+        <li>Cigna</li>
         <li>CT Medicaid/ HUSKY</li>
         <li>Optum</li>
         <li>UnitedHealthcare/ UHC</li>
@@ -35,17 +37,15 @@ const Insurance: React.FC = (): React.ReactElement => (
     <Dropdown title="You don't accept my insurance. What are my options?">
       <p>
         Reach out to us! We’re always looking to make therapy more accessible
-        and affordable for communities who need it. If we aren’t yet paneled
-        with your insurance provider and are eligible for credentialing, we’ll
-        try our best to pursue it.
+        and affordable for communities who need it.
       </p>
       <p>
-        If we aren’t able to become in-network with your insurance, we have
-        options for providing care:
+        If we aren’t able to accept your insurance, we have options for
+        providing care:
       </p>
       <ul>
         <li>
-          <b> Out-Of-Network Reimbursement:</b> You pay the full price of each
+          <b>Out-Of-Network Reimbursement:</b> You pay the full price of each
           session and submit your receipt (also known as a “Super Bill”) as a
           claim to your insurance provider, who then reimburses the difference
           to you directly. This is a good option for folx who:
@@ -60,30 +60,39 @@ const Insurance: React.FC = (): React.ReactElement => (
           </ul>
         </li>
         <li>
-          <b>Sliding Scale:</b> You pay discounted price for each session.
-          Regardless of whether you are insured, our work is not reported to
-          your insurance as they won’t be covering costs. This is a good option
-          for folx who:
+          <b>Sliding Scale:</b> If you are insured, you are opting out of using
+          your insurance plan and paying a reduced price per session out of
+          pocket. To determine eligibility, you and your clinician will complete
+          an assessment for our Sliding Scale program. Due to legal
+          restrictions, sliding scale payments cannot be submitted to insurance
+          for reimbursement. This is a good option for folx who:
           <ul>
             <li>Have limited access to financial resources; AND</li>
             <li>
               Have an existing insurance policy with a high deductible, limited
-              mental health benefits, or no Out-Of-Network benefits; AND
+              mental health benefits, or no Out-Of-Network benefits, OR are
+              uininsured; AND
             </li>
-            <li>Want to financially support our work.</li>
+            <li>
+              Meet eligibility requirements for our Sliding Scale program.
+            </li>
           </ul>
         </li>
         <li>
-          <b>Pro-Bono:</b> You receive our therapeutic services free of charge.
-          Regardless of whether you are insured, our work is not reported to
-          your insurance as they won’t be covering costs. We are honored to
-          provide pro bono services to those who:
+          <b>Pro-Bono:</b> To support our community, we have limited
+          availability for clients to receive our therapeutic services free of
+          charge. We are honored to provide pro bono services to select
+          individuals who:
           <ul>
             <li>Have severely restricted access to financial resources; AND</li>
             <li>
-              Are under-insured or are insured under a carrier that is
-              chronically under-served within our community (i.e.- Medicare);
+              Are under-insured, uninsured, OR are insured under a carrier that
+              is chronically under-served within our community (i.e.- Medicare);
               AND
+            </li>
+            <li>
+              Meet eligibility for our Sliding Scale program, but are unable to
+              pay the reduced fee; AND
             </li>
             <li>Are seeking treatment for current mental health challenges.</li>
           </ul>
@@ -107,26 +116,20 @@ const Insurance: React.FC = (): React.ReactElement => (
     </Dropdown>
     <Dropdown title="How is sliding scale decided?">
       <p>
-        Sliding scale is considered any rate lower than our full, standard
-        service fee and is available to clients who are uninsured, unable or
-        choose not to use their insurance benefits, and cannot afford their
-        therapist’s regular fee.
-      </p>
-      <p>
-        To determine eligibility for sliding scale fees, your therapist may ask
-        questions including but not limited to:
+        Eligibility for our Sliding Scale program is determined based on an
+        assessment conducted with your therapist either at time of intake or
+        when you experience a significant change in your ability to pay for
+        services. This assessment includes questions regarding:
       </p>
       <ul>
         <li>your current insurance benefits (if you are insured);</li>
-        <li>your current level of financial comfort; and/or</li>
+        <li>your current level of financial security; AND</li>
         <li>your current income.</li>
       </ul>
       <p>
-        After discussing eligibility, Lorikeet Collective therapists and their
-        clients agree upon a singular, reduced, flat fee that is charged for
-        each service and is paid out of pocket. If you are interested in
-        inquiring if a sliding scale rate may be right for you, please reach out
-        to your therapist directly.
+        If you are found eligible, your Lorikeet Collective therapist will
+        discuss with you payment options. For more information or wish to apply
+        for our Sliding Scale program, please contact us.
       </p>
     </Dropdown>
     <Dropdown title="What are your rates?">
@@ -149,11 +152,14 @@ const Insurance: React.FC = (): React.ReactElement => (
           (LCSWs/LISWs, LPCs, LMFTs)
         </li>
         <li>
-          <b>$200</b> for an initial psychiatric assessment
+          <b>$200</b> for an initial 60-minute psychiatric assessment
         </li>
         <li>
-          <b>$0</b> always for single-session gender affirming care assessments
-          and letters
+          <b>$110</b> for group therapy sessions
+        </li>
+        <li>
+          <b>$0</b> for single-session gender affirming care assessments and
+          letters
         </li>
       </ul>
     </Dropdown>
@@ -227,9 +233,9 @@ const Insurance: React.FC = (): React.ReactElement => (
         <b>
           <a href="mailto:admin@lorikeetcollective.com?">
             {" "}
-            admin@lorikeetcollective.com{" "}
+            admin@lorikeetcollective.com
           </a>
-        </b>
+        </b>{" "}
         or speak directly with your therapist.
       </p>
     </Dropdown>
