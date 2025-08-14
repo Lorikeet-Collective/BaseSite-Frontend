@@ -9,7 +9,7 @@ const Header: React.FC = (): React.ReactElement => (
       <h1>
         <Link to="/home">Lorikeet Collective</Link>
       </h1>
-      <img src="null" alt="logo" />
+      {/* <img src="null" alt="logo" /> */}
     </div>
     <div>
       <Button isExternal link="https://lorikeetcollective.sessionshealth.com/">

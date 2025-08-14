@@ -30,7 +30,7 @@
     opacity: 0;
   }
   to {
-    height: calc(var(--menu-link-height) * 5);
+    height: calc(var(--menu-link-height) * 4);
     opacity: 1;
   }
 }

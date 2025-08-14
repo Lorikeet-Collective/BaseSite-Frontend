@@ -53,11 +53,11 @@ const MenuModal: React.FC = (): React.ReactElement => {
                 title="Our Philosophy"
                 exitHandler={closeMenuHandler}
               />
-              <MenuLink
+              {/* <MenuLink
                 to="/flock"
                 title="Meet the Flock"
                 exitHandler={closeMenuHandler}
-              />
+              /> */}
               <MenuLink
                 to="/insurance"
                 title="Insurance FAQs"

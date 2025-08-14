@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+// import { Link } from "react-router";
 import ContactForm from "../components/ContactForm/ContactForm";
 
 const ContactUs: React.FC = (): React.ReactElement => (
@@ -7,10 +7,11 @@ const ContactUs: React.FC = (): React.ReactElement => (
     <p>
       If you have questions that need answers, or are looking to inquire about
       services, please fill out the form below with a few details and we'll be
-      in touch soon. Alternatively, you can reach out to specific members of The
+      in touch soon.
+      {/*Alternatively, you can reach out to specific members of The
       Flock using the links found in each clinician’s bio or our administrative
       staff by using the Contact buttons found on the{" "}
-      <Link to="/flock">Meet the Flock</Link> page.
+      <Link to="/flock">Meet the Flock</Link> page. */}
     </p>
     <ContactForm />
   </main>
