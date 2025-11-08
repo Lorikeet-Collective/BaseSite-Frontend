@@ -16,3 +16,16 @@
   width: 100%;
   margin: var(--container-margin);
 }
+
+/* Desktop Media Queries */
+
+@media (min-width: 1000px) {
+  .img,
+  .img-fit {
+    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    justify-self: center;
+    margin: var(--container-margin);
+  }
+}

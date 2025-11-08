@@ -1,0 +1,26 @@
+/* Desktop Media Queries */
+
+@media (min-width: 1000px) {
+  #root {
+    font-size: 1.2em;
+  }
+  main {
+    max-width: 1500px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    max-width: 800px;
+  }
+  button {
+    max-width: fit-content;
+  }
+  .desktop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+  }
+}
