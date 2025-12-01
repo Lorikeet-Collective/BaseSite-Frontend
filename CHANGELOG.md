@@ -1,4 +1,4 @@
-# Current Version: [v0.0.4](#v004)
+# Current Version: [v0.1.0](#v010)
 
 > [!IMPORTANT]
 >
@@ -25,6 +25,20 @@
 </details>
 
 ## Previous Versions
+
+### v0.1.0
+
+<details>
+    <summary>Changes</summary>
+
+- New Features
+  - Added desktop layout
+- Changes
+  - Changed several pages styling for desktop changes
+- Fixes
+  - Event listener should no longer duplicate
+
+</details>
 
 ### v0.0.4
 
