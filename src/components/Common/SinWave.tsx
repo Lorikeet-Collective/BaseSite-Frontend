@@ -43,13 +43,11 @@ const SinWave: React.FC<SinWaveProps> = ({
   };
 
   useEffect(() => {
-    const event: EventListener = (e: Event): void => {
-      const target = e.target as Window;
+    const event: EventListener = (e: Event): void =>
       setSinData((prevData) => ({
         ...prevData,
-        width: target.innerWidth,
+        width: (e.target as Window).innerWidth,
       }));
-    };
     addEventListener("resize", event);
     return () => removeEventListener("resize", event);
   }, []);
