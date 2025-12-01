@@ -1,6 +1,7 @@
 .dropdown-container {
   border-top: 2px dotted var(--tertiary-color);
   overflow: hidden;
+  max-width: 800px;
 }
 
 .dropdown-container:last-child {
