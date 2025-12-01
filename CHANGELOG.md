@@ -17,6 +17,7 @@
 <details>
     <summary>Table-of-Contents</summary>
 
+- [v0.1.0](#v010)
 - [v0.0.4](#v004)
 - [v0.0.3](#v003)
 - [v0.0.2](#v002)
