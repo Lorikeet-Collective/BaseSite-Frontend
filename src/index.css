@@ -1,7 +1,7 @@
 @import "../node_modules/modern-normalize/modern-normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
-* {
+:root {
   /* ----------Global Variables ---------- */
 
   --primary-color: rgb(247, 241, 252);
@@ -13,7 +13,9 @@
   --header-height: 65px;
   --menu-link-height: 35px;
   --animation-path: cubic-bezier(0.5, 1.25, 0.5, 1.25);
+}
 
+* {
   /* ---------- Resets ---------- */
 
   margin: 0;

@@ -1,6 +1,9 @@
 /* Desktop Media Queries */
 
 @media (min-width: 1000px) {
+  * {
+    --header-height: 100px;
+  }
   #root {
     font-size: 1.2em;
   }

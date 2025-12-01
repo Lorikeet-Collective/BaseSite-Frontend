@@ -3,6 +3,7 @@
   height: var(--header-height);
   padding: 0 10px;
   background-color: var(--primary-color);
+  border-bottom: 2px solid var(--bg-color);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -38,4 +39,16 @@
   margin: 0;
   padding: 10px 15px;
   font-size: 0.7em;
+}
+
+@media (min-width: 1000px) {
+  .header-container {
+    padding: 0 50px;
+  }
+  .header-container > div > h1 {
+    font-size: 1.5em;
+  }
+  .header-container > div > button {
+    margin-right: 20px;
+  }
 }
