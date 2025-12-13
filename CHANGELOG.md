@@ -34,8 +34,11 @@
 
 - New Features
   - Added desktop layout
+  - Added Favicon (temp)
+  - Added Lorikeet Logo (temp)
 - Changes
   - Changed several pages styling for desktop changes
+  - Changed color range slightly
 - Fixes
   - Event listener should no longer duplicate
 
