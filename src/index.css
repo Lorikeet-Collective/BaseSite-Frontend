@@ -2,13 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 :root {
-  /* ----------Global Variables ---------- */
+  /* ---------- Global Variables ---------- */
 
-  --primary-color: rgb(247, 241, 252);
+  --primary-color: rgb(255, 255, 255);
   --secondary-color: rgb(35, 102, 99);
   --tertiary-color: rgb(110, 80, 132);
-  --bg-color: rgb(240, 229, 255);
+  --bg-color: rgb(230, 213, 255);
   --shadow-color: rgb(229, 192, 255);
+  /* --primary-color: rgb(247, 241, 252);
+  --secondary-color: rgb(35, 102, 99);
+  --tertiary-color: rgb(110, 80, 132);
+  --bg-color: rgb(230, 213, 255);
+  --shadow-color: rgb(229, 192, 255); */
   --container-margin: 20px 0;
   --header-height: 65px;
   --menu-link-height: 35px;

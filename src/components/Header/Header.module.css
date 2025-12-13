@@ -17,6 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 100%;
 }
 
 .header-container > div > h1,
@@ -32,6 +33,11 @@
 
 .header-container a {
   text-decoration: none;
+}
+
+.header-container div img {
+  height: calc(var(--header-height) / 3);
+  margin-right: 10px;
 }
 
 .header-container button {
