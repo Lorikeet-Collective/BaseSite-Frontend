@@ -3,7 +3,7 @@
   height: var(--header-height);
   padding: 0 10px;
   background-color: var(--primary-color);
-  border-bottom: 2px solid var(--bg-color);
+  border-bottom: 1px solid var(--bg-color);
   display: flex;
   flex-direction: row;
   justify-content: space-between;

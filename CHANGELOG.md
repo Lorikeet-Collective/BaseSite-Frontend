@@ -36,9 +36,11 @@
   - Added desktop layout
   - Added Favicon (temp)
   - Added Lorikeet Logo (temp)
+  - Added Lorikeet logo to footer (temp)
 - Changes
   - Changed several pages styling for desktop changes
   - Changed color range slightly
+  - Changed style of desktop footer
 - Fixes
   - Event listener should no longer duplicate
 

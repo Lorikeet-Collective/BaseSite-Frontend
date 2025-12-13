@@ -9,7 +9,7 @@
   --tertiary-color: rgb(110, 80, 132);
   --bg-color: rgb(230, 213, 255);
   --shadow-color: rgb(229, 192, 255);
-  /* --primary-color: rgb(247, 241, 252);
+  /* --primary-color: rgb(255, 255, 255);
   --secondary-color: rgb(35, 102, 99);
   --tertiary-color: rgb(110, 80, 132);
   --bg-color: rgb(230, 213, 255);
@@ -129,7 +129,6 @@ a:link,
 a:visited {
   padding: 5px 0;
   color: var(--secondary-color);
-  background-color: var(--primary-color);
   font-size: 0.9em;
   font-weight: 600;
   font-style: italic;
