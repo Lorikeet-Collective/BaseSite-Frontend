@@ -40,5 +40,15 @@
 @media (min-width: 1000px) {
     .title-container {
         font-size: 1.7em;
+        transition-duration: 0.05s;
+        transition-timing-function: ease-in-out;
+        transition-property: transform;
+        cursor: pointer;
+    }
+    .title-container:hover {
+        transform: scale(1.05);
+    }
+    .title-container:active {
+        transform: scale(0.99);
     }
 }

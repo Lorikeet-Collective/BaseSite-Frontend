@@ -67,11 +67,5 @@
         left: unset;
         right: 0;
         border-left: 1px solid var(--shadow-color);
-        background: linear-gradient(
-            to bottom,
-            var(--primary-color),
-            95%,
-            var(--bg-color)
-        );
     }
 }

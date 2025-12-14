@@ -21,6 +21,16 @@
     }
     button {
         max-width: fit-content;
+        transition-duration: 0.07s;
+        transition-timing-function: ease-in-out;
+        transition-property: transform;
+        cursor: pointer;
+    }
+    button:hover {
+        transform: scale(1.03);
+    }
+    button:active {
+        transform: scale(0.99);
     }
     iframe {
         max-width: 800px;
@@ -34,5 +44,15 @@
     .desktop-grid > div {
         flex-basis: 0;
         flex-grow: 1;
+    }
+    svg {
+        font-size: 1.7em;
+        transition-duration: 0.05s;
+        transition-timing-function: ease-in-out;
+        transition-property: transform;
+        cursor: pointer;
+    }
+    svg:hover {
+        transform: scale(1.1);
     }
 }
