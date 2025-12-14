@@ -5,10 +5,10 @@
 > <details>
 >   <summary>Info About Versions</summary>
 >
-> - `v`: Version
-> - `First Digit`: Major Release
-> - `Second Digit`: Feature Release
-> - `Third Digit`: Patch Release
+> -   `v`: Version
+> -   `First Digit`: Major Release
+> -   `Second Digit`: Feature Release
+> -   `Third Digit`: Patch Release
 >
 > </details>
 
@@ -17,11 +17,11 @@
 <details>
     <summary>Table-of-Contents</summary>
 
-- [v0.1.0](#v010)
-- [v0.0.4](#v004)
-- [v0.0.3](#v003)
-- [v0.0.2](#v002)
-- [v0.0.1](#v001)
+-   [v0.1.0](#v010)
+-   [v0.0.4](#v004)
+-   [v0.0.3](#v003)
+-   [v0.0.2](#v002)
+-   [v0.0.1](#v001)
 
 </details>
 
@@ -32,17 +32,17 @@
 <details>
     <summary>Changes</summary>
 
-- New Features
-  - Added desktop layout
-  - Added Favicon (temp)
-  - Added Lorikeet Logo (temp)
-  - Added Lorikeet logo to footer (temp)
-- Changes
-  - Changed several pages styling for desktop changes
-  - Changed color range slightly
-  - Changed style of desktop footer
-- Fixes
-  - Event listener should no longer duplicate
+-   New Features
+    -   Added desktop layout
+    -   Added Favicon (temp)
+    -   Added Lorikeet Logo (temp)
+    -   Added Lorikeet logo to footer (temp)
+-   Changes
+    -   Changed several pages styling for desktop changes
+    -   Changed color range slightly
+    -   Changed style of desktop footer
+-   Fixes
+    -   Event listener should no longer duplicate
 
 </details>
 
@@ -51,17 +51,17 @@
 <details>
     <summary>Changes</summary>
 
-- New Features
-  - Added 'Services' page
-  - Added 'InsuranceFAQs' page
-  - Added 'Resources' page
-- Changes
-  - Changed external images to internal
-  - Redone CSS system
-  - Updated footer to correct style
-- Fixes
-  - Fixed menu links not closing modal
-  - Multiple css inconsistencies
+-   New Features
+    -   Added 'Services' page
+    -   Added 'InsuranceFAQs' page
+    -   Added 'Resources' page
+-   Changes
+    -   Changed external images to internal
+    -   Redone CSS system
+    -   Updated footer to correct style
+-   Fixes
+    -   Fixed menu links not closing modal
+    -   Multiple css inconsistencies
 
 </details>
 
@@ -70,12 +70,12 @@
 <details>
     <summary>Changes</summary>
 
-- New Features
-  - Added 'Our Philosophy' page
-- Updates
-  - Changed animation system to be logic based
-- Temporary
-  - Footer format is temporary
+-   New Features
+    -   Added 'Our Philosophy' page
+-   Updates
+    -   Changed animation system to be logic based
+-   Temporary
+    -   Footer format is temporary
 
 </details>
 
@@ -84,14 +84,14 @@
 <details>
     <summary>Changes</summary>
 
-- New Features
-  - Created nav menu modal (mobile)
-  - Created footer (mobile)
-  - Added home page layout
-- Updates
-  - Updated all NPM modules
-- Temporary
-  - Added body lorem ipsum for font scaling
+-   New Features
+    -   Created nav menu modal (mobile)
+    -   Created footer (mobile)
+    -   Added home page layout
+-   Updates
+    -   Updated all NPM modules
+-   Temporary
+    -   Added body lorem ipsum for font scaling
 
 </details>
 
@@ -100,10 +100,10 @@
 <details>
     <summary>Changes</summary>
 
-- New Features
-  - Created foundation for project
-  - Created README for project outline
-  - Created CHANGELOG for change documentation
-  - Integrated .env file for future use
+-   New Features
+    -   Created foundation for project
+    -   Created README for project outline
+    -   Created CHANGELOG for change documentation
+    -   Integrated .env file for future use
 
 </details>

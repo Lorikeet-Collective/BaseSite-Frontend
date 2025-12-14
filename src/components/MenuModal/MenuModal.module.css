@@ -1,45 +1,45 @@
 .nav-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-container {
-  width: 0%;
-  height: calc(100% - var(--header-height));
-  margin: var(--header-height) 0 0 0;
-  padding: 0 40px;
-  background-color: var(--primary-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  text-align: center;
-  white-space: nowrap;
-  opacity: 0;
-  overflow: hidden;
-  z-index: 99;
-  animation-name: slide;
-  animation-duration: 0.4s;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-timing-function: var(--animation-path);
+    width: 0%;
+    height: calc(100% - var(--header-height));
+    margin: var(--header-height) 0 0 0;
+    padding: 0 40px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    white-space: nowrap;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 99;
+    animation-name: slide;
+    animation-duration: 0.4s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: var(--animation-path);
 }
 
 @keyframes slide {
-  from {
-    width: 0%;
-    left: 100%;
-    display: none;
-    opacity: 0;
-  }
-  to {
-    width: 100%;
-    left: 0%;
-    display: flex;
-    opacity: 1;
-  }
+    from {
+        width: 0%;
+        left: 100%;
+        display: none;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        left: 0%;
+        display: flex;
+        opacity: 1;
+    }
 }

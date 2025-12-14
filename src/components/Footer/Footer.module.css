@@ -1,69 +1,69 @@
 .footer-container {
-  padding: 0 20px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid var(--bg-color);
-  background: linear-gradient(var(--primary-color), 50%, var(--bg-color));
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--bg-color);
+    background: linear-gradient(var(--primary-color), 50%, var(--bg-color));
 }
 
 .footer-logo-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
 }
 
 .footer-logo-container img {
-  width: 30px;
+    width: 30px;
 }
 
 .footer-logo-container h2 {
-  display: inline-block;
+    display: inline-block;
 
-  margin-left: 10px;
-  color: var(--tertiary-color);
-  font-size: 1.6em;
-  font-style: italic;
-  border-bottom: 1px dotted var(--secondary-color);
-  text-align: center;
+    margin-left: 10px;
+    color: var(--tertiary-color);
+    font-size: 1.6em;
+    font-style: italic;
+    border-bottom: 1px dotted var(--secondary-color);
+    text-align: center;
 }
 
 .footer-info-container h3 {
-  margin: 10px 0;
-  font-size: 1.2em;
-  text-align: left;
+    margin: 10px 0;
+    font-size: 1.2em;
+    text-align: left;
 }
 
 .footer-subcontainer li {
-  margin: 0;
-  padding-left: 0;
+    margin: 0;
+    padding-left: 0;
 }
 
 /* Desktop Media Queries */
 
 @media (min-width: 1000px) {
-  .footer-container {
-    background: none;
-    background-color: var(--primary-color);
-    align-items: center;
-    font-size: 0.8em;
-    padding: 0 0 50px 0;
-  }
-  .footer-logo-container h2 {
-    font-size: 2em;
-  }
-  .footer-info-container {
-    width: 100%;
-    max-width: 750px;
-    display: flex;
-    justify-content: center;
-  }
-  .footer-subcontainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .footer-container {
+        background: none;
+        background-color: var(--primary-color);
+        align-items: center;
+        font-size: 0.8em;
+        padding: 0 0 50px 0;
+    }
+    .footer-logo-container h2 {
+        font-size: 2em;
+    }
+    .footer-info-container {
+        width: 100%;
+        max-width: 750px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-subcontainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

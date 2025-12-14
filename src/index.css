@@ -2,124 +2,124 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 :root {
-  /* ---------- Global Variables ---------- */
+    /* ---------- Global Variables ---------- */
 
-  --primary-color: rgb(255, 255, 255);
-  --secondary-color: rgb(35, 102, 99);
-  --tertiary-color: rgb(110, 80, 132);
-  --bg-color: rgb(230, 213, 255);
-  --shadow-color: rgb(229, 192, 255);
-  /* --primary-color: rgb(255, 255, 255);
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(35, 102, 99);
+    --tertiary-color: rgb(110, 80, 132);
+    --bg-color: rgb(230, 213, 255);
+    --shadow-color: rgb(229, 192, 255);
+    /* --primary-color: rgb(255, 255, 255);
   --secondary-color: rgb(35, 102, 99);
   --tertiary-color: rgb(110, 80, 132);
   --bg-color: rgb(230, 213, 255);
   --shadow-color: rgb(229, 192, 255); */
-  --container-margin: 20px 0;
-  --header-height: 65px;
-  --menu-link-height: 35px;
-  --animation-path: cubic-bezier(0.5, 1.25, 0.5, 1.25);
+    --container-margin: 20px 0;
+    --header-height: 65px;
+    --menu-link-height: 35px;
+    --animation-path: cubic-bezier(0.5, 1.25, 0.5, 1.25);
 }
 
 * {
-  /* ---------- Resets ---------- */
+    /* ---------- Resets ---------- */
 
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Lora", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 1em;
-  line-height: 1.5em;
-  letter-spacing: 0.2px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 1em;
+    line-height: 1.5em;
+    letter-spacing: 0.2px;
 }
 
 /* ---------- Root Div Styles ---------- */
 
 #root {
-  min-height: 100vh;
-  color: var(--secondary-color);
-  background-color: var(--bg-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    min-height: 100vh;
+    color: var(--secondary-color);
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main {
-  padding: calc(var(--header-height) + 5px) 40px 0 40px;
-  background-color: var(--primary-color);
+    padding: calc(var(--header-height) + 5px) 40px 0 40px;
+    background-color: var(--primary-color);
 }
 
 /* ---------- Misc Styles ---------- */
 
 .required::after {
-  color: red;
-  content: "*";
+    color: red;
+    content: "*";
 }
 
 /* ---------- Psuedo Styles ---------- */
 
 ::placeholder {
-  color: var(--tertiary-color);
-  font-size: 0.8em;
-  font-style: italic;
-  opacity: 0.6;
+    color: var(--tertiary-color);
+    font-size: 0.8em;
+    font-style: italic;
+    opacity: 0.6;
 }
 
 :focus {
-  outline: none;
+    outline: none;
 }
 
 /* ---------- Header Styles ---------- */
 
 h2 {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 h3 {
-  color: var(--tertiary-color);
-  font-size: 1.4em;
+    color: var(--tertiary-color);
+    font-size: 1.4em;
 }
 
 h2,
 h3 {
-  margin: var(--container-margin);
-  font-weight: 800;
-  line-height: 1.2em;
-  text-align: center;
+    margin: var(--container-margin);
+    font-weight: 800;
+    line-height: 1.2em;
+    text-align: center;
 }
 
 /* ---------- Paragraph Styles ---------- */
 
 p {
-  margin: var(--container-margin);
-  color: var(--tertiary-color);
+    margin: var(--container-margin);
+    color: var(--tertiary-color);
 }
 
 /* ---------- List Styles ---------- */
 
 ul {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 li {
-  margin-bottom: 5px;
-  padding-left: 10px;
-  list-style: square;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    list-style: square;
 }
 
 li::marker {
-  color: var(--tertiary-color);
+    color: var(--tertiary-color);
 }
 
 /* ---------- Input Styles ---------- */
 
 input {
-  width: 100%;
-  padding: 5px 0;
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  border: none;
-  border-bottom: 1px solid var(--tertiary-color);
+    width: 100%;
+    padding: 5px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-bottom: 1px solid var(--tertiary-color);
 }
 
 /* ---------- Ancor Styles ---------- */
@@ -127,124 +127,124 @@ input {
 a,
 a:link,
 a:visited {
-  padding: 5px 0;
-  color: var(--secondary-color);
-  font-size: 0.9em;
-  font-weight: 600;
-  font-style: italic;
-  text-decoration: underline;
+    padding: 5px 0;
+    color: var(--secondary-color);
+    font-size: 0.9em;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 /* ---------- Label Styles ---------- */
 
 label {
-  width: 100%;
-  margin-top: 10px;
-  color: var(--tertiary-color);
-  font-size: 1.1em;
-  font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+    color: var(--tertiary-color);
+    font-size: 1.1em;
+    font-weight: 600;
 }
 
 /* ---------- Textarea Styles ---------- */
 
 textarea {
-  width: 100%;
-  padding: 5px 0;
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  border: none;
-  border-bottom: 1px solid var(--tertiary-color);
-  overflow-y: scroll;
-  resize: vertical;
+    width: 100%;
+    padding: 5px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-bottom: 1px solid var(--tertiary-color);
+    overflow-y: scroll;
+    resize: vertical;
 }
 
 textarea::-webkit-resizer {
-  border: 3px solid var(--tertiary-color);
+    border: 3px solid var(--tertiary-color);
 }
 
 /* ---------- Select Styles ---------- */
 
 select,
 select::picker(select) {
-  appearance: base-select;
-  padding: 5px 0;
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
+    appearance: base-select;
+    padding: 5px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 select {
-  width: 100%;
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid var(--tertiary-color);
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--tertiary-color);
 }
 
 select::picker(select) {
-  border-radius: 0 0 10px 10px;
-  border: 1px solid var(--tertiary-color);
-  font-size: 1.1em;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid var(--tertiary-color);
+    font-size: 1.1em;
 }
 
 select::picker-icon {
-  color: var(--tertiary-color);
-  transition: 0.4s rotate;
+    color: var(--tertiary-color);
+    transition: 0.4s rotate;
 }
 
 select:open::picker-icon {
-  rotate: 180deg;
+    rotate: 180deg;
 }
 
 /* ---------- Option Styles ---------- */
 
 option {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 option:checked {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 option:not(:last-child) {
-  border-bottom: 1px dotted var(--tertiary-color);
+    border-bottom: 1px dotted var(--tertiary-color);
 }
 
 /* ---------- Button Styles ---------- */
 
 button {
-  width: 100%;
-  margin: var(--container-margin);
-  padding: 15px 20px;
-  color: var(--primary-color);
-  background-color: var(--tertiary-color);
-  border-radius: 25px;
-  border-style: none;
-  font-size: 0.9em;
-  font-weight: 800;
-  text-decoration: none;
+    width: 100%;
+    margin: var(--container-margin);
+    padding: 15px 20px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    border-radius: 25px;
+    border-style: none;
+    font-size: 0.9em;
+    font-weight: 800;
+    text-decoration: none;
 }
 
 button > a,
 button > a:link,
 button > a:visited {
-  text-decoration: none;
-  color: var(--primary-color);
-  background-color: var(--tertiary-color);
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
 }
 
 /* ---------- iFrame Styles ---------- */
 
 iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  margin: var(--container-margin);
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin: var(--container-margin);
 }
 
 /* ---------- SVG Styles ---------- */
 
 svg {
-  position: relative;
+    position: relative;
 }

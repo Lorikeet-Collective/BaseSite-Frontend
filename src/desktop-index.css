@@ -1,29 +1,37 @@
 /* ---------- Desktop Media Queries ---------- */
 
 @media (min-width: 1000px) {
-  * {
-    --header-height: 100px;
-  }
-  #root {
-    font-size: 1.2em;
-  }
-  main {
-    max-width: 1500px;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  p {
-    max-width: 800px;
-  }
-  button {
-    max-width: fit-content;
-  }
-  .desktop-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
-  }
+    * {
+        --header-height: 100px;
+    }
+    #root {
+        font-size: 1.2em;
+    }
+    main {
+        width: 1500px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        max-width: 800px;
+    }
+    button {
+        max-width: fit-content;
+    }
+    iframe {
+        max-width: 800px;
+    }
+    .desktop-grid {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 25px;
+    }
+    .desktop-grid > div {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
 }

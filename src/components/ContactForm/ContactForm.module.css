@@ -1,28 +1,41 @@
 .form-container {
-  width: 100%;
-  margin: var(--container-margin);
+    width: 100%;
+    padding: 10px;
+    margin: var(--container-margin);
+    border: 2px solid var(--shadow-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
 }
 
 .col-divider {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .row-divider {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
 }
 
 .info {
-  padding: 0 10px;
-  color: var(--secondary-color);
-  line-height: 1.1em;
-  font-size: 0.8em;
-  font-style: italic;
+    padding: 0 10px;
+    color: var(--secondary-color);
+    line-height: 1.1em;
+    font-size: 0.8em;
+    font-style: italic;
 }
 
 .form-container button {
-  margin: 0;
+    margin: 0;
+}
+
+/* Desktop Media Queries */
+
+@media (min-width: 1000px) {
+    .form-container {
+        max-width: 800px;
+        padding: 20px;
+    }
 }

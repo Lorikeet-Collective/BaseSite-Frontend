@@ -10,15 +10,15 @@
 
 ## Table-of-Contents
 
-- [About The Project](#about-the-project)
-- [Built With](#built-with)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Running The Application](#running)
-- [Testing](#testing)
-- [Linting](#linting)
-- [License](#license)
-- [Notes](#notes)
+-   [About The Project](#about-the-project)
+-   [Built With](#built-with)
+-   [Prerequisites](#prerequisites)
+-   [Installation](#installation)
+-   [Running The Application](#running)
+-   [Testing](#testing)
+-   [Linting](#linting)
+-   [License](#license)
+-   [Notes](#notes)
 
 <!-- About -->
 
@@ -71,8 +71,8 @@ This is the official Lorikeet Collective main website frontend.
 
 ## Prerequisites
 
-- Follow the [Lorikeet Backend](https://github.com/Lorikeet-Collective/BaseSite-Backend) `README.md` file to get the associated backend up and running.
-- Make sure your `.env` variables are set properly to connect to the backend.
+-   Follow the [Lorikeet Backend](https://github.com/Lorikeet-Collective/BaseSite-Backend) `README.md` file to get the associated backend up and running.
+-   Make sure your `.env` variables are set properly to connect to the backend.
 
 > [!WARNING]
 > If you have not received your `.env` variables, contact the Lead Engineer. The project will **_not_** work without them.
@@ -93,10 +93,10 @@ npm install
 
 The current available `NPM` scripts are:
 
-- `dev` | run a dev server
-- `build` | build the current project
-- `start` | run a built project
-- `lint` | check for linting errors
+-   `dev` | run a dev server
+-   `build` | build the current project
+-   `start` | run a built project
+-   `lint` | check for linting errors
 
 To run any of the above commands use this format in terminal:
 
@@ -128,8 +128,8 @@ todo
 
 Google Lighthouse is used to audit our accessibility standards to meet the following:
 
-- [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
-- [WCAG 3](https://www.w3.org/TR/wcag-3.0)
+-   [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
+-   [WCAG 3](https://www.w3.org/TR/wcag-3.0)
 
 > [!NOTE]
 > WCAG 3 will be implemented once the full release is available. Check here: [Status](https://www.w3.org/TR/wcag-3.0/#sotd)
@@ -158,21 +158,21 @@ Distributed under the MIT License. See [LICENSE.txt](https://github.com/Lorikeet
 >
 > #### A pull-request will be <code style="color:red;">auto-denied</code> under the following:
 >
-> - Linting must be verified with **_zero_** errors.
-> - All test cases must be passed with **_zero_** errors.
-> - Documentation must be relevant and updated to any changes presented.
-> - Comment any code and update old comments to reflect changes.
+> -   Linting must be verified with **_zero_** errors.
+> -   All test cases must be passed with **_zero_** errors.
+> -   Documentation must be relevant and updated to any changes presented.
+> -   Comment any code and update old comments to reflect changes.
 
 Git commits will be prefixed with one of the following. Commit messages are in past tense:
 
-- `fix` | Fix / Patch
-- `create` | New Feature or Add-on
-- `delete` | Removal of Code
-- `temp` | Temp Change or Work Around
-- `change` | Code Edit / Modification
-- `iter` | Regular Code Iteration
-- `update` | NPM Package / Tool Update
-- `perf` | Performance Change for Slow Code
-- `sec` | Security Update / Change
-- `dev` | Add Service / Tool to Dev Environment
-- `prod` | Add Service / Tool to Production Environment
+-   `fix` | Fix / Patch
+-   `create` | New Feature or Add-on
+-   `delete` | Removal of Code
+-   `temp` | Temp Change or Work Around
+-   `change` | Code Edit / Modification
+-   `iter` | Regular Code Iteration
+-   `update` | NPM Package / Tool Update
+-   `perf` | Performance Change for Slow Code
+-   `sec` | Security Update / Change
+-   `dev` | Add Service / Tool to Dev Environment
+-   `prod` | Add Service / Tool to Production Environment

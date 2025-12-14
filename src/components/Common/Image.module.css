@@ -1,31 +1,30 @@
 .img {
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
 }
 
 .img-fit {
-  max-height: 125px;
-  object-fit: contain;
+    max-height: 125px;
+    object-fit: contain;
 }
 
 .img,
 .img-fit {
-  width: 100%;
-  margin: var(--container-margin);
+    width: 100%;
+    margin: var(--container-margin);
 }
 
 /* Desktop Media Queries */
 
 @media (min-width: 1000px) {
-  .img,
-  .img-fit {
-    height: 500px;
-    max-width: 500px;
-    max-height: 500px;
-    justify-self: center;
-    margin: var(--container-margin);
-  }
+    .img {
+        height: 500px;
+        max-width: 500px;
+        max-height: 500px;
+        justify-self: center;
+        margin: var(--container-margin);
+    }
 }

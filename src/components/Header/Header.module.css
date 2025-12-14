@@ -1,60 +1,60 @@
 .header-container {
-  width: 100%;
-  height: var(--header-height);
-  padding: 0 10px;
-  background-color: var(--primary-color);
-  border-bottom: 1px solid var(--bg-color);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 999;
+    width: 100%;
+    height: var(--header-height);
+    padding: 0 10px;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 
 .header-container div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
 }
 
 .header-container > div > h1,
 .header-container > div > button {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .header-container h1 a {
-  display: inline;
-  font-style: normal;
-  font-weight: 800;
+    display: inline;
+    font-style: normal;
+    font-weight: 800;
 }
 
 .header-container a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .header-container div img {
-  height: calc(var(--header-height) / 3);
-  margin-right: 10px;
+    height: calc(var(--header-height) / 3);
+    margin-right: 10px;
 }
 
 .header-container button {
-  width: auto;
-  margin: 0;
-  padding: 10px 15px;
-  font-size: 0.7em;
+    width: auto;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 0.7em;
 }
 
 @media (min-width: 1000px) {
-  .header-container {
-    padding: 0 50px;
-  }
-  .header-container > div > h1 {
-    font-size: 1.5em;
-  }
-  .header-container > div > button {
-    margin-right: 20px;
-  }
+    .header-container {
+        padding: 0 50px;
+    }
+    .header-container > div > h1 {
+        font-size: 1.5em;
+    }
+    .header-container > div > button {
+        margin-right: 20px;
+    }
 }

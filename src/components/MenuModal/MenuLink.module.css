@@ -1,19 +1,19 @@
 .menu-link-container {
-  height: var(--menu-link-height);
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5em;
+    height: var(--menu-link-height);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
 }
 
 .menu-link-container a,
 .menu-link-container a:link,
 .menu-link-container a:visited {
-  padding: 0;
-  color: var(--tertiary-color);
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 400;
+    padding: 0;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
 }
