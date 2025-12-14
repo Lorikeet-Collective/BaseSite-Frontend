@@ -41,8 +41,9 @@
     -   Changed several pages styling for desktop changes
     -   Changed color range slightly
     -   Changed style of desktop footer
+    -   Reformatted all code to be more readable
 -   Fixes
-    -   Event listener should no longer duplicate
+    -   Event listeners should no longer duplicate
 
 </details>
 
