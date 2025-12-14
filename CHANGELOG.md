@@ -37,6 +37,7 @@
     -   Added Favicon (temp)
     -   Added Lorikeet Logo (temp)
     -   Added Lorikeet logo to footer (temp)
+    -   Added cursor and animation feedback for hover and active events
 -   Changes
     -   Changed several pages styling for desktop changes
     -   Changed color range slightly
