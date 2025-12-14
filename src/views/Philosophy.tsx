@@ -24,7 +24,7 @@ const Philosophy: React.FC = (): React.ReactElement => {
                     <p>
                         Lorikeet Collective, PLLC. was founded on the principle
                         that therapeutic spaces should inclusive and affirming
-                        for all LGBTQAI2S+, disabled, neurodiverse, BIPOC, and
+                        for all LGBTQAI2S+, disabled, neurodivergent, racialized, and
                         multiply marginalized folx— from those who find
                         themselves looking for a safe place to heal to those
                         called upon to heal others.
@@ -47,13 +47,11 @@ const Philosophy: React.FC = (): React.ReactElement => {
                     </p>
                 </div>
                 {!isClamped && <SinWave />}
-                {/* __________ \/ IN DEVELOPMENT \/ __________ */}
                 <div>
                     <Image src={welcomeSign} />
-                    <h3>___ TODO ___</h3>
-                    <p>___ TODO ___</p>
+                    <h3>Non-Judgement</h3>
+                    <p></p>
                 </div>
-                {/* __________ /\ IN DEVELOPMENT /\ __________ */}
             </div>
             <Dropdown title="Which principles guide your therapeutic approach?">
                 <p>
@@ -118,6 +116,21 @@ const Philosophy: React.FC = (): React.ReactElement => {
                 </p>
             </Dropdown>
             <Dropdown title="In which states are you licensed to provide care?">
+                <p>
+                    This varies by therapist. Ask your therapist in which states
+                    they are able to accept clients! Currently, Lorikeet
+                    Collective actively serves clients in the following states:
+                </p>
+                <ul>
+                    <li>Connecticut</li>
+                    <li>Massachusetts</li>
+                    <li>Rhode Island</li>
+                    <li>Ohio</li>
+                    <li>Illinois</li>
+                    <li>Iowa</li>
+                </ul>
+            </Dropdown>
+            <Dropdown title="What is a therapy collective?">
                 <p>
                     A therapy collective is a non-hierarchical group of mental
                     health professionals. Therapy has the capability to heal and
