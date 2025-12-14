@@ -17,3 +17,11 @@
     font-style: normal;
     font-weight: 400;
 }
+
+/* Desktop Media Queries */
+
+@media (min-width: 1000px) {
+    .menu-link-container {
+        font-size: 1.7em;
+    }
+}

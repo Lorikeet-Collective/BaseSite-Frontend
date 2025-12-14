@@ -34,3 +34,11 @@
         opacity: 1;
     }
 }
+
+/* Desktop Media Queries */
+
+@media (min-width: 1000px) {
+    .title-container {
+        font-size: 1.7em;
+    }
+}

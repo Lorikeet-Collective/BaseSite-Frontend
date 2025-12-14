@@ -31,15 +31,47 @@
 
 @keyframes slide {
     from {
+        filter: blur(50px);
         width: 0%;
         left: 100%;
         display: none;
         opacity: 0;
     }
     to {
+        filter: blur(0px);
         width: 100%;
         left: 0%;
         display: flex;
         opacity: 1;
+    }
+}
+
+/* Desktop Media Queries */
+
+@media (min-width: 1000px) {
+    @keyframes slide {
+        from {
+            filter: blur(50px);
+            width: 0%;
+            display: none;
+            opacity: 0;
+        }
+        to {
+            filter: blur(0px);
+            width: 350px;
+            display: flex;
+            opacity: 1;
+        }
+    }
+    .modal-container {
+        left: unset;
+        right: 0;
+        border-left: 1px solid var(--shadow-color);
+        background: linear-gradient(
+            to bottom,
+            var(--primary-color),
+            95%,
+            var(--bg-color)
+        );
     }
 }

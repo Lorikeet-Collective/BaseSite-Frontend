@@ -8,7 +8,8 @@
         font-size: 1.2em;
     }
     main {
-        width: 1500px;
+        width: 100%;
+        max-width: 1500px;
         align-self: center;
         display: flex;
         flex-direction: column;

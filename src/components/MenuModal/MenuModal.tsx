@@ -1,3 +1,4 @@
+// Component Imports
 import { useState, useRef, useInsertionEffect } from "react";
 import { createPortal } from "react-dom";
 import { enterIcon, exitIcon } from "../SVG/icons";
@@ -5,11 +6,14 @@ import SVGIcon from "../SVG/SVGIcon";
 import MenuCatagory from "./MenuCatagory";
 import MenuLink from "./MenuLink";
 import styles from "./MenuModal.module.css";
+// Hook Imports
+import useWidth from "../../hooks/useWidth";
 
 const MenuModal: React.FC = (): React.ReactElement => {
     const [isOpen, setIsOpen] = useState(false);
     const [isRendered, setIsRendered] = useState(false);
     const modal = useRef<HTMLUListElement>(null);
+    const isClamped = useWidth();
 
     const closeMenuHandler = () => {
         setIsOpen(false);
@@ -17,7 +21,8 @@ const MenuModal: React.FC = (): React.ReactElement => {
     };
 
     useInsertionEffect(() => {
-        document.body.style.overflowY = isOpen ? "hidden" : "auto";
+        if (!isClamped)
+            document.body.style.overflowY = isOpen ? "hidden" : "auto";
     }, [isOpen]);
 
     return (
@@ -61,10 +66,10 @@ const MenuModal: React.FC = (): React.ReactElement => {
                                 exitHandler={closeMenuHandler}
                             />
                             {/* <MenuLink
-                to="/flock"
-                title="Meet the Flock"
-                exitHandler={closeMenuHandler}
-              /> */}
+                                to="/flock"
+                                title="Meet the Flock"
+                                exitHandler={closeMenuHandler}
+                            /> */}
                             <MenuLink
                                 to="/insurance"
                                 title="Insurance FAQs"
