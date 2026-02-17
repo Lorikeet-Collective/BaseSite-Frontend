@@ -59,6 +59,7 @@ const SinWave: React.FC<SinWaveProps> = ({
 
     return (
         <svg
+            className="sinwave"
             width={"100%"}
             height={useDynamicHeight ? getComputedMenuHeight() : sinData.height}
             viewBox={`0 0 ${sinData.width} ${sinData.height}`}

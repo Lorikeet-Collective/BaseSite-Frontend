@@ -45,14 +45,14 @@
         flex-basis: 0;
         flex-grow: 1;
     }
-    svg {
+    svg:not(.sinwave) {
         font-size: 1.7em;
         transition-duration: 0.05s;
         transition-timing-function: ease-in-out;
         transition-property: transform;
         cursor: pointer;
     }
-    svg:hover {
+    svg:hover:not(.sinwave) {
         transform: scale(1.1);
     }
 }
